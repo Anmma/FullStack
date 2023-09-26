@@ -1,3 +1,14 @@
+:root{
+    --tonoRosa:#F76666;
+    --tonoOscuro:#02052F;
+    --fuentePrincipal: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+
 html{
     font-size: 62,5%;
 }
@@ -86,21 +97,21 @@ h6{
     background-color: green;
 } */
 
-
+body{
+    font-family: var(--fuentePrincipal);
+}
 
 h1{
-    background-color: rgba(248, 102, 102, 0.65);
+    background-color:#F76666 ;
         font-weight: 800;
         font-size: 47px;
         padding: 35px;
-        color: #fff;
-        font-family: 'Open Sans', sans-serif;
+        color: white;
+        font-family: var(--fuentePrincipal);
         padding-right: 15px;
         padding-left: 15px;
 }
-h2{
-    
-}
+
 
 h3{
     color: #F76666;
@@ -110,9 +121,33 @@ h3{
 a{
     color: #F76666;
     text-decoration: none;
-    background-color: transparent;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--fuentePrincipal);
     font-weight: 400;
     padding-right: 15px;
     padding-left: 15px;
 }
+
+.menuInicio{
+    color: var(--tonoOscuro);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.menuInforma{
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: var(--tonoRosa);
+    border-radius: 20px;
+    
+    
+}
+
+.enlaceLogin {
+    
+}
+
+/*
+.modificacion {
+    color: var(--fuentePrincipal)
+} */

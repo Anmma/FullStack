@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" href="./css/normalize.css" as="style">
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <!-- Ubicar el link de font antes para que pueda cargar  -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> -->
+    
     <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
-
 
     <title>Tu Carrera Digital</title>
 
@@ -36,19 +44,19 @@
 
     <header>
         
-        <a href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginAlumno.aspx">Login Alumnos</a>
-        <a href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginEmpresa.aspx">Login Empresas</a>
+        <a class="enlaceLogin" href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginAlumno.aspx">Login Alumnos</a>
+        <a class="enlaceLogin" href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginEmpresa.aspx">Login Empresas</a>
         
         <a href="#"><img src="Img/Tu-carrera-digital-general.png" alt="Logo Tu carrera digital"></a>
 
         
-        <a href="https://www.tucarreradigital.es/zona-centro#cursos">Cursos</a>
-        <a href="https://www.tucarreradigital.es/sobre-nosotros">Sobre Nosotros</a>
-        <a href="#">Informate</a>
+        <a class="menuInicio"  href="https://www.tucarreradigital.es/zona-centro#cursos">Cursos</a>
+        <a class="menuInicio" href="https://www.tucarreradigital.es/sobre-nosotros">Sobre Nosotros</a>
+        <a class="menuInforma" href="#">Informate</a>
     </header>
 
     <main>
-        <h1>
+        <h1 class="modificacion">
         Descubre la formacion que te dará la oportunidad de covertirte en un profesional
         </h1>
          <img src="Img/ico-centro.png" alt="">
@@ -68,11 +76,11 @@
 
             <h2>Cambia tu futuro</h2>
 
-            <h2>Marketing digital</h2>
+            <h2 class="modificacion">Marketing digital</h2>
             <a href="https://www.tucarreradigital.es/zona-centro/curso-marketing-digital#cursos">Inscribirme</a>
-            <h2>Programacion de video juegos, diseño 3D y realidad</h2>
+            <h2 class="modificacion">Programacion de video juegos, diseño 3D y realidad</h2>
             <a href="https://www.tucarreradigital.es/zona-centro/curso-marketing-digital#cursos">Inscribirme</a>
-            <h2>Programación web fullstack</h2>
+            <h2 class="modificacion">Programación web fullstack</h2>
             <a href="https://www.tucarreradigital.es/zona-centro/curso-marketing-digital#cursos">Incribirme</a>
 
         </section>
