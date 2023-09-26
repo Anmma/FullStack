@@ -131,6 +131,7 @@ a{
     color: var(--tonoOscuro);
     font-size: 14px;
     font-weight: 700;
+    font-family: var(--fuentePrincipal);
 }
 
 .menuInforma{
@@ -139,6 +140,7 @@ a{
     font-weight: 700;
     background-color: var(--tonoRosa);
     border-radius: 20px;
+    font-family: var(--fuentePrincipal);
     
     
 }
