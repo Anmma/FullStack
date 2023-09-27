@@ -205,7 +205,7 @@ h1{
 }
 
 /* ESTILOS SECCION CURSOS */
-.contenedor h3{
+.sectionCursos h3{
     text-align: center;
     color: var(--tonoRosa);
     text-transform: uppercase;
@@ -215,22 +215,47 @@ h1{
     margin: 40px 0px;
 }
 
-.contenedor>h2{
+.sectionCursos>h2{
     text-align: center;
     color: var(--tonoOscuro);
     font-family: var(--fuentePrincipal);
     text-transform: uppercase;
     font-weight: 800;
     font-size: 2.7rem;
+    padding-bottom: 50px;
 }
 
-.botonVer{
+.bCentros{
+    text-align: center;
+}
+
+.bVer{
     background-color: var(--tonoRosa);
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 24px;
     font-family: var(--fuentePrincipal);
+    border-color: var(--tonoRosa);
+    margin-right: 0.5rem;
+    margin-bottom: 20px;
+}
+
+.bMadrid{
+    background-color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 24px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid;
+    border-color: var(--tonoRosa);
+    color: var(--tonoOscuro);
+    font-family: var(--fuentePrincipal);
+    margin-bottom: 20px;
+
 }
 
 
