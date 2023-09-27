@@ -2,15 +2,11 @@
     --tonoRosa:#F76666;
     --tonoOscuro:#02052F;
     --fuentePrincipal: 'Open Sans', sans-serif;
+    --fuenteBotonoes: "DinBold", sans-serif;
 }
 
-
-
-
-
-
 html{
-    font-size: 62,5%;
+    font-size: 62.5%;
 }
 
 body{
@@ -97,7 +93,7 @@ h6{
     background-color: green;
 } */
 
-body{
+/* body{
     font-family: var(--fuentePrincipal);
 }
 
@@ -147,9 +143,110 @@ a{
 
 .enlaceLogin {
     
+} */
+/* ESTILOS GENERICOS */
+
+.contenedor{
+    max-width: 87%;
+    margin: 0 auto 0 auto;
 }
 
-/*
-.modificacion {
-    color: var(--fuentePrincipal)
-} */
+/* ESTILOS PARA EL MAIN */
+
+.fondoMain{
+    background-image: url(../Img/11641893944_banner_zona_centro.png);
+    background-size: cover;
+    background-position: top left;
+    padding: 80px 0 180px 0;
+}
+
+.margenDerecho{
+    margin-right: 30%;
+}
+
+h1{
+    background-color: rgba(248,102,102,0.65);
+    font-family: var(--fuentePrincipal);
+    font-weight: 800;
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+    padding: 35px;
+    color: white;
+    
+}
+
+.fondoMain a{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    padding: 24px 94px;
+    font-family: var(--fuenteBotonoes);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.flexMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+/* ESTILOS PARA LA IMAGEN DE CORPORACIONES */
+.logosOficiales{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    margin-top: -120px;
+    border-radius: 12px;
+}
+
+/* ESTILOS SECCION CURSOS */
+.contenedor h3{
+    text-align: center;
+    color: var(--tonoRosa);
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    font-weight: 800;
+    font-size: 1.7rem;
+    margin: 40px 0px;
+}
+
+.contenedor>h2{
+    text-align: center;
+    color: var(--tonoOscuro);
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2.7rem;
+}
+
+.botonVer{
+    background-color: var(--tonoRosa);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-family: var(--fuentePrincipal);
+}
+
+
+/* ESTILOS SECCION PIDENOSLO */
+
+/* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
+
+/* ESTILOS LOCALIZACIONES */
+.localizaciones{
+    background-color: black;
+    color: white;
+}
+
+
+/* ESTILOS CONTACTAR */
+
+/* ESTILOS FOOTER */
+
+/* ESTILOS HEADER */
