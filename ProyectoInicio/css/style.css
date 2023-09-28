@@ -193,6 +193,12 @@ h1{
     justify-content: space-between;
     
 }
+
+.flexMain a:hover{
+    background-color: white;
+    color: var(--tonoRosa);
+    border-color: var(--tonoRosa);
+}
 /* ESTILOS PARA LA IMAGEN DE CORPORACIONES */
 .logosOficiales{
     background-color: white;
@@ -298,6 +304,11 @@ h1{
     display: inline-block;
 }
 
+.cursos a:hover{
+    background-color: var(--tonoRosa);
+    color: white;
+}
+
 .cMarketing{
     background-image: url(../Img/Curso-marketing-digital-centro.png);
     margin-right: 15px;
@@ -336,7 +347,7 @@ h1{
     /* text-align: center; no aplica por no ser text */
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.7rem;
     color: white;
     background-color: var(--tonoRosa);
@@ -345,9 +356,11 @@ h1{
     border-radius: 96px;
     display: inline-block;
     line-height: 1.5;
-    
 }
-
+.pidenoslo a:hover{
+    background-color: var(--tonoOscuro);
+    text-decoration: underline;
+}
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
 
 /* ESTILOS LOCALIZACIONES */
