@@ -361,12 +361,39 @@ h1{
     background-color: var(--tonoOscuro);
     text-decoration: underline;
 }
+/* VIDEO */
+.multimedia{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
+.sectionInfo{
+    display: flex;
+    justify-content: center;
+    margin: ;
+}
+
+.paraQuien>h3{
+    font-family: var(--fuentePrincipal);
+    color: var(--tonoRosa);
+}
+
+.paraQuien>h2{
+    font-size: 27px;
+    font-family: var(--fuentePrincipal);
+    font-weight: 800;
+    color: var(--tonoOscuro);
+    max-width: 50%;
+}
 
 /* ESTILOS LOCALIZACIONES */
 .localizaciones{
     background-color: black;
     color: white;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 1.2;
 }
 
 
