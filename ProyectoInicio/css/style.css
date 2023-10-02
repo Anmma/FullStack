@@ -370,34 +370,236 @@ h1{
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
 .sectionInfo{
     display: flex;
-    justify-content: center;
-    margin: ;
-}
+    flex-direction: row;
+    margin-bottom: 100px;
+ }
 
-.paraQuien>h3{
+.sectionInfo>div{
+    flex: 1;
+    max-width: 50%;
+}
+.paraQuienIz{
+    margin-right: 15px;
+}
+.paraQuienIzq h3{
     font-family: var(--fuentePrincipal);
     color: var(--tonoRosa);
+    font-weight: 600;
+    font-size: 1.7rem;
 }
 
-.paraQuien>h2{
-    font-size: 27px;
+.paraQuienIzq h2{
+    font-size: 2.7rem;
     font-family: var(--fuentePrincipal);
     font-weight: 800;
     color: var(--tonoOscuro);
-    max-width: 50%;
+    margin-bottom: 22px;
+}
+
+.paraQuienIzq p{
+    font-family: var(--fuentePrincipal);
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    color: var(--tonoOscuro);
+} 
+
+.paraQuienIzq h4{
+    color: var(--tonoOscuro);
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+    font-weight: 800;
+    size: 1.5rem;
+    line-height: 1.8;
+}
+
+.paraQuienIzq a{
+    color: var(--tonoRosa);
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.paraQuienIzq h5{
+    font-family: var(--fuentePrincipal);
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--tonoOscuro);
+    line-height: 1.5;
+    
+}
+
+.paraQuienIzq .botonInfografia{
+    background-color: var(--tonoRosa);
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    display: inline-block;
+}
+
+.paraQuienDer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+    margin-top: 60px;
+}
+
+.paraSuperior{
+    font-family: var(--fuentePrincipal);
+    background-color: var(--tonoRosa);
+    padding: 60px 30px;
+    
+}
+
+.paraSuperior h2{
+    font-size: 2.7rem;
+    font-family: var(--fuentePrincipal);
+    font-weight: 800;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+}
+
+.paraSuperior .desAzul{color: var(--tonoOscuro);}
+
+.paraSuperior span{color: black;}
+
+.paraInferior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -50px;
+    margin-right: 30px; 
+}
+
+.paraInferior h2{
+    font-family: var(--fuentePrincipal);
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    padding: 50px;
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
+
+.paraInferior img{
+    width: 50px;
+    height: 50px;
+}
+
+.paraInferior span{
+    color:var(--tonoRosa);
 }
 
 /* ESTILOS LOCALIZACIONES */
 .localizaciones{
     background-color: black;
     color: white;
-    font-weight: 800;
-    font-size: 17px;
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    padding: 90px;
+}
+.textoLocaliza{
+    font-weight: 700;
     line-height: 1.2;
+    font-size: 1.7rem;
+    margin-bottom: 40px;
+}
+.direcciones{
+display: flex;
+}
+.direcciones h3{
+    font-size: 1.5rem;
+}
+.direcciones p{
+    font-weight: 100;
+    font-size: 1.4rem ;
+}
+.direcA{
+    flex: 1;
+    max-width: 25%;
+}
+.direcB{
+    flex: 1;
+    max-width: 25%;
+}
+
+/* ESTILOS CONTACTAR */
+.sectionContacto{
+    background-color: var(--tonoRosa);
+    padding: 100px;
+    font-family: var(--fuentePrincipal); 
+    
+}
+.sectionContacto h3{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    margin-bottom: 22px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: white;
+}
+.sectionContacto h2{
+    font-weight: 800;
+    font-size: 1.7;
+    color: white;
+    text-transform: uppercase;
+}
+.datosContacto{
+    display: flex;
+    justify-content: center;
+
+}
+
+.datosContacto .datoTel{
+    background-color: white; 
+    flex: 1 ;
+    max-width: 50%;
+    padding: 20px;
+    margin-right: 15px;
+    border-radius: 0.25rem; 
+    display: flex;
+    justify-content: start;
+}
+
+.datosContacto .datoCorreo{
+    background-color: white;
+    flex: 1 ;
+    max-width: 50%;
+    padding: 20px; 
+    margin-left: 15px;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: start;
+    
 }
 
 
-/* ESTILOS CONTACTAR */
+.datosContacto img{
+    margin-right: 1.0rem;
+    width: 80px;
+}
+
+.datosContacto h4{
+    text-transform: uppercase;
+    color: var(--tonoOscuro);
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.datosContacto a{
+    color: var(--tonoRosa);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+
+
+
 
 /* ESTILOS FOOTER */
 
