@@ -1,3 +1,40 @@
+@media(max-width: 350px){
+    .mediaQ{
+        background-color: green;
+        padding: 500px;
+    }
+}
+
+@media(min-width:360px) and (max-width:616px){
+    .mediaQ{
+        background-color: red;
+        padding: 500px;
+    }
+}
+
+@media(min-width:616px) and (max-width:933px){
+    .mediaQ{
+        background-color: blue;
+        padding: 500px;
+    }
+}
+@media(min-width:933px) and (max-width:1131px){
+    .mediaQ{
+        background-color: yellow;
+        padding: 500px;
+    }
+}
+
+@media(min-width:1131px) {
+    .mediaQ{
+        background-color: brown;
+        padding: 500px;
+    }
+}
+
+
+
+
 /* EJERCICIO 1  */
 .cadenaDescendente h2{
     background-color: blue;
@@ -109,3 +146,71 @@
     padding: 25px;
     border-radius: 30px;
 }
+/* Ejemplo1 */
+.porcentajes{
+    display: flex;
+}
+
+.seccion1{
+    flex: 1;
+    max-width: 20%;
+    background-color: blueviolet;
+}
+.seccion2{
+    flex: 1;
+    max-width: 30%;
+    background-color: brown;
+}
+.seccion3{
+    flex: 1;
+    max-width: 50%;
+    background-color: aqua;
+}
+
+
+/* Ejemplo2 */
+.ejemplo2{
+    display: flex;
+    flex-direction: column;
+}
+
+.texto1{
+    background-color: blueviolet;
+    flex: 1;
+    max-height: 100px;
+}
+
+.texto2{
+    background-color: brown;
+    flex: 1;
+    max-height: 200px;
+}
+
+
+/* Ejemplo3 */
+
+.ejemplo3{
+    display:flex;
+}
+
+.caja1{
+    width: 40%;
+    background-color: green;
+}
+
+.caja2{
+    display: flex;
+    width: 60%;
+    background-color: black;
+}
+
+.caja2 .treinta{
+    background-color: red;
+    width: 30%;
+}
+
+.caja2 .setenta{
+    background-color: blue;
+    width: 70%;
+}
+

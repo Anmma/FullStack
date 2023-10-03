@@ -13,143 +13,32 @@ body{
     font-size: 16px;
 }
 
+@media (min-width:1140px){
+    .contenedor{
+        max-width: 88%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:1140px) and (min-width:768px){
+    .contenedor{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:768px){
+    .contenedor{
+        max-width: 90px;
+        margin: 0 auto;
+    }
+}
 /*ESTO ME PERMITE CONSEGUIR 10 PX = 1REM
 SIN ESO 16 PX = 1REM */
 
-/* h1{
-    color: red;
-    background-color: yellow;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 30px;
-    padding-bottom: 100px;
-    margin-top: 200px;
-    margin-bottom: 200px;
-    border: 30px solid black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2rem;
-    max-width: 60%;
-}
-body{
-    font-size: 16px;
-} */
-
-/* h5{
-    color: white;
-    background-color: blue;
-} */
-
-/* .h5azul{
-    color: white;
-    background-color: blue;
-}
-#pRojo{
-    color: white;
-    background-color: red;
-}
-
-.seccionPrueba h3{
-    color: white;
-    background-color: green;
-} */
-
-/* .h3Uno{
-    color: red;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 3rem;
-}
-
-#h3Dos{
-    color: red;
-    text-align: center ;
-    text-transform: uppercase;
-    font-size: 3rem;
-}
-
-h6{
-    color: #b55bb2;
-    text-align: end;
-    font-size:3rem ;
-    text-transform: uppercase;
-}
-
-.cadenaDes p {
-    color: #229e19;
-    text-align: center;
-    text-transform: lowercase;
-    font-size: 4rem;
-}
-
-[src="Img/Logo-Adecco.png"] {
-    padding: 2rem;
-}
-
-.cadenaDes>a {
-    margin-left: 5rem;
-}
-
-.h3Dos,[src="Img/Logo-Adecco.png"]{
-    background-color: green;
-} */
-
-/* body{
-    font-family: var(--fuentePrincipal);
-}
-
-h1{
-    background-color:#F76666 ;
-        font-weight: 800;
-        font-size: 47px;
-        padding: 35px;
-        color: white;
-        font-family: var(--fuentePrincipal);
-        padding-right: 15px;
-        padding-left: 15px;
-}
-
-
-h3{
-    color: #F76666;
-    font-weight: 500;
-}
-
-a{
-    color: #F76666;
-    text-decoration: none;
-    font-family: var(--fuentePrincipal);
-    font-weight: 400;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.menuInicio{
-    color: var(--tonoOscuro);
-    font-size: 14px;
-    font-weight: 700;
-    font-family: var(--fuentePrincipal);
-}
-
-.menuInforma{
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    background-color: var(--tonoRosa);
-    border-radius: 20px;
-    font-family: var(--fuentePrincipal);
-    
-    
-}
-
-.enlaceLogin {
-    
-} */
 /* ESTILOS GENERICOS */
 
-.contenedor{
-    max-width: 87%;
-    margin: 0 auto 0 auto;
-}
+
 
 /* ESTILOS PARA EL MAIN */
 
@@ -449,8 +338,8 @@ h1{
 .paraSuperior{
     font-family: var(--fuentePrincipal);
     background-color: var(--tonoRosa);
-    padding: 60px 30px;
-    
+    padding: 60px 60px;
+    line-height: 35px;
 }
 
 .paraSuperior h2{
@@ -460,7 +349,6 @@ h1{
     color: white;
     margin-top: 0;
     margin-bottom: 10px;
-
 }
 
 .paraSuperior .desAzul{color: var(--tonoOscuro);}
@@ -528,13 +416,14 @@ display: flex;
 }
 
 /* ESTILOS CONTACTAR */
-.sectionContacto{
+.contacto{
     background-color: var(--tonoRosa);
-    padding: 100px;
+    padding-top: 90px;
+    padding-bottom: 130px;
     font-family: var(--fuentePrincipal); 
     
 }
-.sectionContacto h3{
+.contacto h3{
     text-transform: uppercase;
     font-size: 1.7rem;
     margin-bottom: 22px;
@@ -542,16 +431,17 @@ display: flex;
     line-height: 1.2;
     color: white;
 }
-.sectionContacto h2{
+.contacto h2{
     font-weight: 800;
     font-size: 1.7;
     color: white;
     text-transform: uppercase;
+    
 }
 .datosContacto{
     display: flex;
     justify-content: center;
-
+    padding-top: 40px;
 }
 
 .datosContacto .datoTel{
@@ -588,6 +478,7 @@ display: flex;
     color: var(--tonoOscuro);
     font-weight: 800;
     font-size: 1.6rem;
+    margin-bottom: 5px;
 }
 
 .datosContacto a{
@@ -595,6 +486,7 @@ display: flex;
     text-decoration: none;
     font-weight: 800;
     font-size: 1.2rem;
+
 }
 
 
@@ -602,5 +494,86 @@ display: flex;
 
 
 /* ESTILOS FOOTER */
+.pieDePagina{
+display: flex;
+flex-direction: column; 
+color: #f3f3f5;
+
+}
+.zonaNosotros{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.zonaNosotros>a{
+    margin-bottom: 22px;
+    margin-right: 80px;
+    font-size: 1.7rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--tonoOscuro);
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+
+}
+
+.final{
+    font-family: var(--fuentePrincipal);
+    
+    border-top: 1px solid var(--tonoOscuro);
+    border-bottom: 1px solid var(--tonoOscuro) ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.final a{
+   font-size: 1.4rem;
+   margin-right: 50px;
+   color: var(--tonoOscuro);
+}
+
 
 /* ESTILOS HEADER */
+.enlaceLogin{
+    display: flex;
+    justify-content: end;
+    padding-top: 15px;
+}
+.enlaceLogin a{
+    font-family: var(--fuentePrincipal);
+    color: var(--tonoRosa);
+    text-decoration: none;
+    font-weight: 400;
+    margin-right: 15px;
+}
+.picTuCarreraDigital{
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+.menuFoto{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.menuInicio a{
+    color: var(--tonoOscuro);
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--fuentePrincipal);
+    text-decoration: none;
+    padding: 15px;
+    
+}
+
+.menuInicio .menuInforma:hover{
+    background-color: var(--tonoOscuro);
+}
+
+.menuInicio .menuInforma{
+    background-color: var(--tonoRosa);
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+}
