@@ -1,10 +1,13 @@
+/* ESTILOS GENERICOS */
+
 :root{
     --tonoRosa:#F76666;
     --tonoOscuro:#02052F;
     --fuentePrincipal: 'Open Sans', sans-serif;
     --fuenteBotonoes: "DinBold", sans-serif;
 }
-
+/*ESTO ME PERMITE CONSEGUIR 10 PX = 1REM
+SIN ESO 16 PX = 1REM html+body fontsize*/
 html{
     font-size: 62.5%;
 }
@@ -29,14 +32,10 @@ body{
 
 @media(max-width:768px){
     .contenedor{
-        max-width: 90px;
+        max-width: 90%;
         margin: 0 auto;
     }
 }
-/*ESTO ME PERMITE CONSEGUIR 10 PX = 1REM
-SIN ESO 16 PX = 1REM */
-
-/* ESTILOS GENERICOS */
 
 
 
@@ -48,9 +47,14 @@ SIN ESO 16 PX = 1REM */
     background-position: top left;
     padding: 80px 0 180px 0;
 }
-
 .margenDerecho{
     margin-right: 30%;
+}
+
+@media(max-width:1140px){
+    .margenDerecho{
+        margin-right: 0;
+    }
 }
 
 h1{
@@ -60,8 +64,11 @@ h1{
     font-size: 4.5rem;
     margin-bottom: 10px;
     padding: 35px;
-    color: white;
-    
+    color: white;  
+}
+
+h1::after{
+    content:"TEXTO PRUEBA";
 }
 
 .fondoMain a{
@@ -76,13 +83,18 @@ h1{
     font-weight: 700;
 }
 
+@media(max-width:768px){
+    .fondoMain a{ padding: 24px 70px;}
+}
+
 .flexMain{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
 }
-
+.flexMain img{
+    margin-right: 10px;
+}
 .flexMain a:hover{
     background-color: white;
     color: var(--tonoRosa);
@@ -99,6 +111,31 @@ h1{
     border-radius: 12px;
 }
 
+@media(max-width:1140px) and (min-width:768px){
+    [src="Img/Logos-oficiales.png"]{
+        max-width: 70%;
+    }
+    [src="Img/Logo-Adecco.png"]{
+        max-width: 30%;
+    }
+}
+
+@media(max-width:768px){
+    .logosOficiales{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logosOficiales img{
+        padding: 20px;
+    }
+    [src="Img/Logos-oficiales.png"]{
+        max-width: 100%;
+    }
+    [src="Img/Logo-Adecco.png"]{
+        max-width: 100%;
+    }
+}
 /* ESTILOS SECCION CURSOS */
 .sectionCursos h3{
     text-align: center;
@@ -109,7 +146,6 @@ h1{
     font-size: 1.7rem;
     margin: 40px 0px;
 }
-
 .sectionCursos>h2{
     text-align: center;
     color: var(--tonoOscuro);
@@ -119,13 +155,11 @@ h1{
     font-size: 2.7rem;
     padding-bottom: 50px;
 }
-
 .bCentros{
     display: flex;
     justify-content: center;
     margin-bottom: 105px;
 }
-
 .bVerTodo{
     background-color: var(--tonoRosa);
     color: white;
@@ -138,7 +172,6 @@ h1{
     margin-right: 0.5rem;
     
 }
-
 .bMadrid{
     background-color: white;
     text-decoration: none;
@@ -151,7 +184,6 @@ h1{
     color: var(--tonoOscuro);
     font-family: var(--fuentePrincipal);
 }
-
 .cursos{
     display: flex;
     justify-content: space-between;
@@ -159,7 +191,12 @@ h1{
     margin-right: -15px;
     margin-left: -15px;
 }
-
+/* MOVIL */
+@media(max-width:768px){
+   .cursos{
+    flex-direction: column;
+   }
+}
 .cursos>div{
     flex: 2;
     max-width: 50%;    
@@ -175,6 +212,23 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
+}
+/* MOVIL */
+@media(max-width:768px){
+    .cursos>div{
+        padding: 20px 30px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        max-width: 100%;
+    }
+}
+/* TABLET */
+@media(max-width:1140px){
+    .cursos>div{
+        padding: 20px 30px;
+    }
 }
 
 .cursos div h2 {
@@ -192,30 +246,27 @@ h1{
     padding: 20px 60px;
     display: inline-block;
 }
-
 .cursos a:hover{
     background-color: var(--tonoRosa);
     color: white;
 }
-
 .cMarketing{
     background-image: url(../Img/Curso-marketing-digital-centro.png);
-    margin-right: 15px;
-    
+    margin-right: 15px; 
 }
-
 .cProgramacion{
     background-image: url(../Img/Curso-programacion-videojuegos-centro.png);
     margin-left: 15px;
 }
-
-
-
+/* MOVIL */
+@media(max-width:768px){
+   .cMarketing{margin-right:0;}
+   .cProgramacion{margin-left: 0;}
+}
 /* ESTILOS SECCION PIDENOSLO */
 .interesCurso{
     padding-bottom: 60px;
     font-weight: 400;
-    
 }
 
 .interesCurso div{
@@ -256,6 +307,19 @@ h1{
     justify-content: center;
     margin-bottom: 70px;
 }
+/* TABLET Y MOVIL */
+@media (max-width:1140px) {
+    .multimedia iframe{
+            width: 100%;
+            height: 350px;
+    }
+}
+@media (max-width:768px) {
+    .multimedia iframe{
+            width: 100%;
+            height: 200px;
+    }
+}
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
 .sectionInfo{
     display: flex;
@@ -263,9 +327,23 @@ h1{
     margin-bottom: 100px;
  }
 
+ @media (max-width:1140px) {
+    .sectionInfo{
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
 .sectionInfo>div{
     flex: 1;
     max-width: 50%;
+}
+
+@media (max-width:1140px){
+    .sectionInfo>div{
+        flex: 1;
+        max-width: 100%;
+    }
 }
 .paraQuienIz{
     margin-right: 15px;
@@ -414,6 +492,24 @@ display: flex;
     flex: 1;
     max-width: 25%;
 }
+/* CASA ARREGLAR */
+/* @media (max-width:1140px) {
+    .direcA{
+        flex: 1;
+        max-width: 50%;
+    }
+    .direcB{
+        flex: 1;
+        max-width: 50%;
+    } 
+}
+
+@media(max-width:768px){
+    
+    .localizaciones .direcciones{
+        flex-wrap: wrap;
+    }
+} */
 
 /* ESTILOS CONTACTAR */
 .contacto{
@@ -421,7 +517,6 @@ display: flex;
     padding-top: 90px;
     padding-bottom: 130px;
     font-family: var(--fuentePrincipal); 
-    
 }
 .contacto h3{
     text-transform: uppercase;
@@ -466,12 +561,25 @@ display: flex;
     justify-content: start;
     
 }
-
+/* CASA ARREGLAR*/
+/* @media (max-width:1140px) {
+    .datosContacto{
+        flex-direction: column;
+    }
+    .datoCorreo{
+        max-width: 100%;
+    }
+    .datoTel{
+        max-width: 100%;
+    }
+} */
 
 .datosContacto img{
     margin-right: 1.0rem;
     width: 80px;
 }
+
+
 
 .datosContacto h4{
     text-transform: uppercase;
@@ -489,22 +597,16 @@ display: flex;
 
 }
 
-
-
-
-
 /* ESTILOS FOOTER */
 .pieDePagina{
 display: flex;
 flex-direction: column; 
 color: #f3f3f5;
-
 }
 .zonaNosotros{
     padding-top: 50px;
     padding-bottom: 40px;
 }
-
 .zonaNosotros>a{
     margin-bottom: 22px;
     margin-right: 80px;
@@ -514,9 +616,7 @@ color: #f3f3f5;
     color: var(--tonoOscuro);
     text-transform: uppercase;
     font-family: var(--fuentePrincipal);
-
 }
-
 .final{
     font-family: var(--fuentePrincipal);
     
@@ -530,14 +630,16 @@ color: #f3f3f5;
    margin-right: 50px;
    color: var(--tonoOscuro);
 }
-
-
 /* ESTILOS HEADER */
+
+
 .enlaceLogin{
     display: flex;
     justify-content: end;
     padding-top: 15px;
 }
+
+/* MEDIAQ PARA LOS ENLACES CASA */
 .enlaceLogin a{
     font-family: var(--fuentePrincipal);
     color: var(--tonoRosa);
@@ -549,6 +651,7 @@ color: #f3f3f5;
     padding-top: 20px;
     padding-bottom: 0;
 }
+
 .menuFoto{
     display: flex;
     justify-content:space-between;
@@ -577,3 +680,4 @@ color: #f3f3f5;
     color: white;
     border-radius: 20px;
 }
+

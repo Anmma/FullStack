@@ -32,9 +32,6 @@
     }
 }
 
-
-
-
 /* EJERCICIO 1  */
 .cadenaDescendente h2{
     background-color: blue;
@@ -214,3 +211,22 @@
     width: 70%;
 }
 
+/* EJERCICIO ABSOLUTE & RELATIVE */
+
+.ejercicioAr{
+    height: 500px;
+    background-image: linear-gradient(to right, red 50%,violet 60%);
+    position: relative;
+}
+
+.ejercicioAr div{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    box-shadow: 39px 42px 19px 6px rgba(0,0,0,0.65);
+
+
+}
