@@ -67,10 +67,6 @@ h1{
     color: white;  
 }
 
-h1::after{
-    content:"TEXTO PRUEBA";
-}
-
 .fondoMain a{
     background-color: black;
     color: white;
@@ -428,6 +424,15 @@ h1::after{
     margin-top: 0;
     margin-bottom: 10px;
 }
+@media (max-width:768px) {
+    .paraSuperior{
+        margin-right: 30px;
+    }
+    .paraSuperior h2{
+        font-size: 2.4rem;
+        line-height: 1.2;
+    }
+}
 
 .paraSuperior .desAzul{color: var(--tonoOscuro);}
 
@@ -439,6 +444,15 @@ h1::after{
     align-items: center;
     margin-top: -50px;
     margin-right: 30px; 
+}
+
+@media (max-width:768px) {
+    .paraInferior{
+        align-items: center;
+        margin-top: 10px;
+    
+    }
+    
 }
 
 .paraInferior h2{
@@ -474,9 +488,10 @@ h1::after{
     font-size: 1.7rem;
     margin-bottom: 40px;
 }
-.direcciones{
+/* EDICION! cambio flex x grid*/
+/* .direcciones{
 display: flex;
-}
+} */
 .direcciones h3{
     font-size: 1.5rem;
 }
@@ -484,16 +499,20 @@ display: flex;
     font-weight: 100;
     font-size: 1.4rem ;
 }
-.direcA{
+/* .direcA{
     flex: 1;
     max-width: 25%;
 }
 .direcB{
     flex: 1;
     max-width: 25%;
+} */
+.direcciones{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
-/* CASA ARREGLAR */
-/* @media (max-width:1140px) {
+
+ @media (max-width:1140px) {
     .direcA{
         flex: 1;
         max-width: 50%;
@@ -505,11 +524,13 @@ display: flex;
 }
 
 @media(max-width:768px){
-    
-    .localizaciones .direcciones{
-        flex-wrap: wrap;
+    .localizaciones{
+        padding: 60px;
     }
-} */
+    .localizaciones .direcciones{
+        flex-direction: column;
+    }
+} 
 
 /* ESTILOS CONTACTAR */
 .contacto{
@@ -561,18 +582,26 @@ display: flex;
     justify-content: start;
     
 }
-/* CASA ARREGLAR*/
-/* @media (max-width:1140px) {
+
+@media (max-width:1140px) {
     .datosContacto{
         flex-direction: column;
     }
-    .datoCorreo{
+    .datosContacto .datoCorreo{
+        flex: 1;
         max-width: 100%;
+        margin-top: 15px;
+        margin-left: 0;
+        margin-right: 0;
     }
-    .datoTel{
+    .datosContacto .datoTel{
         max-width: 100%;
+        max-width: 100%;
+        margin-top: 15px;
+        margin-left: 0;
+        margin-right: 0;
     }
-} */
+} 
 
 .datosContacto img{
     margin-right: 1.0rem;
@@ -638,7 +667,12 @@ color: #f3f3f5;
     justify-content: end;
     padding-top: 15px;
 }
-
+@media (max-width:1140px) {
+    .enlaceLogin{
+        display: flex;
+        justify-content: center;
+    }
+}
 /* MEDIAQ PARA LOS ENLACES CASA */
 .enlaceLogin a{
     font-family: var(--fuentePrincipal);
@@ -659,6 +693,13 @@ color: #f3f3f5;
     margin-bottom: 10px;
     margin-top: 10px;
 }
+@media (max-width:1140px) {
+    .menuFoto{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
 
 .menuInicio a{
     color: var(--tonoOscuro);
@@ -668,6 +709,12 @@ color: #f3f3f5;
     text-decoration: none;
     padding: 15px;
     
+}
+@media (max-width:1140px) {
+    .menuInicio{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
 }
 
 .menuInicio .menuInforma:hover{
