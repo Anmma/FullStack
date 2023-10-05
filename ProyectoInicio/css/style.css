@@ -38,7 +38,6 @@ body{
 }
 
 
-
 /* ESTILOS PARA EL MAIN */
 
 .fondoMain{
@@ -425,8 +424,9 @@ h1{
     margin-bottom: 10px;
 }
 @media (max-width:768px) {
-    .paraSuperior{
-        margin-right: 30px;
+    .paraQuienDer{
+        margin-left: 20px;
+        width: 90%;
     }
     .paraSuperior h2{
         font-size: 2.4rem;
@@ -446,15 +446,6 @@ h1{
     margin-right: 30px; 
 }
 
-@media (max-width:768px) {
-    .paraInferior{
-        align-items: center;
-        margin-top: 10px;
-    
-    }
-    
-}
-
 .paraInferior h2{
     font-family: var(--fuentePrincipal);
     background-color: black;
@@ -468,6 +459,24 @@ h1{
 .paraInferior img{
     width: 50px;
     height: 50px;
+}
+
+@media (max-width:768px) {
+    .paraInferior{
+        display: grid;
+        grid: 1fr/1fr 1fr;
+        margin-top: -50px;
+    }
+
+    .paraInferior h2{
+        padding-bottom:50px;
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+    
 }
 
 .paraInferior span{
@@ -648,7 +657,6 @@ color: #f3f3f5;
 }
 .final{
     font-family: var(--fuentePrincipal);
-    
     border-top: 1px solid var(--tonoOscuro);
     border-bottom: 1px solid var(--tonoOscuro) ;
     padding-top: 20px;
@@ -659,6 +667,8 @@ color: #f3f3f5;
    margin-right: 50px;
    color: var(--tonoOscuro);
 }
+
+
 /* ESTILOS HEADER */
 
 
