@@ -1,12 +1,37 @@
-:root{}
 
-html{
-    font-size: 62.5%;
+
+:root{
+    --fuenteGeneral:'IBM Plex Mono', monospace;
+    --claroRosa: rgb(240, 172, 172);
 }
+
+html{font-size: 62.5%;}
 
 body{
     font-size: 16px;
+    background-color: black;
 }
+header{
+    display: flex;
+    justify-content: end;
+}
+header a{
+    font-family: var(--fuenteGeneral);
+    text-decoration: none;
+    color: whitesmoke;
+}
+span{font-weight: 800; color: whitesmoke;}
+
+.inicioTexto h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fuenteGeneral);
+    font-weight: 800px;
+    font-size: 8rem;
+    color: rgb(250, 215, 245);
+}
+
 
 
 
