@@ -32,6 +32,8 @@ span{font-weight: 800; color: whitesmoke;}
     color: rgb(250, 215, 245);
 }
 
-
-
+.cajasInicio{
+   display: grid;
+   grid: 1fr / 1fr 1fr 1fr 
+}
 
