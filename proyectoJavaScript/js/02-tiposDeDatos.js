@@ -94,4 +94,32 @@ let descuento=40,
     console.log("AHORRO", ahorro);
     
 
+// INCREMENTOS Y DECREMENTOS 
+
+let meGusta=0;
+
+meGusta++; //INCREMENTA EN 1 
+// meGusta+=15; ---- igual a meGusta= meGusta+15
+// meGusta-=6; ---- igual a meGusta=meGusta-6
+
+console.log("Me gusta",meGusta++); //vale 1 porque primero lee meGusta y luego lo actualiza para eso poner ++ adelante
+// console.log("Me gusta",meGusta++); //vale 2 
+//LA VARIABLE SE VA REASIGNANDO
+
+
+//EJERCICIO CONCATENAR
+
+let nombre= "Ana Maza Roman";
+let email= "mazaanaroman@gmail.com";
     
+// console.log("Nombre y Email",nombre+ "" + email);
+console.log(`Nombre: ${nombre} Email: ${email}`);
+
+
+//BOOLEAN 
+
+let boolean1 = true;
+let boolean2 = false;
+let boolean3="true" //string
+
+
