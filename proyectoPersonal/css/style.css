@@ -69,4 +69,31 @@ span{font-weight: 800; color: whitesmoke;}
     color: whitesmoke;
 }
 
+.slider{
+    display:flex;
+    justify-content: center;
+    animation-name: cambio;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
 
+}
+
+.slider img{
+    width: 500px;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.slider:hover{animation-play-state: paused;}
+
+
+@keyframes cambio{ 
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
