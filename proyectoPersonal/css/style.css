@@ -41,7 +41,7 @@ span{font-weight: 800; color: whitesmoke;}
     margin-bottom: 40px;
     margin-top: 20px;
 }
-
+/* MEDIA MOVIL TEXTO INICIO */
 @media (max-width:768px) {
     .inicioTexto h1{
         font-size: 5rem;
@@ -71,7 +71,7 @@ span{font-weight: 800; color: whitesmoke;}
     padding: 50px 60px 50px 60px;
     border-radius: 15px;
 }
-
+/* MEDIA MOVIL - CAJAS INICIO */
 @media (max-width:768px) {
     .cajasInicio{
         display: flex;
@@ -87,8 +87,9 @@ span{font-weight: 800; color: whitesmoke;}
     font-size: 1.5rem;
     text-decoration: none;
     font-family: var(--fuenteGeneral);
-    font-weight: 400;
+    font-weight: 500;
     color: whitesmoke;
+    text-transform: uppercase;
 }
 
 /* SLIDER */
@@ -96,9 +97,12 @@ span{font-weight: 800; color: whitesmoke;}
     display:flex;
     justify-content: center;
     align-items: start;
-    margin: 0;
+    margin: 0px;
     padding: 0;
 }
+
+/* MEDIA SLIDER TABLET MONITOR */
+
 .slider {
     width: 100%;
     display: flex;
@@ -120,23 +124,65 @@ span{font-weight: 800; color: whitesmoke;}
     0% {
         transform: translateX(0);
     }
-    
-    33.33% {
-        transform: translateX(-100%);
+    25%{
+        transform: translateX(-105%);
     }
-    66.67% {
-        transform: translateX(-211%);
+    50%{
+        transform: translateX(-194%);
     }
+
     100% {
         transform: translateX(0);
     }
 }
+/* MEDIA TABLET */
+@media(min-width:768px) and (max-width:1140px){
+    .cajasInicio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cajaE{
+        padding: 20px 50px 20px 50px;
+    }
+    .cajaC{
+        padding:20px 50px 20px 50px;
+    }
+    .cajaB{
+        padding: 20px 50px 20px 50px;
+    }
+    
+    .slider img{
+        margin: 5px;
+    }
+
+    @keyframes cambio{
+        0% {
+            transform: translateX(0);
+        }
+       
+        25%{
+            transform: translateX(-105%);
+        }
+
+        50%{
+            transform: translateX(-210%);
+        }
+    
+        100% {
+            transform: translateX(0);
+        }
+    }
+    
+}
+/* MEDIA SLIDER MOVIL */
 
 @media (max-width:768px){
 
     .slider img{
         width: 350px;
-        animation-duration: 15s;
+        animation-duration: 17s;
         margin: 15px;
     }
 
