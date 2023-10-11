@@ -12,7 +12,7 @@ body{
     background-color: black;
 }
 
-.contenedor1{
+.contenedorCajas{
     max-width: 60%;
     margin: 0 auto;
 }
@@ -38,14 +38,24 @@ span{font-weight: 800; color: whitesmoke;}
     font-weight: 800px;
     font-size: 7rem;
     color: rgb(250, 215, 245);
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+@media (max-width:768px) {
+    .inicioTexto h1{
+        font-size: 5rem;
+        text-align: center;
+    }
 }
 
 /* SECCION1 */
 .cajasInicio{
    display: flex;
    justify-content: space-between;
-   margin-top: 50px;
+   margin-bottom: 20px;
 }
+
 .cajaE{
     background-image: url(../imgProyectoPersonal/fondo1.jfif);
     padding: 50px 80px 50px 80px;
@@ -61,39 +71,93 @@ span{font-weight: 800; color: whitesmoke;}
     padding: 50px 60px 50px 60px;
     border-radius: 15px;
 }
+
+@media (max-width:768px) {
+    .cajasInicio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cajaE{ padding: 30px 50px 30px 50px;margin-bottom: 10px;}
+    .cajaC{ padding: 30px 20px 30px 20px;margin-bottom: 10px;}
+    .cajaB{ padding: 30px;margin-bottom: 5px;}
+}
+
 .cajasInicio a{
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     font-family: var(--fuenteGeneral);
     font-weight: 400;
     color: whitesmoke;
 }
 
-.slider{
+/* SLIDER */
+.cajasSlide{
     display:flex;
     justify-content: center;
-    animation-name: cambio;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-out;
-
+    align-items: start;
+    margin: 0;
+    padding: 0;
+}
+.slider {
+    width: 100%;
+    display: flex;
+    overflow: hidden; 
 }
 
 .slider img{
-    width: 500px;
-    margin-top: 20px;
-    margin-right: 40px;
+    width: 400px;
+    margin: 20px; 
+    border-radius: 15px;
+    animation-name: cambio;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 2s;
 }
 
-.slider:hover{animation-play-state: paused;}
+@keyframes cambio{
+    0% {
+        transform: translateX(0);
+    }
+    
+    33.33% {
+        transform: translateX(-100%);
+    }
+    66.67% {
+        transform: translateX(-211%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 
+@media (max-width:768px){
 
-@keyframes cambio{ 
-  0%{
-    transform: translateX(100%);
-  }
-  100%{
-    transform: translateX(0%);
-  }
+    .slider img{
+        width: 350px;
+        animation-duration: 15s;
+        margin: 15px;
+    }
+
+    @keyframes cambio{
+        0% {
+            transform: translateX(0);
+        }
+        10%{
+            transform: translateX(-110%);
+        }
+        20%{
+            transform: translateX(-218%);
+        }
+        30%{
+            transform: translateX(-327%);
+        }
+        40%{
+            transform: translateX(-435%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
 }
