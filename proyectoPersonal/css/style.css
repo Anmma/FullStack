@@ -38,7 +38,7 @@ span{font-weight: 800; color: whitesmoke;}
     font-weight: 800px;
     font-size: 7rem;
     color: rgb(250, 215, 245);
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     margin-top: 20px;
     text-transform: uppercase;
 }
@@ -103,87 +103,59 @@ span{font-weight: 800; color: whitesmoke;}
     padding: 0;
 }
 .slider {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     overflow: hidden; 
 }
 
 .slider img{
-    width: 500px;
-    margin-top:30px;
-    margin-right: 10px;
-    margin-left: 5px;
+    width: 300px;
+    height: 250px;
+    margin: 25px 10px 25px 10px;
     border-radius: 15px;
-    animation-name: cambio;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-delay: 2s;
 }
 
-@keyframes cambio{
-    0% {
-        transform: translateX(0);
-    }
-    70%{
-        transform: translateX(-107%);
-    }
-    /* 20%{
-        transform: translateX(-147%);
-    } */
-    100% {
-        transform: translateX(0);
-    }
-}
+
 /* MEDIA TABLET */
 @media(min-width:768px) and (max-width:1140px){
     .cajasInicio{
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
     .cajaE{
-        padding: 30px 50px 30px 50px; margin-bottom: 20px;
+        padding: 30px 50px 30px 50px; 
+        margin-bottom: 20px;
     }
     .cajaC{
-        padding:30px 20px 30px 20px;margin-bottom: 20px
+        padding:30px 20px 30px 20px; 
+        margin-bottom: 20px
     }
     .cajaB{
         padding: 30px;margin-bottom: 20px
     }
 
     .slider img{
-        margin: 5px;
-        width: 400px;
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+        border-radius: 15px;
     }
 
-    @keyframes cambio{
-        0% {
-            transform: translateX(0);
-        }
-       
-        25%{
-            transform: translateX(-105%);
-        }
-
-        50%{
-            transform: translateX(-210%);
-        }
-    
-        100% {
-            transform: translateX(0);
-        }
-    }
-    
 }
 /* MEDIA SLIDER MOVIL */
 
 @media (max-width:768px){
-
+    .slider{max-width: 100%;}
     .slider img{
         width: 350px;
         animation-duration: 17s;
         margin: 15px;
+        border-radius: 15px;
+        animation-name: cambio;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-delay: 2s;
     }
 
     @keyframes cambio{
@@ -199,11 +171,9 @@ span{font-weight: 800; color: whitesmoke;}
         30%{
             transform: translateX(-327%);
         }
-        40%{
-            transform: translateX(-435%);
-        }
         100% {
             transform: translateX(0);
         }
     }
 }
+
