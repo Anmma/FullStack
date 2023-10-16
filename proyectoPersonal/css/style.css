@@ -111,7 +111,7 @@ span{font-weight: 800; color: whitesmoke;}
 .slider img{
     width: 300px;
     height: 250px;
-    margin: 25px 10px 25px 10px;
+    margin: 25px 15px 25px 15px;
     border-radius: 15px;
 }
 
@@ -135,9 +135,9 @@ span{font-weight: 800; color: whitesmoke;}
     }
 
     .slider img{
-        width: 150px;
+        width: 180px;
         height: 150px;
-        margin: 20px;
+        margin: 10px;
         border-radius: 15px;
     }
 
@@ -145,7 +145,9 @@ span{font-weight: 800; color: whitesmoke;}
 /* MEDIA SLIDER MOVIL */
 
 @media (max-width:768px){
+
     .slider{max-width: 100%;}
+
     .slider img{
         width: 350px;
         animation-duration: 17s;
