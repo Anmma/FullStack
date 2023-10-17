@@ -49,8 +49,8 @@ console.log("EJERCICIO DESTRUCTURING", finSemana);
 
 console.log("LOGITUD DEL ARRAY", meses.length);
 
-// MODIFICAR EL ARRAY
-let nuevoArreglo = [16.5,...numeros,1540];
+// CREAR UN NUEVO ARREGLO CON UN ARRAY YA REALIZADO, AGREGANDO EN PRINCIPIO Y EN FIN 
+let nuevoArreglo = [16.5,...numeros,1540,180];
 console.log("NUEVO ARREGLO", nuevoArreglo);
 
 //EJERCICIO
@@ -66,19 +66,19 @@ console.log(estaciones)
 let carrito = [
     obje1={
         nombre: "nombre1",
-        precio : 1
+        precio : 150
     },
     obje2={
     nombre: "nombre2",
-        precio : 1
+        precio : 10
     },
     obje3={
     nombre: "nombre3",
-        precio : 1
+        precio : 10
     },
     obje4={
     nombre: "nombre4",
-        precio : 1
+        precio : 10
     }];
 
 console.table(carrito);
@@ -94,15 +94,20 @@ resultado = carrito.some(function(producto){
     return producto.nombre === "tablet" // me devolvera true or false
 });
 
+console.log("INCLUDES PARA OBJETO", resultado);
+
 // COMO SABER EL TOTAL DEL CARRITO --- REDUCE
 resultado = carrito.reduce(function(total, producto){
     return total+ producto.precio
-}, 0);  //No hace falta 0 por defecto se inicializa 0
+}, 0);  //No es necesario indicar donde se inicializa, es importante comprobar en consola a partir de donde fue inicializado. Por defecto siempre sera 0
+console.log("REDUCE", resultado);
 
 //PARA FILTAR 
 resultado = carrito.filter(function(producto){
-    return producto.precio > 400
+    return producto.precio > 100
 });
+
+console.log("RESULTADO DE FILTRACION:", resultado);
 
 //COMPARADORES
 // === EXACTAMENTE IGUALES
@@ -112,3 +117,4 @@ resultado = carrito.filter(function(producto){
 // <= menor igual
 // >mayor que 
 // >= mayor igual
+
