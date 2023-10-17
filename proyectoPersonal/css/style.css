@@ -38,7 +38,7 @@ span{font-weight: 800; color: whitesmoke;}
     font-weight: 800px;
     font-size: 7rem;
     color: rgb(250, 215, 245);
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     margin-top: 20px;
     text-transform: uppercase;
 }
@@ -54,21 +54,24 @@ span{font-weight: 800; color: whitesmoke;}
 .cajasInicio{
    display: flex;
    justify-content: space-between;
-   margin-bottom: 20px;
+   margin-bottom: 50px;
 }
 
 .cajaE{
-    background-image: url(../imgProyectoPersonal/fondo1.jfif);
+    background-image: url(../imgProyectoPersonal/fondo1.jpg);
+    background-size: cover;
     padding: 40px 60px 40px 60px;
     border-radius: 15px;
 }
 .cajaC{
     background-image: url(../imgProyectoPersonal/fondo2.jpg);
+    background-size: cover;
     padding: 40px 35px 40px 35px;
     border-radius: 15px;
 }
 .cajaB{
     background-image: url(../imgProyectoPersonal/fondo3.jpg);
+    background-size: cover;
     padding: 40px 50px 40px 50px;
     border-radius: 15px;
 }
@@ -111,7 +114,7 @@ span{font-weight: 800; color: whitesmoke;}
 .slider img{
     width: 300px;
     height: 250px;
-    margin: 25px 15px 25px 15px;
+    margin: 25px 35px 25px 35px;
     border-radius: 15px;
 }
 
