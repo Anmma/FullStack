@@ -1,8 +1,13 @@
 
 
 :root{
-    --fuenteGeneral:'IBM Plex Mono', monospace;
-    --claroRosa: rgb(240, 172, 172);
+    --fuente1: 'Share Tech Mono', monospace;;
+    --fuente2:'IBM Plex Mono', monospace;;
+    --violetEventos: rgb(94, 57, 226); 
+    --redEventos: rgb(236, 60, 83);
+    --greenEventos: rgb(79, 232, 102);
+    --cyanEventos: rgb(51, 226, 141);
+    --orangeEventos: rgb(230, 142, 32);
 }
 
 html{font-size: 62.5%;}
@@ -23,7 +28,7 @@ header{
     justify-content: end;
 }
 header a{
-    font-family: var(--fuenteGeneral);
+    font-family: var(--fuente1);
     text-decoration: none;
     color: whitesmoke;
 }
@@ -34,13 +39,12 @@ span{font-weight: 800; color: whitesmoke;}
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: var(--fuenteGeneral);
+    font-family: var(--fuente1);
     font-weight: 800px;
     font-size: 7rem;
-    color: rgb(250, 215, 245);
+    color: whitesmoke;
     margin-bottom: 70px;
     margin-top: 20px;
-    text-transform: uppercase;
 }
 /* MEDIA MOVIL TEXTO INICIO */
 @media (max-width:768px) {
@@ -54,7 +58,7 @@ span{font-weight: 800; color: whitesmoke;}
 .cajasInicio{
    display: flex;
    justify-content: space-between;
-   margin-bottom: 50px;
+   margin-bottom: 40px;
 }
 
 .cajaE{
@@ -82,6 +86,7 @@ span{font-weight: 800; color: whitesmoke;}
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 20px;
     }
     .cajaE{ padding: 30px 50px 30px 50px;margin-bottom: 15px;}
     .cajaC{ padding: 30px 20px 30px 20px;margin-bottom: 15px;}
@@ -91,8 +96,8 @@ span{font-weight: 800; color: whitesmoke;}
 .cajasInicio a{
     font-size: 1.5rem;
     text-decoration: none;
-    font-family: var(--fuenteGeneral);
-    font-weight: 500;
+    font-family: var(--fuente2);
+    font-weight: 700;
     color: whitesmoke;
     text-transform: uppercase;
 }
@@ -114,7 +119,7 @@ span{font-weight: 800; color: whitesmoke;}
 .slider img{
     width: 300px;
     height: 250px;
-    margin: 25px 35px 25px 35px;
+    margin: 25px 15px 25px 15px;
     border-radius: 15px;
 }
 
@@ -182,3 +187,24 @@ span{font-weight: 800; color: whitesmoke;}
     }
 }
 
+.sectorEventos h2{
+    color: var(--violetEventos);
+}
+
+
+/* violeta eventos rgb(94, 57, 226)
+rojo eventos rgb(236, 60, 83)
+verde eventos rgb(79, 232, 102)
+cyan eventos rgb(51, 226, 141)
+naranja eventos rgb(230, 142, 32)
+
+
+naranja cultural rgb(242, 114, 13)
+violeta cultural rgb(184, 156, 228)
+rosa cultural rgb(221, 126, 98)
+amarillo cultural rgb(246, 189, 62)
+
+violeta bar rgb(153, 48, 155)
+rojo bar rgb(211, 33, 42)
+celeste bar rgb(144, 154, 205)
+naranja bar rgb(219, 93, 33) */
