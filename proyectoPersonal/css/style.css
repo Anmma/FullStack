@@ -2,12 +2,12 @@
 
 :root{
     --fuente1: 'Share Tech Mono', monospace;;
-    --fuente2:'IBM Plex Mono', monospace;;
-    --violetEventos: rgb(94, 57, 226); 
-    --redEventos: rgb(236, 60, 83);
-    --greenEventos: rgb(79, 232, 102);
-    --cyanEventos: rgb(51, 226, 141);
-    --orangeEventos: rgb(230, 142, 32);
+    --fuente2: 'Share Tech', sans-serif;
+    --lila: rgb(186, 158, 232); 
+    --red: rgb(236, 60, 83);
+    --green: rgb(79, 232, 102);
+    --cyan: rgb(51, 226, 141);
+    --orange: rgb(230, 142, 32);
 }
 
 html{font-size: 62.5%;}
@@ -27,11 +27,14 @@ header{
     display: flex;
     justify-content: end;
 }
-header a{
+.loginA,.loginB{
     font-family: var(--fuente1);
     text-decoration: none;
     color: whitesmoke;
 }
+.loginA:hover{color: var(--red);}
+.loginB:hover{color: var(--orange);}
+
 span{font-weight: 800; color: whitesmoke;}
 
 /* MAIN */
@@ -43,8 +46,8 @@ span{font-weight: 800; color: whitesmoke;}
     font-weight: 800px;
     font-size: 7rem;
     color: whitesmoke;
-    margin-bottom: 70px;
-    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-top: 40px;
 }
 /* MEDIA MOVIL TEXTO INICIO */
 @media (max-width:768px) {
@@ -58,7 +61,7 @@ span{font-weight: 800; color: whitesmoke;}
 .cajasInicio{
    display: flex;
    justify-content: space-between;
-   margin-bottom: 40px;
+   margin-bottom: 70px;
 }
 
 .cajaE{
@@ -96,7 +99,7 @@ span{font-weight: 800; color: whitesmoke;}
 .cajasInicio a{
     font-size: 1.5rem;
     text-decoration: none;
-    font-family: var(--fuente2);
+    font-family: var(--fuente1);
     font-weight: 700;
     color: whitesmoke;
     text-transform: uppercase;
@@ -129,6 +132,7 @@ span{font-weight: 800; color: whitesmoke;}
     .cajasInicio{
         flex-direction: column;
         align-items: center;
+        margin-bottom: 20px;
     }
     .cajaE{
         padding: 30px 50px 30px 50px; 
@@ -187,24 +191,30 @@ span{font-weight: 800; color: whitesmoke;}
     }
 }
 
-.sectorEventos h2{
-    color: var(--violetEventos);
+.tituloE{
+    color: whitesmoke;
+    font-family: var(--fuente1);
+    font-size: 4rem;
+    margin-left: 15px;
+    text-align: center;
 }
 
+.tituloE:hover{ color: var(--lila);}
 
-/* violeta eventos rgb(94, 57, 226)
-rojo eventos rgb(236, 60, 83)
-verde eventos rgb(79, 232, 102)
-cyan eventos rgb(51, 226, 141)
-naranja eventos rgb(230, 142, 32)
-
-
-naranja cultural rgb(242, 114, 13)
-violeta cultural rgb(184, 156, 228)
-rosa cultural rgb(221, 126, 98)
-amarillo cultural rgb(246, 189, 62)
-
-violeta bar rgb(153, 48, 155)
-rojo bar rgb(211, 33, 42)
-celeste bar rgb(144, 154, 205)
-naranja bar rgb(219, 93, 33) */
+@media(max-width:1140px){
+    .tituloE{
+        font-size: 3rem;
+    }
+}
+.imgEvent{
+    display: grid;
+    grid: 1fr / 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.imgEvent img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+}
