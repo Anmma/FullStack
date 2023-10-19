@@ -369,3 +369,15 @@
     grid-column: 1/3;
     grid-row: 1/2;
 }
+
+
+
+.pruebasCajas div{
+    border: solid black 6px;
+}
+.pruebasCajas{
+    display: grid;
+    grid: 1fr 1fr / 1fr 1fr 1fr ;
+    height: 500px;
+}
+

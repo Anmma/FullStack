@@ -130,8 +130,6 @@ span{font-weight: 800; color: whitesmoke;}
 /* MEDIA TABLET */
 @media(min-width:768px) and (max-width:1140px){
     .cajasInicio{
-        flex-direction: column;
-        align-items: center;
         margin-bottom: 20px;
     }
     .cajaE{
@@ -140,10 +138,12 @@ span{font-weight: 800; color: whitesmoke;}
     }
     .cajaC{
         padding:30px 20px 30px 20px; 
-        margin-bottom: 20px
+        margin-bottom: 20px;
     }
+    
     .cajaB{
-        padding: 30px;margin-bottom: 20px
+        padding: 30px;
+        margin-bottom: 20px;
     }
 
     .slider img{
@@ -152,7 +152,6 @@ span{font-weight: 800; color: whitesmoke;}
         margin: 10px;
         border-radius: 15px;
     }
-
 }
 /* MEDIA SLIDER MOVIL */
 
@@ -208,7 +207,7 @@ span{font-weight: 800; color: whitesmoke;}
     }
 }
 
-
+/* SECCION EVENTOS */
 .imgEvent {
     display:grid;
     grid: 1fr/1fr 1fr 1fr 1fr 1fr ;
@@ -252,13 +251,12 @@ span{font-weight: 800; color: whitesmoke;}
 
 @media(max-width:768px){
     .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
-        width: 100px;
-        height: 150px;
+        width: 150px;
+        height: 250px;
+        margin-bottom: 10px;
     }
     .imgEvent {
-        display:grid;
-        grid: 1fr /1fr 1fr 1fr 1fr 1fr ;
-        margin-left:0px;
+        grid:1fr 1fr / 1fr 1fr ;
     }
 }
 .textoImgE{
@@ -266,10 +264,14 @@ span{font-weight: 800; color: whitesmoke;}
     background-color: black;
     width: 100%;
     color: whitesmoke;
+    font-size: 1rem;
     font-family: var(--fuente1);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.textoImgE h2{
+    margin-left: 10px;
 }
 
 .textoImgE:hover{
@@ -278,3 +280,14 @@ span{font-weight: 800; color: whitesmoke;}
 }
 
 
+.verMas{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.verMas a{
+    color: whitesmoke;
+    font-size: 2rem;
+    font-family: var(--fuente1);
+    text-decoration: none;
+}
