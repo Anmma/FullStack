@@ -5,9 +5,8 @@
     --fuente2: 'Share Tech', sans-serif;
     --lila: rgb(186, 158, 232); 
     --red: rgb(236, 60, 83);
-    --green: rgb(79, 232, 102);
-    --cyan: rgb(51, 226, 141);
     --orange: rgb(230, 142, 32);
+    --green:rgb(122, 214, 78);
 }
 
 html{font-size: 62.5%;}
@@ -130,8 +129,6 @@ span{font-weight: 800; color: whitesmoke;}
 /* MEDIA TABLET */
 @media(min-width:768px) and (max-width:1140px){
     .cajasInicio{
-        flex-direction: column;
-        align-items: center;
         margin-bottom: 20px;
     }
     .cajaE{
@@ -140,10 +137,12 @@ span{font-weight: 800; color: whitesmoke;}
     }
     .cajaC{
         padding:30px 20px 30px 20px; 
-        margin-bottom: 20px
+        margin-bottom: 20px;
     }
+    
     .cajaB{
-        padding: 30px;margin-bottom: 20px
+        padding: 30px;
+        margin-bottom: 20px;
     }
 
     .slider img{
@@ -152,7 +151,6 @@ span{font-weight: 800; color: whitesmoke;}
         margin: 10px;
         border-radius: 15px;
     }
-
 }
 /* MEDIA SLIDER MOVIL */
 
@@ -191,6 +189,8 @@ span{font-weight: 800; color: whitesmoke;}
     }
 }
 
+/* SECCION EVENTOS */
+
 .tituloE{
     color: whitesmoke;
     font-family: var(--fuente1);
@@ -208,84 +208,100 @@ span{font-weight: 800; color: whitesmoke;}
     }
 }
 
-
+.subE{
+    color: whitesmoke;
+    margin-left: 20px;
+    font-family: var(--fuente1);
+    font-size: 2.5rem;
+}
 .imgEvent {
-    display:flex;
+    display:grid;
+    grid: 1fr/1fr 1fr 1fr 1fr 1fr ;
+    margin-left: 20px;
+    margin-top: 0;
 }
 
 .fondoE1{
         background-image: url(../imgProyectoPersonal/eventoClooneDom19.png);
-        background-size:cover;
-        background-repeat: no-repeat;
-        width: 250px;
-        height: 450px;
-        margin-right: 10px;
-        display: flex;
-        justify-content: center;
 }
-
 .fondoE2{
         background-image: url(../imgProyectoPersonal/eventoJamieJonesvie17.png);
-        background-size:cover;
-        background-repeat: no-repeat;
-        width: 250px;
-        height: 450px;
-        margin-left: 10px;
-        margin-right: 10px;
-        display: flex;
-        justify-content: center;
 }
-
 .fondoE3{
         background-image: url(../imgProyectoPersonal/eventoYoungMarcoSab18.png);
-        background-size:cover;
-        background-repeat: no-repeat;
-        width: 250px;
-        height: 450px;
-        margin-left: 10px;
-        margin-right: 10px;
-        display: flex;
-        justify-content: center;
-        }
+}
 .fondoE4{
-        background-image: url(../imgProyectoPersonal/eventoJamieJonesvie17.png);
-        background-size:cover;
-        background-repeat: no-repeat;
-        width: 250px;
-        height: 450px;
-        margin-left: 10px;
-        margin-right: 10px;
-        display: flex;
-        justify-content: center;
-
+        background-image: url(../imgProyectoPersonal/IsumiJue23.png);
 }
 .fondoE5{
         background-image: url(../imgProyectoPersonal/eventoJamieJonesvie17.png);
-        background-size:cover;
-        background-repeat: no-repeat;
-        width: 250px;
-        height: 450px;
-        margin-left: 10px;
-        margin-right: 5px;
-        display: flex;
-        justify-content: center;
 }
 
+.fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+@media(min-width:768px) and (max-width:1140px){
+    
+    .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
+        width: 150px;
+        height: 250px;
+    }
+    .imgEvent {
+        margin-left: 7px;
+    }
+}
+
+@media(max-width:768px){
+    .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
+        width: 150px;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    .imgEvent {
+        display: grid;
+        grid: 1fr 1fr / 1fr 1fr 
+    }
+
+}
 .textoImgE{
-    display: none;
-}
-
-.cajaFondo:hover {
-    background-color: black;
     opacity: 0;
-    transition: 1s ;
+    background-color: black;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-family: var(--fuente1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textoImgE h2{
+    margin-left: 10px;
+}
+
+.textoImgE:hover{
+    opacity: 1;
+    transition: 1s;
+}
+
+.verMas1{
     display: flex;
     justify-content: center;
 }
 
-.cajaFondo:hover .textoImgE {
-    display: flex;
-    justify-content: center;
-    color: bisque;
-
+.verMasHover{
+    color: whitesmoke;
+    font-family: var(--fuente1);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+.verMasHover:hover{
+    color: var(--green);
 }
