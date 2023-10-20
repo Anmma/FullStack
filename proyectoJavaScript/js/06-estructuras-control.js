@@ -281,23 +281,37 @@ while(t <= 20){
 
 
 
-    //EJERCICIO 
+//EJERCICIO 
 
     function confirmacion(h){
     if(h > 0){
-        console.log("Positivo")
+        console.log("Positivo");
     }else if(h<0){
-        console.log("Negativo")
+        console.log("Negativo");
     }else{
-        console.log("ES 0")
+        console.log("ES 0");
     }
     }
 
     // EJERCICIO
 
     function regresion (g){
-        for (let g = 100; g >= 0 ; g--){
-            console.log(g)
+        for (let r = g; r >= 0 ; r--){
+            console.log(r)
         }
     }
 
+    regresion(500);
+
+    // EJERCICIO 
+    let totalAcumulacion = 0;
+
+    function acumulacion (n){
+        for (let p = n; p >=n ; p--){
+            totalAcumulacion = totalAcumulacion + p;
+        }
+        console.log(totalAcumulacion);
+    }
+    acumulacion(3);
+
+   

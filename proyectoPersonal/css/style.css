@@ -208,11 +208,20 @@ span{font-weight: 800; color: whitesmoke;}
     }
 }
 
-.subE{
+.sub1E{
     color: whitesmoke;
-    margin-left: 20px;
+    margin-left: 10px;
     font-family: var(--fuente1);
     font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.sub2E{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: whitesmoke;
+    margin-left: 10px;
+    font-family: var(--fuente1);
+    
 }
 .imgEvent {
     display:grid;
