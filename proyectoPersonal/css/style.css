@@ -45,7 +45,7 @@ span{font-weight: 800; color: whitesmoke;}
     font-weight: 800px;
     font-size: 7rem;
     color: whitesmoke;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     margin-top: 40px;
 }
 /* MEDIA MOVIL TEXTO INICIO */
@@ -60,7 +60,7 @@ span{font-weight: 800; color: whitesmoke;}
 .cajasInicio{
    display: flex;
    justify-content: space-between;
-   margin-bottom: 70px;
+   margin-bottom: 50px;
 }
 
 .cajaE{
@@ -109,7 +109,7 @@ span{font-weight: 800; color: whitesmoke;}
     display:flex;
     justify-content: center;
     align-items: start;
-    margin: 0px;
+    margin: 0;
     padding: 0;
 }
 .slider {
@@ -121,7 +121,7 @@ span{font-weight: 800; color: whitesmoke;}
 .slider img{
     width: 300px;
     height: 250px;
-    margin: 25px 15px 25px 15px;
+    margin: 20px 20px 20px 10px;
     border-radius: 15px;
 }
 
@@ -217,24 +217,24 @@ span{font-weight: 800; color: whitesmoke;}
 .imgEvent {
     display:grid;
     grid: 1fr/1fr 1fr 1fr 1fr 1fr ;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 0;
 }
 
 .fondoE1{
-        background-image: url(../imgProyectoPersonal/eventoClooneDom19.png);
+        background-image: url(../imgProyectoPersonal/eventoJamieJonesvie17.png);
 }
 .fondoE2{
-        background-image: url(../imgProyectoPersonal/eventoJamieJonesvie17.png);
-}
-.fondoE3{
         background-image: url(../imgProyectoPersonal/eventoYoungMarcoSab18.png);
 }
+.fondoE3{
+        background-image: url(../imgProyectoPersonal/eventoClooneDom19.png);
+}
 .fondoE4{
-        background-image: url(../imgProyectoPersonal/IsumiJue23.png);
+        background-image: url(../imgProyectoPersonal/eventoRhode&BrownSab18.png);
 }
 .fondoE5{
-        background-image: url(../imgProyectoPersonal/eventoJamieJonesvie17.png);
+        background-image: url(../imgProyectoPersonal/eventoIsumiJue23.png);
 }
 
 .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
@@ -265,7 +265,11 @@ span{font-weight: 800; color: whitesmoke;}
     }
     .imgEvent {
         display: grid;
-        grid: 1fr 1fr / 1fr 1fr 
+        grid: 1fr 1fr 1fr / 1fr 1fr 
+    }
+    .fondo5{
+        grid-column: 2/3;
+        grid-row: 2/3;
     }
 
 }

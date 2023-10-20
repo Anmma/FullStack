@@ -158,9 +158,10 @@ function multiplo (x){
 multiplo(2);
 
 
-// EJERCICIO
+// EJERCICIO parseInt(prompt("Escriba el numero que quiere comparar", "Numero aquì"));
 
-let comparar = parseInt(prompt("Escriba el numero que quiere comparar", "Numero aquì"));
+
+let comparar = 10; 
 
 switch(comparar + 10){
     case 9 : console.log("Tu numero es 9");
@@ -174,3 +175,89 @@ switch(comparar + 10){
     default : console.log("No se compara con los numeros en base de datos"); 
     break
 }
+
+
+// ITERADORES / bucles
+
+console.log(1);
+console.log(2);
+console.log(3);
+console.log(4);
+
+for(let i = 0; i <=3 ; i++){  // INDICE / CONDICION se ejectutara con esta condicion / ACTUALIZADOR
+     console.log(i+1)
+}
+//EJERCICIO 1
+for(let a = 100 ; a <= 200 ; a ++ ){
+    console.log(a)
+}
+
+// EJERCICIO 2
+for (let b = 2; b < 50; b+=2){
+    console.log(b)
+}
+
+
+// EJERCICIO 3 
+for (let c= 100; c >= 0; c-=5){
+    console.log(c)
+}
+
+for(let d = 1 ; d <= 20;  d++){
+    if(d%2 === 0){
+        console.log(d);
+    }
+}
+
+//EJERCICIO RECORRER EL ARRAY 
+
+let arrayNumero = [1,2,3,4,5,6,7,8,9]; // el array toma hasta el numero que tiene y su indice principal es 0 
+
+for(let e = 0 ; e < arrayNumero.length; e ++){
+    console.log(arrayNumero[e]);
+}
+
+// EJERCICIO RECORRER EL ARRAY CARRITO CON EL METODO LENTGH 
+let carrito = [
+    obje1={
+        name: "TV",
+        costo : 750
+    },
+    obje2={
+    name: "Tablet",
+        costo : 350
+    },
+    obje3={
+    name: "Movil",
+        costo : 550
+    },
+    obje4={
+    name: "PC",
+        costo : 1750
+    }];
+
+console.table(carrito);
+
+for (let f = 0 ; f < carrito.length ; f++){
+    console.log(carrito[f].name);
+    console.log(carrito[f].costo);
+}
+
+
+// WHILE -- bluque que recorre -- sintaxis diferente a for --- con while podemos coger cualquier variable que tengamos creada
+// WHILE Y FOR SON FORMAS DE HACER LO MISMO 
+// LA VARIABLE VA A SER GLOBAL 
+
+
+let x = 0; // INDICE FUERA DEL WHILE
+while(x=100){ // CONDICION
+    console.log(x);
+    x++ // ACTUALIZADOR AL FINAL 
+}
+
+// DO WHILE SINTAXIS --- esta en el bucle hasta que no cuente ---- si no cumple condicion recorre solo 1 vez 
+let j = 20; // INDICE TAMBIEN POR FUERA
+do{
+    console.log(j);
+    j++; // ACTUALIZADOR LUEGO DEL CONSOLE
+}while(j < 10); // CONDICION AL FINAL EN WHILE
