@@ -261,3 +261,43 @@ do{
     console.log(j);
     j++; // ACTUALIZADOR LUEGO DEL CONSOLE
 }while(j < 10); // CONDICION AL FINAL EN WHILE
+
+
+
+
+// for(let d = 1 ; d <= 20;  d++){
+//     if(d%2 === 0){
+//         console.log(d);
+//     }
+// }
+
+let t = 1;
+while(t <= 20){
+    if(t%2 === 0){
+        console.log(t);
+    }
+    t++ // la actualizacion va fuera del if, antes del cierre del while
+}
+
+
+
+    //EJERCICIO 
+
+    function confirmacion(h){
+    if(h > 0){
+        console.log("Positivo")
+    }else if(h<0){
+        console.log("Negativo")
+    }else{
+        console.log("ES 0")
+    }
+    }
+
+    // EJERCICIO
+
+    function regresion (g){
+        for (let g = 100; g >= 0 ; g--){
+            console.log(g)
+        }
+    }
+
