@@ -303,3 +303,32 @@ function esBisiesto(anio) {
 
 
 console.log("",esBisiesto(2020));
+
+// función que cuente la cantidad de vocales en una cadena.
+// F: VOCALES
+// P: TEXTO
+function vocales(texto){
+    let vocal = "aeiouAEIOU";
+    let contador= 0;
+    for(let v=0; v < texto.length; v++){
+        if(vocal.includes(texto[v])){
+            contador++
+        }
+    }return contador;
+}
+let texto = "Este texto tiene que contar la cantidad de vocales";
+let cantidadVocales = vocales(texto);
+console.log("La cantidad de vocales es: ", cantidadVocales);
+
+// función que cuente la cantidad de palabras en una cadena.
+// F: PALABRAS
+// P: TEXTO
+
+let cadenaPalabras = ["Esta", "es", "una", "cadena"];
+
+function palabras(texto){
+    return texto.length;
+}
+
+let cantidadPalabras = palabras(cadenaPalabras);
+console.log("El conteo da: ", cantidadPalabras);
