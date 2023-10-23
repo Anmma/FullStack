@@ -12,8 +12,8 @@
 html{font-size: 62.5%;}
 
 body{
-    font-size: 16px;
     background-color: black;
+    
 }
 
 .contenedorCajas{
@@ -26,15 +26,20 @@ header{
     display: flex;
     justify-content: end;
 }
+
+.logueoInicio{
+    margin-right: 20px;
+}
 .loginA,.loginB{
     font-family: var(--fuente1);
     text-decoration: none;
     color: whitesmoke;
+    font-size: 1.5rem;
 }
 .loginA:hover{color: var(--red);}
 .loginB:hover{color: var(--orange);}
 
-span{font-weight: 800; color: whitesmoke;}
+span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 
 /* MAIN */
 .inicioTexto h1{
@@ -104,29 +109,7 @@ span{font-weight: 800; color: whitesmoke;}
     text-transform: uppercase;
 }
 
-/* SLIDER */
-.cajasSlide{
-    display:flex;
-    justify-content: center;
-    align-items: start;
-    margin: 0;
-    padding: 0;
-}
-.slider {
-    max-width: 100%;
-    display: flex;
-    overflow: hidden; 
-}
 
-.slider img{
-    width: 300px;
-    height: 250px;
-    margin: 20px 20px 20px 10px;
-    border-radius: 15px;
-}
-
-
-/* MEDIA TABLET */
 @media(min-width:768px) and (max-width:1140px){
     .cajasInicio{
         margin-bottom: 20px;
@@ -144,49 +127,6 @@ span{font-weight: 800; color: whitesmoke;}
         padding: 30px;
         margin-bottom: 20px;
     }
-
-    .slider img{
-        width: 180px;
-        height: 150px;
-        margin: 10px;
-        border-radius: 15px;
-    }
-}
-/* MEDIA SLIDER MOVIL */
-
-@media (max-width:768px){
-
-    .slider{max-width: 100%;}
-
-    .slider img{
-        width: 350px;
-        animation-duration: 17s;
-        margin: 15px;
-        border-radius: 15px;
-        animation-name: cambio;
-        animation-duration: 15s;
-        animation-iteration-count: infinite;
-        animation-direction: normal;
-        animation-delay: 2s;
-    }
-
-    @keyframes cambio{
-        0% {
-            transform: translateX(0);
-        }
-        10%{
-            transform: translateX(-110%);
-        }
-        20%{
-            transform: translateX(-218%);
-        }
-        30%{
-            transform: translateX(-327%);
-        }
-        100% {
-            transform: translateX(0);
-        }
-    }
 }
 
 /* SECCION EVENTOS */
@@ -202,12 +142,6 @@ span{font-weight: 800; color: whitesmoke;}
 
 .tituloE:hover{ color: var(--lila);}
 
-@media(max-width:1140px){
-    .tituloE{
-        font-size: 3rem;
-    }
-}
-
 .sub1E{
     color: whitesmoke;
     margin-left: 10px;
@@ -216,17 +150,35 @@ span{font-weight: 800; color: whitesmoke;}
     text-transform: uppercase;
 }
 .sub2E{
-    font-size: 2rem;
-    text-transform: uppercase;
     color: whitesmoke;
     margin-left: 10px;
     font-family: var(--fuente1);
-    
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.sub3E{
+    color: whitesmoke;
+    margin-left: 10px;
+    font-family: var(--fuente1);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+@media(max-width:1140px){
+    .tituloE{
+        font-size: 3rem;
+    }
+}
+
+.subE{
+    color: whitesmoke;
+    margin-left: 20px;
+    font-family: var(--fuente1);
+    font-size: 2.5rem;
 }
 .imgEvent {
     display:grid;
     grid: 1fr/1fr 1fr 1fr 1fr 1fr ;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-top: 0;
 }
 
@@ -255,33 +207,7 @@ span{font-weight: 800; color: whitesmoke;}
     justify-content: center;
     overflow: hidden;
 }
-@media(min-width:768px) and (max-width:1140px){
-    
-    .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
-        width: 150px;
-        height: 250px;
-    }
-    .imgEvent {
-        margin-left: 7px;
-    }
-}
 
-@media(max-width:768px){
-    .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
-        width: 150px;
-        height: 250px;
-        margin-bottom: 10px;
-    }
-    .imgEvent {
-        display: grid;
-        grid: 1fr 1fr 1fr / 1fr 1fr 
-    }
-    .fondo5{
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-
-}
 .textoImgE{
     opacity: 0;
     background-color: black;
@@ -304,6 +230,10 @@ span{font-weight: 800; color: whitesmoke;}
 
 .verMas1{
     display: flex;
+    
+}
+.verMas2{
+    display: flex;
     justify-content: center;
 }
 
@@ -317,4 +247,106 @@ span{font-weight: 800; color: whitesmoke;}
 }
 .verMasHover:hover{
     color: var(--green);
+}
+
+/* PROXIMO MES  */
+.fondoP1{
+    background-image: url(../imgProyectoPersonal/eventoGordonCityVier1.png);
+}
+.fondoP2{
+    background-image: url(../imgProyectoPersonal/eventoAnabelArroyo.png);
+}
+.fondoP3{
+    background-image: url(../imgProyectoPersonal/eventoClaraCuveMar5.png);
+}
+.fondoP4{
+    background-image: url(../imgProyectoPersonal/eventoRebekhaJue7.png);
+}
+.fondoP5{
+    background-image: url(../imgProyectoPersonal/eventoWadeSab9.png);
+}
+
+.fondoP1,.fondoP2,.fondoP3,.fondoP4,.fondoP5{
+background-size:cover;
+background-repeat: no-repeat;
+width: 250px;
+height: 450px;
+display: flex;
+justify-content: center;
+overflow: hidden;
+}
+
+.textoImgP{
+opacity: 0;
+background-color: black;
+width: 100%;
+color: whitesmoke;
+font-size: 1rem;
+font-family: var(--fuente1);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.textoImgP h2{
+margin-left: 10px;
+}
+
+.textoImgP:hover{
+opacity: 1;
+transition: 1s;
+}
+
+@media(min-width:768px) and (max-width:1140px){
+    
+    .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
+        width: 150px;
+        height: 250px;
+    }
+    .imgEvent {
+        margin-left: 7px;
+    }
+    .textoImgE{
+        font-size: 0.7rem;
+    }
+    .fondoP1,.fondoP2,.fondoP3,.fondoP4,.fondoP5{
+        width: 150px;
+        height: 250px;
+    }
+    .textoImgP{
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width:768px){
+    .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
+        width: 150px;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    .imgEvent {
+        display: grid;
+        grid: 1fr 1fr 1fr / 1fr 1fr 
+    }
+    .fondo5{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .textoImgE{
+        font-size: 0.5rem;
+    }
+    .fondoP1,.fondoP2,.fondoP3,.fondoP4,.fondoP5{
+        width: 150px;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    .textoImgP{
+        font-size: 0.5rem;
+    }
+    .cajaVerMas{
+        display: inline;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left:  -10px;
+    }
 }
