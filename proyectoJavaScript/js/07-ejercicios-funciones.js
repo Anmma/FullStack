@@ -135,19 +135,16 @@ P: LETRA1, LETRA2
 // F: INVERTIR
 // P: CADENA
 
-let cadenaOriginal = [1,2,3,4];
+let cadenaOriginal = "";
 
 function invertir(cadena){
-    let cadenaInvertida = "";
     for(let x = cadena.length -1; x >= 0; x--){   // EL -1 INDICARA QUE VOY A COMERZAR A INVERTIR A PARTIR DEL ULTIMO ELEMENTO HACIA EL PRIMER ELEMENTO >=0
-        cadenaInvertida += cadena[x];
+        cadenaOriginal+= cadena[x];  // es igual que cadenaF=cadenaF+cadena[i];
     }
-    return cadenaInvertida;
+    return cadenaOriginal;
 }
 
-let cadenaInvertida = invertir(cadenaOriginal);
-
-console.log(cadenaInvertida);
+console.log(invertir("hola"));
 
 
 // función que concatene dos cadenas.
@@ -161,7 +158,6 @@ function concatenar(cadena1, cadena2){
 concatenar("Este texto", " va concatenado");
 
 
-
 // función que determine si una cadena contiene una letra.
 // F: CONTIENE
 // P: CADENA, LETRA
@@ -170,7 +166,7 @@ function contiene(cadena,letra){
     console.log("Esta incluida la palabra en mi texto?: ", cadena.includes(letra));
 }
 
-contiene("El texto incluye letra", "El");
+contiene("El texto incluye letra", "E");
 
 // función que encuentre el número más grande en un array.
 // F: MAXNUM
@@ -193,6 +189,14 @@ function maxNum(array){
 let numeroMax = maxNum(numeros);
 console.log("El numero mas grande es",numeroMax);
 
+
+// OTRA FORMA MAS SIMPLE
+
+function MaxNum(array){
+    console.log(Math.max(...array));
+}
+
+MaxNum(numeros)
 // función que encuentre el número más pequeño en un array.
 // F: MINNUM
 // P: ARRAY
@@ -261,10 +265,10 @@ console.log("Array 2 " + arrayNumeros(array2));
 // P: N1,N2
 
 function numeroAleatorio(n1, n2){
-    return Math.floor(Math.random()*(n2 - n1 + 1) + n1);
+    return Math.floor(Math.random()*(n2 - n1)+ n1);
 }
 
-console.log("Mi numero aleatorio es:", numeroAleatorio(2,9));
+console.log("Mi numero aleatorio es:", numeroAleatorio(0,800));
 
 // función que calcule el área de un triángulo con base y altura como parámetros. Area=base*altura/2
 // F: AREATRIAGULO
@@ -286,14 +290,29 @@ function grados(celcius){
     console.log((celcius * (9/5)) + 32);
 }
 
-grados(5);
+grados(20);
 
 
 // función que determine si un año es bisiesto.
 // F: BISIESTO
 // P: DIAS
 
-function esBisiesto(anio) {
+
+//SEGUN LOS DIAS 
+
+function bisiesto (dias){
+    if (366 === dias){
+        console.log("Este año es bisiesto");
+    }else{
+        console.log("Este año no es bisiesto");
+    }
+}
+
+bisiesto(366);
+
+
+//SEGUN EL AÑO
+function bisiesto(anio) {
     if ((anio % 4 === 0 && anio % 100 !== 0) || anio % 400 === 0) {
         return true;
     } else {
@@ -302,11 +321,16 @@ function esBisiesto(anio) {
 }
 
 
-console.log("",esBisiesto(2020));
+console.log("",bisiesto(2020));
+
+
+
 
 // función que cuente la cantidad de vocales en una cadena.
 // F: VOCALES
 // P: TEXTO
+
+
 function vocales(texto){
     let vocal = "aeiouAEIOU";
     let contador= 0;
@@ -332,3 +356,60 @@ function palabras(texto){
 
 let cantidadPalabras = palabras(cadenaPalabras);
 console.log("El conteo da: ", cantidadPalabras);
+
+
+
+//OTRA FORMA
+
+function palabras(texto){
+    let contador = 0;
+    for(let i = 0; i < texto.length; i++){
+        if (texto [i] === " "){
+            contador++
+        }
+    }
+    console.log(contador+1)
+}
+
+palabras ("buenos dias mi nombre es Ana Maza")
+
+
+
+// función que determine si una contraseña es segura basándose en 
+// longitud>8, 
+// mayúsculas y minusculas
+// números
+// F: CONTRASEÑASEGURA
+// P: CONTRASEÑA
+
+
+// function contraseniaSegura(contrasenia){
+//     if (contrasenia.length> 7 &&
+//          /[A-Z]/.test(contrasenia) &&
+//          /[a-z]/.test(contrasenia) &&
+//          /\d/.test(contrasenia)){
+//          console.log("La contraseña es segura")}
+//          else{
+//             console.log("La contraseña no es segura");
+//          }
+// }   
+// contrasenia("hola");
+
+
+
+
+
+
+// función que ordene un array de números de forma ascendente.
+// F: ORDENARARRAY
+// P: ARRAY
+
+
+let arraySin= [1,2,7,4,3];
+
+function ordenar(array){
+    let arrayOrd = array.sort(function (a,b){return a -b})
+    return arrayOrd
+};
+
+console.log(ordenar(arraySin));

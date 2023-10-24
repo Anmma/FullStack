@@ -17,6 +17,8 @@ console.log(`USO DE SINTAXIS DE PUNTO CON TEMPLATE STRING: ${producto.precio}`);
 console.log("USO DE CORCHETES", producto["precio"]);
 
 // PODEMOS MODIFICAR OBJETOS : AL UTILIZAR LA SINTAXIS DE PUNTO PODEMOS CREAR UNA VARIABLE QUE NO EXISTIA Y ASIGNARLE UN VALOR 
+//AÑADIR PROPIEDADES 
+
 producto.categoria = "deporte";
 console.log(`AÑADIR CATEGORIA A PRODUCTO ${producto}`, producto); //uso directo de template string 
 

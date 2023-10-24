@@ -62,6 +62,10 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 }
 
 /* SECCION1 */
+.sectorEventos{
+    margin-left: 20px;
+}
+
 .cajasInicio{
    display: flex;
    justify-content: space-between;
@@ -144,25 +148,17 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 
 .sub1E{
     color: whitesmoke;
-    margin-left: 10px;
     font-family: var(--fuente1);
     font-size: 2.5rem;
     text-transform: uppercase;
 }
 .sub2E{
     color: whitesmoke;
-    margin-left: 10px;
     font-family: var(--fuente1);
     font-size: 2.5rem;
     text-transform: uppercase;
 }
-.sub3E{
-    color: whitesmoke;
-    margin-left: 10px;
-    font-family: var(--fuente1);
-    font-size: 2.5rem;
-    text-transform: uppercase;
-}
+
 @media(max-width:1140px){
     .tituloE{
         font-size: 3rem;
@@ -178,7 +174,6 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 .imgEvent {
     display:grid;
     grid: 1fr/1fr 1fr 1fr 1fr 1fr ;
-    margin-left: 30px;
     margin-top: 0;
 }
 
@@ -208,46 +203,7 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     overflow: hidden;
 }
 
-.textoImgE{
-    opacity: 0;
-    background-color: black;
-    width: 100%;
-    color: whitesmoke;
-    font-size: 1rem;
-    font-family: var(--fuente1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.textoImgE h2{
-    margin-left: 10px;
-}
 
-.textoImgE:hover{
-    opacity: 1;
-    transition: 1s;
-}
-
-.verMas1{
-    display: flex;
-    
-}
-.verMas2{
-    display: flex;
-    justify-content: center;
-}
-
-.verMasHover{
-    color: whitesmoke;
-    font-family: var(--fuente1);
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-top: 20px;
-    font-size: 2rem;
-}
-.verMasHover:hover{
-    color: var(--green);
-}
 
 /* PROXIMO MES  */
 .fondoP1{
@@ -276,7 +232,7 @@ justify-content: center;
 overflow: hidden;
 }
 
-.textoImgP{
+.textoImgP,.textoImgE{
 opacity: 0;
 background-color: black;
 width: 100%;
@@ -286,8 +242,9 @@ font-family: var(--fuente1);
 display: flex;
 justify-content: center;
 align-items: center;
-}
-.textoImgP h2{
+} 
+
+.textoImgP,.textoImgE h2{
 margin-left: 10px;
 }
 
@@ -296,14 +253,40 @@ opacity: 1;
 transition: 1s;
 }
 
+.textoImgE:hover{
+    opacity: 1;
+    transition: 1s;
+}
+
+.cajaVerMas1{
+    display: flex;
+    justify-content: start;
+}
+.cajaVerMas2{
+    display: flex;
+    justify-content: start;
+}
+
+.verMasHover1,.verMasHover2{
+    color: whitesmoke;
+    font-family: var(--fuente1);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+.verMasHover1:hover{
+    color: var(--green);
+}
+.verMasHover2:hover{
+    color: var(--orange);
+}
+
 @media(min-width:768px) and (max-width:1140px){
-    
+    .sectorEventos{margin-left: 7px;}
     .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
         width: 150px;
         height: 250px;
-    }
-    .imgEvent {
-        margin-left: 7px;
     }
     .textoImgE{
         font-size: 0.7rem;
@@ -312,9 +295,8 @@ transition: 1s;
         width: 150px;
         height: 250px;
     }
-    .textoImgP{
-        font-size: 0.7rem;
-    }
+    .textoImgP{font-size: 0.7rem;}
+    
 }
 
 @media(max-width:768px){
@@ -325,7 +307,8 @@ transition: 1s;
     }
     .imgEvent {
         display: grid;
-        grid: 1fr 1fr 1fr / 1fr 1fr 
+        grid: 1fr 1fr 1fr / 1fr 1fr;
+        margin-left: 0px;
     }
     .fondo5{
         grid-column: 2/3;
@@ -342,11 +325,12 @@ transition: 1s;
     .textoImgP{
         font-size: 0.5rem;
     }
-    .cajaVerMas{
-        display: inline;
-        display: flex;
-        align-items: center;
+    .cajaVerMas1,.cajaVerMas2{
+        width: 150px;
+        height: 250px;
         justify-content: center;
-        margin-left:  -10px;
+        align-items: center;
+        
     }
+    
 }
