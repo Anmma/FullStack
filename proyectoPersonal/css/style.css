@@ -13,12 +13,6 @@ html{font-size: 62.5%;}
 
 body{
     background-color: black;
-    
-}
-
-.contenedorCajas{
-    max-width: 60%;
-    margin: 0 auto;
 }
 
 /* HEADER */
@@ -42,16 +36,16 @@ header{
 span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 
 /* MAIN */
-.inicioTexto h1{
+.inicioTexto{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: var(--fuente1);
     font-weight: 800px;
-    font-size: 7rem;
+    font-size: 4rem;
     color: whitesmoke;
-    margin-bottom: 60px;
-    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-top: 90px;
 }
 /* MEDIA MOVIL TEXTO INICIO */
 @media (max-width:768px) {
@@ -62,14 +56,13 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 }
 
 /* SECCION1 */
-.sectorEventos{
-    margin-left: 20px;
-}
 
 .cajasInicio{
    display: flex;
-   justify-content: space-between;
-   margin-bottom: 50px;
+   justify-content: center;
+   gap: 50px;
+   max-width: 100%;
+   margin: 0 auto 150px auto;
 }
 
 .cajaE{
@@ -90,6 +83,16 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     padding: 40px 50px 40px 50px;
     border-radius: 15px;
 }
+
+.cajasInicio a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: var(--fuente1);
+    font-weight: 700;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
 /* MEDIA MOVIL - CAJAS INICIO */
 @media (max-width:768px) {
     .cajasInicio{
@@ -104,19 +107,10 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     .cajaB{ padding: 30px;margin-bottom: 5px;}
 }
 
-.cajasInicio a{
-    font-size: 1.5rem;
-    text-decoration: none;
-    font-family: var(--fuente1);
-    font-weight: 700;
-    color: whitesmoke;
-    text-transform: uppercase;
-}
-
 
 @media(min-width:768px) and (max-width:1140px){
     .cajasInicio{
-        margin-bottom: 20px;
+        margin: 0 auto;
     }
     .cajaE{
         padding: 30px 50px 30px 50px; 
@@ -131,10 +125,15 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
         padding: 30px;
         margin-bottom: 20px;
     }
+  
 }
 
 /* SECCION EVENTOS */
-
+.sectorEventos{
+    margin-top: 200px;
+    margin-left: 20px;
+    max-width: 100%;
+}
 .tituloE{
     color: whitesmoke;
     font-family: var(--fuente1);
@@ -174,6 +173,8 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 .imgEvent {
     display:grid;
     grid: 1fr/1fr 1fr 1fr 1fr 1fr ;
+    width: 100%;
+    gap: 10px;
     margin-top: 0;
 }
 
@@ -202,8 +203,6 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     justify-content: center;
     overflow: hidden;
 }
-
-
 
 /* PROXIMO MES  */
 .fondoP1{
@@ -258,11 +257,7 @@ transition: 1s;
     transition: 1s;
 }
 
-.cajaVerMas1{
-    display: flex;
-    justify-content: start;
-}
-.cajaVerMas2{
+.cajaVerMas1,.cajaVerMas2{
     display: flex;
     justify-content: start;
 }
@@ -296,6 +291,10 @@ transition: 1s;
         height: 250px;
     }
     .textoImgP{font-size: 0.7rem;}
+
+    .sectorEventos{
+        margin-top: 100px;
+    }
     
 }
 
