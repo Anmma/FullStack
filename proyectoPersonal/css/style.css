@@ -7,6 +7,8 @@
     --red: rgb(236, 60, 83);
     --orange: rgb(230, 142, 32);
     --green:rgb(122, 214, 78);
+    --pink:rgb(223, 127, 118);
+    --yellow:rgb(254, 194, 82);
 }
 
 html{font-size: 62.5%;}
@@ -131,27 +133,26 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 /* SECCION EVENTOS */
 .sectorEventos{
     margin-top: 200px;
-    margin-left: 20px;
+    margin-left: 5px;
     max-width: 100%;
 }
+
+@media(min-width:1440px){
+    .sectorEventos{margin-left: 20px;}
+}
+
 .tituloE{
     color: whitesmoke;
     font-family: var(--fuente1);
     font-size: 4rem;
-    margin-left: 15px;
-    text-align: center;
+    margin-left: 50px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .tituloE:hover{ color: var(--lila);}
 
-.sub1E{
-    color: whitesmoke;
-    font-family: var(--fuente1);
-    font-size: 2.5rem;
-    text-transform: uppercase;
-}
-.sub2E{
+.sub1E,.sub2E{
     color: whitesmoke;
     font-family: var(--fuente1);
     font-size: 2.5rem;
@@ -164,12 +165,6 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     }
 }
 
-.subE{
-    color: whitesmoke;
-    margin-left: 20px;
-    font-family: var(--fuente1);
-    font-size: 2.5rem;
-}
 .imgEvent {
     display:grid;
     grid: 1fr/1fr 1fr 1fr 1fr 1fr ;
@@ -203,7 +198,6 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     justify-content: center;
     overflow: hidden;
 }
-
 /* PROXIMO MES  */
 .fondoP1{
     background-image: url(../imgProyectoPersonal/eventoGordonCityVier1.png);
@@ -262,12 +256,12 @@ transition: 1s;
     justify-content: start;
 }
 
-.verMasHover1,.verMasHover2{
+.verMasHover1,.verMasHover2,.verMasHover3{
     color: whitesmoke;
     font-family: var(--fuente1);
     text-decoration: none;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 2rem;
 }
 .verMasHover1:hover{
@@ -278,7 +272,6 @@ transition: 1s;
 }
 
 @media(min-width:768px) and (max-width:1140px){
-    .sectorEventos{margin-left: 7px;}
     .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
         width: 150px;
         height: 250px;
@@ -294,6 +287,7 @@ transition: 1s;
 
     .sectorEventos{
         margin-top: 100px;
+        margin-left: 7px;
     }
     
 }
@@ -304,6 +298,8 @@ transition: 1s;
         height: 250px;
         margin-bottom: 10px;
     }
+    .sectorEventos{margin-top: 100px;}
+    
     .imgEvent {
         display: grid;
         grid: 1fr 1fr 1fr / 1fr 1fr;
@@ -333,3 +329,50 @@ transition: 1s;
     }
     
 }
+
+/* SECCION CULTURAL */
+.seccionCultura{
+    max-width: 100%;
+}
+
+.cajaCultura{
+    display: grid;
+    grid: 1fr / 1fr 1fr 1fr ;
+    gap: 20px;
+    margin: 5px;
+}
+.cajaCtexto{
+    display: grid;
+    grid: 1fr/1fr 1fr 1fr;
+    gap: 20px;
+    margin: 5px 0px 20px 0px;
+}
+.tituloC{
+    color: whitesmoke;
+    font-family: var(--fuente1);
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.tituloC:hover{color:var(--yellow);}
+
+.textoCult{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family: var(--fuente1);
+    text-align: center;
+}
+
+
+.imgCult1,.imgCult2,.imgCult3{
+    width:100%;
+}
+.cajaVerMas3{
+    display: flex;
+    justify-content: center;
+}
+
+.verMasHover3:hover{
+    color: var(--pink);
+}
+

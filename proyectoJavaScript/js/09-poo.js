@@ -57,7 +57,7 @@ console.log(producto7);
 // OTRA FORMA DE CREAR OBJETOS MEDIANTES CONTRUCTORES
 
 class ProductoClase2{
-    constructor(nombre, precio){
+    constructor(nombre, precio){   // INFORMACION DE MI OBJETO
         this.nombreObjeto2 = nombre;
         this.precioObjeto2= precio;
     }
@@ -92,7 +92,7 @@ class Libro{
 let libro1 = new Libro("Martin Fierro", 200 , 122234324); //NEW para crear OBJETOS a partir de la CLASE
 console.log(libro1);
 
-//HERENCIA de PROPIEDADES --- REUTILIZAR UNA CLASE
+//HERENCIA de PROPIEDADES --- REUTILIZAR UNA CLASE  ---- PARA COPIAR PROPIEDADES DE UNA CLASE A OTRA 
 // EXTENDS === HEREDA
 //PONGO TODAS LAS PROPIEDADES, NUEVAS Y HEREDADAS 
 //TODAS LAS QUE VAN HEREDADAS VAN DENTRO DE LA PALABRA SUPER
@@ -128,7 +128,7 @@ console.log(coche1.numeroDeAños());
 let cochePadre = new Coche ("Toyota", 2005, "asdjakd", "1233L");
 console.log(cochePadre.numeroDeAños());
 
-//EJERCICIO HERENCIA
+//EJERCICIO HERENCIA  // HERENCIA PARA COPIAR PROPIEDADES DE UNA CLASE A OTRA 
 
 class Itv extends Coche{
     constructor(añoCompra,matricula, añoItv){
@@ -142,3 +142,6 @@ class Itv extends Coche{
 
 let coche3= new Itv (2016, "dasdas", 2026);
 console.log(coche3.proximaItv())
+
+
+
