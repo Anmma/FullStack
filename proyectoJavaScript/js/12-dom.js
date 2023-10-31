@@ -86,3 +86,5 @@ ejercicioEnlace.classList.add("enlace");
 
 let enlaceJS4 = document.querySelector(".navP");
 enlaceJS4.appendChild(ejercicioEnlace);
+
+/// Ejercicio

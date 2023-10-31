@@ -1,5 +1,7 @@
 
-.seccionP{
-    background-image: url(./fondo2.jpg);
-    background-size: cover;
+
+body{
+    background-color: rgb(212, 171, 171);
+    margin-bottom: 2000px;
 }
+
