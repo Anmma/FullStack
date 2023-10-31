@@ -16,25 +16,28 @@ html{font-size: 62.5%;}
 
 body{
     background-color: black;
+    box-sizing: border-box;
+    height: 100%;
 }
 
 /* HEADER */
 header{
     display: flex;
     justify-content: end;
+    width: 100%;
 }
 
 .logueoInicio{
     margin-right: 20px;
 }
-.loginA,.loginB{
+#loginA,#loginB{
     font-family: var(--fuente1);
     text-decoration: none;
     color: whitesmoke;
     font-size: 1.5rem;
 }
-.loginA:hover{color: var(--redSoft);}
-.loginB:hover{color: var(--orange);}
+#loginA:hover{color: var(--redSoft);}
+#loginB:hover{color: var(--orange);}
 
 span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 
@@ -87,7 +90,7 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 .enlacesInicio:hover{font-size: 2rem;}
 
 /* SECCION EVENTOS */
-
+.sectorEventos{width: 100%;}
 .tituloE{
     color: whitesmoke;
     font-family: var(--fuente1);
@@ -373,10 +376,14 @@ transition: 1s;
 
 .cajaBack{
     display: flex;
-    justify-content: center;
-    margin-top: 50px;
+    justify-content: flex-start;
     font-size: 1.5rem;
+    width: 100%;  
+    position: sticky;
+    top: 0;
+    left: 0;
 }
+
 .backHover{
     text-decoration: none;
     color: whitesmoke;
@@ -384,6 +391,7 @@ transition: 1s;
     text-transform: uppercase;
     border: solid 1px whitesmoke;
 }
+
 .backHover:hover{color: var(--cyan);border-color: var(--cyan);}
 
 /* FOOTER */
@@ -393,6 +401,7 @@ transition: 1s;
     justify-items: center;
     margin: 50px 0px 5px 0px;
     border-top: whitesmoke solid 1px;
+    width: 100%;
 }
 
 .textoFin{
@@ -470,25 +479,65 @@ transition: 1s;
     }
 }
 /* POPUP */
-.popUp{
-    background-color: rgb(0, 0, 0);
-    width: 500px;
-    height: 500px;
+.popUpA,.popUpB{
+    background: rgba(0, 0, 0, 0.621);
     position:absolute;
     top: 0;
-    display: flex;
+    width: 100%;
+    height: 100%;
+    display: none;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .contenidoPopUp{
-    height: 250px;
-    width: 500px;
-    background: whitesmoke;
-    padding: 20px;
+    height: 350px;
+    width: 550px;
+    background-image: url(../imgProyectoPersonal/fondo3.jpg);
+    padding: 5px;
     border-radius: 5px;
     position: relative;
+    font-family: var(--fuente1);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+}
+.tituloLogin{margin-bottom:50px;}
+.tituloSu{margin-bottom:40px;}
+
+.inPop{
+    margin: 20px auto ;
+    display: block;
+    width: 50%;
+    justify-items: center;
+    padding: 8px;
+    border: solid 2px rgba(0, 0, 0, 0.571);
+    font-family: var(--fuente1);
 }
 
+.imgX{
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+} 
+.imgX img{
+    width: 25px;
+}
 
-/* https://www.youtube.com/watch?v=ptI8g-05VM0 */
+.buttonPop1{
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    color: white;
+}
+.buttonPop2{
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    color: white;
+}
+.botonesLogueo{margin-top: 50px;}
