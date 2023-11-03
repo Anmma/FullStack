@@ -22,9 +22,10 @@ document.getElementById("cierreb").addEventListener("click" , function(){
 let cajaBack = document.querySelector('.cajaBack');
 
 window.addEventListener('scroll', () =>{
-    if (window.scrollY > 100){
+    if (window.scrollY > 500){
         cajaBack.style.display = 'block';
-    }else{
+    }
+    else{
         cajaBack.style.display = 'none'
     }
 })

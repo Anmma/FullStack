@@ -52,6 +52,7 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     color: whitesmoke;
     margin-bottom: 50px;
     margin-top: 90px;
+    text-transform: uppercase;
 }
 
 /* SECCION1 */
@@ -382,6 +383,7 @@ transition: 1s;
     left: 0;
     height: 100%;
     padding: 4px;
+    display: none;
 }
 .backHover {
     display: flex; 
@@ -477,7 +479,7 @@ transition: 1s;
 }
 /* POPUP */
 .popUpA,.popUpB{
-    background: rgba(0, 0, 0, 0.621);
+    background: rgba(0, 0, 0, 0.852);
     position:absolute;
     top: 0;
     width: 100%;
@@ -510,9 +512,10 @@ transition: 1s;
     width: 50%;
     justify-items: center;
     padding: 8px;
-    border: solid 2px rgba(0, 0, 0, 0.571);
+    border: solid 2px rgb(255, 255, 255);
     font-family: var(--fuente1);
 }
+.inPop::placeholder{color: rgba(0, 0, 0, 0.838);}
 
 .imgX{
     display: flex;

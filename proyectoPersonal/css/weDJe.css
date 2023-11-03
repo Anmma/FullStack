@@ -1,0 +1,35 @@
+:root{
+    --fuente1: 'Share Tech Mono', monospace;;
+    --lila: rgb(186, 158, 232); 
+    --redSoft: rgb(236, 60, 83);
+    --orange: rgb(230, 142, 32);
+    --green:rgb(122, 214, 78);
+    --pink:rgb(223, 127, 118);
+    --yellow:rgb(254, 194, 82);
+    --skyblue:rgb(21, 185, 227);
+    --cyan:rgb(60, 228, 141);
+}
+
+html{font-size: 62.5%;}
+
+body{
+    background-color: black;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.tituloDje{
+   color: white;
+   font-size: 4rem;
+   font-family: var(--fuente1);
+   text-transform: uppercase;
+}
+.tituloImgDje{
+    background-image: url(../imgProyectoPersonal/fondo1.jpg);
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 0px;
+    padding-bottom: 200px;
+}
