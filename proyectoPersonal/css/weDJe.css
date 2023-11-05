@@ -16,6 +16,7 @@ body{
     background-color: black;
     box-sizing: border-box;
     height: 100%;
+    background-image: url(../imgProyectoPersonal/fondo1.jpg);background-size:cover;
 }
 
 .tituloDje{
@@ -25,11 +26,36 @@ body{
    text-transform: uppercase;
 }
 .tituloImgDje{
-    background-image: url(../imgProyectoPersonal/fondo1.jpg);
-    background-size:cover;
+    background-color: rgba(0, 0, 0, 0.834);
     display: flex;
     justify-content: center;
     align-items: start;
     padding-top: 0px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
+    border-radius: 15px;
+}
+.sectionA1{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.cajaImgA1{
+    display: flex;
+}
+.imgA1{
+    background-image: url(../imgProyectoPersonal/eventoJamieJonesvie17.png);
+    background-size: cover;
+    width: 89vh;
+    height: 62vh;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.textoA1{
+    font-size: 2.5rem;
+    padding: 160px;
+    margin-left: 20px;
+    background-color:rgba(0, 0, 0, 0.673);
+    border-radius: 15px;
+    color: whitesmoke;
+    font-family: var(--fuente1);
 }
