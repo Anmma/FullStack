@@ -16,7 +16,7 @@ body{
     background-color: black;
     box-sizing: border-box;
     height: 100%;
-    background-image: url(../imgProyectoPersonal/fondo1.jpg);background-size:cover;
+    background-image: url(../imgProyectoPersonal/f1.jpg);background-size:cover;
 }
 
 .tituloDje{
@@ -39,23 +39,23 @@ body{
     display: flex;
     flex-direction: column;
 }
-.cajaImgA1{
+.cajaImgText1{
     display: flex;
+    width: 100%;
+    margin-bottom: 10px;
 }
 .imgA1{
-    background-image: url(../imgProyectoPersonal/eventoJamieJonesvie17.png);
-    background-size: cover;
-    width: 89vh;
-    height: 62vh;
-    margin-bottom: 20px;
+    width:250px;
     border-radius: 15px;
 }
 .textoA1{
-    font-size: 2.5rem;
-    padding: 160px;
     margin-left: 20px;
     background-color:rgba(0, 0, 0, 0.673);
     border-radius: 15px;
     color: whitesmoke;
     font-family: var(--fuente1);
+}
+.textoA1 p{
+    font-size: 2rem;
+    margin: 50px;
 }
