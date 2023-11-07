@@ -541,3 +541,36 @@ transition: 1s;
     color: white;
 }
 .botonesLogueo{margin-top: 50px;}
+
+/*PAGINA DJ EVENTOS*/
+.tituloPagDe{
+    font-family: var(--fuente1);
+    font-weight: 800px;
+    color: whitesmoke;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contenedorDjE{
+    display: flex;
+    flex-direction: column;
+}
+
+.cajaImgText1{
+    display: flex;
+}
+
+.imgDjE1{
+    width: 250px;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+.textoDjE{
+    font-size: 2rem;
+    color: whitesmoke;
+    font-family: var(--fuente1);
+    width: 70%;
+    margin-left: 20px;
+}
