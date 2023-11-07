@@ -13,10 +13,10 @@
 html{font-size: 62.5%;}
 
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     box-sizing: border-box;
     height: 100%;
-    background-image: url(../imgProyectoPersonal/f1.jpg);background-size:cover;
+    background-size:cover;
 }
 
 .tituloDje{
@@ -33,6 +33,7 @@ body{
     padding-top: 0px;
     padding-bottom: 100px;
     border-radius: 15px;
+    border: var(--lila) solid 2px;
 }
 .sectionA1{
     margin-top: 20px;
@@ -54,6 +55,7 @@ body{
     border-radius: 15px;
     color: whitesmoke;
     font-family: var(--fuente1);
+    border: var(--skyblue) solid 2px;
 }
 .textoA1 p{
     font-size: 2rem;
