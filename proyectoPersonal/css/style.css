@@ -577,6 +577,7 @@ transition: 1s;
 
 .cajaImgText1{
     display: flex;
+    margin-bottom: 20PX;
 }
 
 .imgDjE1{
@@ -593,3 +594,14 @@ transition: 1s;
     margin-left: 20px;
 }
 
+.textoDjE a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+  
+  
+  
+  
