@@ -29,6 +29,7 @@ header{
 
 .logueoInicio{
     margin-right: 20px;
+    margin-top: 10px;
 }
 #loginA,#loginB{
     font-family: var(--fuente1);
@@ -380,9 +381,8 @@ transition: 1s;
     font-size: 1.5rem;
     position: fixed;
     top: 0;
-    left: 0;
     height: 100%;
-    padding: 4px;
+    padding: 2px;
     display: none;
 }
 .backHover {
@@ -543,14 +543,24 @@ transition: 1s;
 .botonesLogueo{margin-top: 50px;}
 
 /*PAGINA DJ EVENTOS*/
+
 /*MENU*/
 .menuPg1{
     display: flex;
-    justify-content: center;
-}
-.li{
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 50px;
     list-style: none;
+    margin-bottom: 50px;
+    cursor: pointer;
 }
+
+.menuPg1 li{
+    font-family: var(--fuente1);
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
 .tituloPagDe{
     font-family: var(--fuente1);
     font-weight: 800px;
