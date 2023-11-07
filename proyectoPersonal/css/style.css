@@ -543,6 +543,14 @@ transition: 1s;
 .botonesLogueo{margin-top: 50px;}
 
 /*PAGINA DJ EVENTOS*/
+/*MENU*/
+.menuPg1{
+    display: flex;
+    justify-content: center;
+}
+.li{
+    list-style: none;
+}
 .tituloPagDe{
     font-family: var(--fuente1);
     font-weight: 800px;
@@ -574,3 +582,4 @@ transition: 1s;
     width: 70%;
     margin-left: 20px;
 }
+
