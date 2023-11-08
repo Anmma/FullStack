@@ -133,13 +133,13 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
         background-image: url(../imgProyectoPersonal/eventoYoungMarcoSab18.png);
 }
 .fondoE3{
-        background-image: url(../imgProyectoPersonal/eventoClooneDom19.png);
-}
-.fondoE4{
         background-image: url(../imgProyectoPersonal/eventoRhode&BrownSab18.png);
 }
-.fondoE5{
+.fondoE4{
         background-image: url(../imgProyectoPersonal/eventoIsumiJue23.png);
+}
+.fondoE5{
+        background-image: url();
 }
 
 .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
@@ -184,16 +184,14 @@ opacity: 0;
 background-color: rgba(0, 0, 0, 0.753);
 width: 100%;
 color: whitesmoke;
-font-size: 1rem;
+font-size: 1.5rem;
 font-family: var(--fuente1);
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 } 
 
-.textoImgP,.textoImgE h2{
-margin-left: 10px;
-}
 
 .textoImgP:hover{
 opacity: 1;
@@ -203,6 +201,44 @@ transition: 1s;
 .textoImgE:hover{
     opacity: 1;
     transition: 1s;
+}
+
+.enlaceUbicacion,.enlaceEntradas,.enlaceGeneros,.enlaceLocal{
+    text-decoration: none;
+    color:whitesmoke;
+    margin: 5px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.enlaceEntradas:hover{
+    color: var(--yellow);
+}
+.enlaceUbicacion:hover{
+    color: var(--orange);
+}
+.enlaceLocal{
+    font-size: 2rem;
+}
+.enlaceLocal:hover{
+    color: var(--redSoft);
+}
+.enlaceGeneros{
+    border: 2px solid whitesmoke;
+    padding: 5px;
+}
+.enlaceGeneros:hover{
+    color: var(--lila);
+    border: 2px solid var(--lila);
+}
+.cajaGeneros{
+    margin-top: 10px;
+}
+.textoImgE h3{
+    font-size: 2rem;
+    margin-top: 28px;
+}
+.textoImgE h2{
+    text-transform: uppercase;
 }
 
 .cajaVerMas1,.cajaVerMas2,.cajaVerMas3{
