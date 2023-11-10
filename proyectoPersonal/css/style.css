@@ -145,7 +145,7 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
     background-size:cover;
     background-repeat: no-repeat;
-    width: 285px;
+    width: 250px;
     height: 450px;
     display: flex;
     justify-content: center;
@@ -172,7 +172,7 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 .fondoP1,.fondoP2,.fondoP3,.fondoP4,.fondoP5{
 background-size:cover;
 background-repeat: no-repeat;
-width: 285px;
+width: 250px;
 height: 450px;
 display: flex;
 justify-content: center;
