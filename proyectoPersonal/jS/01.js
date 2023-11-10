@@ -18,18 +18,6 @@ document.getElementById("cierreb").addEventListener("click" , function(){
 })
 
 
-//CajaBack
-let cajaBack = document.querySelector('.cajaBack');
-
-window.addEventListener('scroll', () =>{
-    if (window.scrollY > 500){
-        cajaBack.style.display = 'block';
-    }
-    else{
-        cajaBack.style.display = 'none'
-    }
-})
-
 
 //weDJe
 //CALENDAR & GENERO

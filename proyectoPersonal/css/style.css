@@ -136,16 +136,16 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
         background-image: url(../imgProyectoPersonal/eventoRhode&BrownSab18.png);
 }
 .fondoE4{
-        background-image: url(../imgProyectoPersonal/eventoIsumiJue23.png);
+        background-image: url(../imgProyectoPersonal/eventoHalley18nov.png);
 }
 .fondoE5{
-        background-image: url();
+        background-image: url(../imgProyectoPersonal/eventoIsumiJue23.png);
 }
 
 .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
     background-size:cover;
     background-repeat: no-repeat;
-    width: 250px;
+    width: 285px;
     height: 450px;
     display: flex;
     justify-content: center;
@@ -157,13 +157,13 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     background-image: url(../imgProyectoPersonal/eventoGordonCityVier1.png);
 }
 .fondoP2{
-    background-image: url(../imgProyectoPersonal/eventoAnabelArroyo.png);
+    background-image: url(../imgProyectoPersonal/eventoEgoTrip1dic.png);
 }
 .fondoP3{
-    background-image: url(../imgProyectoPersonal/eventoClaraCuveMar5.png);
+    background-image: url(../imgProyectoPersonal/eventoLaster02dic.png);
 }
 .fondoP4{
-    background-image: url(../imgProyectoPersonal/eventoRebekhaJue7.png);
+    background-image: url(../imgProyectoPersonal/eventoGetTraum5dic.png);
 }
 .fondoP5{
     background-image: url(../imgProyectoPersonal/eventoWadeSab9.png);
@@ -172,26 +172,27 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 .fondoP1,.fondoP2,.fondoP3,.fondoP4,.fondoP5{
 background-size:cover;
 background-repeat: no-repeat;
-width: 250px;
+width: 285px;
 height: 450px;
 display: flex;
 justify-content: center;
+overflow: hidden;
 border-radius: 15px;
 }
 
 .textoImgP,.textoImgE{
 opacity: 0;
-background-color: rgba(0, 0, 0, 0.753);
+background-color: rgba(0, 0, 0, 0.877);
 width: 100%;
 color: whitesmoke;
-font-size: 1.5rem;
+font-size: 1.4rem;
 font-family: var(--fuente1);
+font-weight: 800px;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 } 
-
 
 .textoImgP:hover{
 opacity: 1;
@@ -203,7 +204,7 @@ transition: 1s;
     transition: 1s;
 }
 
-.enlaceUbicacion,.enlaceEntradas,.enlaceGeneros,.enlaceLocal{
+.enlaceUbicacion,.enlaceEntradas,.enlaceGeneros,.enlaceLocal,.enlaceInfo{
     text-decoration: none;
     color:whitesmoke;
     margin: 5px;
@@ -415,19 +416,15 @@ transition: 1s;
 
 .cajaBack{
     font-size: 1.5rem;
-    position: fixed;
-    top: 0;
-    height: 100%;
-    padding: 2px;
-    display: none;
+    margin-top: 50px;
 }
-.backHover {
+.backArrow{
     display: flex; 
     align-items: center;
     justify-content: center; 
     height: 100%;
 }
-.backHover:hover{color: var(--cyan);border-color: var(--cyan);}
+
 
 /* FOOTER */
 .fin{
