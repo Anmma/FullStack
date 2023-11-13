@@ -69,7 +69,7 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 .cajaE{
     background-image: url(../imgProyectoPersonal/fondo1.jpg);
     background-size: cover;
-    padding: 40px 60px 40px 60px;
+    padding: 40px 75px 40px 75px;
     border-radius: 15px;
 }
 .cajaC{
@@ -86,14 +86,14 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     font-weight: 800;
     color: whitesmoke;
     text-transform: uppercase;
-    transition: 1s;
+    transition: transform 0.3s; 
 }
 
-.enlacesInicio:hover{font-size: 2rem;}
+.enlacesInicio:hover{transform: scale(1.2);}
 
 /* SECCION EVENTOS */
-.sectorEventos{width: 100%;}
-.tituloE{
+.sectorDjs{width: 100%;}
+.tituloSection1{
     color: whitesmoke;
     font-family: var(--fuente1);
     font-size: 4rem;
@@ -101,9 +101,9 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     text-align: center;
 }
 
-.tituloE:hover{ color: var(--lila);}
+.tituloSection1:hover{ color: var(--lila);}
 
-.sub1E,.sub2E{
+.sub1,.sub2{
     color: whitesmoke;
     font-family: var(--fuente1);
     font-size: 2.5rem;
@@ -112,14 +112,14 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 }
 
 @media(max-width:1140px){
-    .tituloE{
+    .tituloSection1{
         font-size: 3rem;
     }
 }
 
-.imgEvent {
+.imgDjsPrincipal{
     display: grid;
-    grid: 1fr / 1fr 1fr 1fr 1fr 1fr;
+    grid: 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     padding: 20px;
     margin-top: 0;
@@ -127,19 +127,19 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 }
 
 .fondoE1{
-        background-image: url(../imgProyectoPersonal/eventoJamieJonesvie17.png);
+        background-image: url(../imgProyectoPersonal/17112023-jamieJones.png);
 }
 .fondoE2{
-        background-image: url(../imgProyectoPersonal/eventoYoungMarcoSab18.png);
+        background-image: url(../imgProyectoPersonal/18112023-youngMarco.png);
 }
 .fondoE3{
-        background-image: url(../imgProyectoPersonal/eventoRhode&BrownSab18.png);
+        background-image: url(../imgProyectoPersonal/18112023-rhode&brown.png);
 }
 .fondoE4{
-        background-image: url(../imgProyectoPersonal/eventoHalley18nov.png);
+        background-image: url(../imgProyectoPersonal/18112023-halley.png);
 }
 .fondoE5{
-        background-image: url(../imgProyectoPersonal/eventoIsumiJue23.png);
+        background-image: url(../imgProyectoPersonal/23112023-isumi.png);
 }
 
 .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
@@ -154,19 +154,19 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 }
 /* PROXIMO MES  */
 .fondoP1{
-    background-image: url(../imgProyectoPersonal/eventoGordonCityVier1.png);
+    background-image: url(../imgProyectoPersonal/01122023-gordonCity.png);
 }
 .fondoP2{
-    background-image: url(../imgProyectoPersonal/eventoEgoTrip1dic.png);
+    background-image: url(../imgProyectoPersonal/01122023-egoTrip.png);
 }
 .fondoP3{
-    background-image: url(../imgProyectoPersonal/eventoLaster02dic.png);
+    background-image: url();
 }
 .fondoP4{
-    background-image: url(../imgProyectoPersonal/eventoGetTraum5dic.png);
+    background-image: url();
 }
 .fondoP5{
-    background-image: url(../imgProyectoPersonal/eventoWadeSab9.png);
+    background-image: url();
 }
 
 .fondoP1,.fondoP2,.fondoP3,.fondoP4,.fondoP5{
@@ -203,7 +203,9 @@ transition: 1s;
     opacity: 1;
     transition: 1s;
 }
-
+.infoDjs{
+    text-align: center;
+}
 .enlaceUbicacion,.enlaceEntradas,.enlaceGeneros,.enlaceLocal,.enlaceInfo{
     text-decoration: none;
     color:whitesmoke;
@@ -242,13 +244,16 @@ transition: 1s;
     text-transform: uppercase;
 }
 
-.cajaVerMas1,.cajaVerMas2,.cajaVerMas3{
+.cajaVerMas1,.cajaVerMas2{
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
+.cajaVerMas3{
+    margin-top: 50px ;
+}
 
-.verMasHover1,.verMasHover2,.verMasHover3{
+.verMasHover1,.verMasHover2{
     color: whitesmoke;
     font-family: var(--fuente1);
     text-decoration: none;
@@ -256,15 +261,14 @@ transition: 1s;
     margin-top: 10px;
     font-size: 2rem;
 }
+
 .verMasHover1:hover{
     color: var(--green);
 }
 .verMasHover2:hover{
     color: var(--skyblue);
 }
-.verMasHover3:hover{
-    color: var(--yellow);
-}
+
 @media(min-width:768px) and (max-width:1140px){
     .cajasInicio{
         margin: 0 auto;
@@ -349,12 +353,12 @@ transition: 1s;
 }
 
 /* SECCION CULTURAL */
-.seccionSC{
+.seccionC{
     max-width: 100%;
-    margin-top:150px;
+    margin-top:70px;
 }
 
-.tituloSC{
+.tituloC{
     color: whitesmoke;
     font-family: var(--fuente1);
     font-size: 4rem;
@@ -364,13 +368,13 @@ transition: 1s;
 }
 .tituloC:hover{color:var(--yellow);}
 
-.imgSC{
+.imgC{
     display: grid;
     grid: 1fr 1fr / 1fr 1fr 1fr ;
     justify-items: center;
     gap: 10px;
 }
-.infoSC{
+.infoC{
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.753);
     width: 100%;
@@ -381,27 +385,41 @@ transition: 1s;
     justify-content: center;
     align-items: center;
 }
-.infoSC h2{
-    text-align: center;
+.infoC{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
 }
-.infoSC:hover{
+.infoC:hover{
     opacity: 1;
     transition: 1s;
     }
-.caja1SC{
-    background-image: url(../imgProyectoPersonal/fondo3.jpg);}
-.caja2SC{
-    background-image: url(../imgProyectoPersonal/fondo3.jpg);}
-.caja3SC{
-    background-image: url(../imgProyectoPersonal/fondo3.jpg);}
-.caja4SC{
-    background-image: url(../imgProyectoPersonal/fondo3.jpg);}
-.caja5SC{
-    background-image: url(../imgProyectoPersonal/fondo3.jpg);}
-.caja6SC{
-    background-image: url(../imgProyectoPersonal/fondo3.jpg);}
+    
+.infoEvento{
+    font-size: 1.5rem;
+}
+.enlaceConcierto{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+.caja1C{
+    background-image: url(../imgProyectoPersonal/fondo1.jpg);}
+.caja2C{
+    background-image: url(../imgProyectoPersonal/fondo1.jpg);}
+.caja3C{
+    background-image: url(../imgProyectoPersonal/fondo1.jpg);}
+.caja4C{
+    background-image: url(../imgProyectoPersonal/fondo1.jpg);}
+.caja5C{
+    background-image: url(../imgProyectoPersonal/fondo1.jpg);}
+.caja6C{
+    background-image: url(../imgProyectoPersonal/fondo1.jpg);}
 
-.caja1SC,.caja2SC,.caja3SC,.caja4SC,.caja5SC,.caja6SC{
+.caja1C,.caja2C,.caja3C,.caja4C,.caja5C,.caja6C{
     background-size:cover;
     background-repeat: no-repeat;
     width: 400px;
@@ -431,7 +449,7 @@ transition: 1s;
     display: grid;
     grid: 1fr 1fr / 1fr 1fr 1fr;
     justify-items: center;
-    margin: 50px 0px 5px 0px;
+    margin: 80px 0px 5px 0px;
     border-top: whitesmoke solid 1px;
     width: 100%;
 }
@@ -474,10 +492,18 @@ transition: 1s;
         max-width: 100%;
         margin-top:100px;
     }
-    .imgSC{
-        display: grid;
-        grid:1fr 1fr 1fr 1fr 1fr / 1fr;
+    .imgC{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
     }
+    .caja1C,.caja2C,.caja3C,.caja4C,.caja5C,.caja6C{
+        width: 375px;
+        height: 250px;
+    }
+
     .fin{
         display: grid;
         grid: 1fr 1fr 1fr 1fr/ 1fr ;
