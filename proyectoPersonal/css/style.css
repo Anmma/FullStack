@@ -96,7 +96,7 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 .tituloSection1{
     color: whitesmoke;
     font-family: var(--fuente1);
-    font-size: 4rem;
+    font-size: 6rem;
     text-transform: uppercase;
     text-align: center;
 }
@@ -123,23 +123,23 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     justify-items: center;
     padding: 20px;
     margin-top: 0;
-    gap:10px;
+    gap: 10px;
 }
 
 .fondoE1{
-        background-image: url(../imgProyectoPersonal/17112023-jamieJones.png);
+        background-image: url(../imgProyectoPersonal/Djs/17112023-jamieJones.png);
 }
 .fondoE2{
-        background-image: url(../imgProyectoPersonal/17-11-2023-caniche.png);
+        background-image: url(../imgProyectoPersonal/Djs/17-11-2023-caniche.png);
 }
 .fondoE3{
-        background-image: url(../imgProyectoPersonal/18-11-2023-argy.png);
+        background-image: url(../imgProyectoPersonal/Djs/18-11-2023-argy.png);
 }
 .fondoE4{
-        background-image: url(../imgProyectoPersonal/18-11-2023-youngMarco.png);
+        background-image: url(../imgProyectoPersonal/Djs/18-11-2023-youngMarco.png);
 }
 .fondoE5{
-        background-image: url(../imgProyectoPersonal/18-11-2023-kunst.png);
+        background-image: url(../imgProyectoPersonal/Djs/18-11-2023-kunst.png);
 }
 
 .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
@@ -151,6 +151,7 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     justify-content: center;
     overflow: hidden;
     border-radius: 15px;
+    margin-bottom: 50px;
 }
 
 .fondoE6,.fondoE7,.fondoE8,.fondoE9,.fondoE10{
@@ -166,19 +167,19 @@ border-radius: 15px;
 
 
 .fondoE6{
-    background-image: url(../imgProyectoPersonal/18112023-rhode&brown.png);
+    background-image: url(../imgProyectoPersonal/Djs/18112023-rhode&brown.png);
 }
 .fondoE7{
-    background-image: url(../imgProyectoPersonal/18-11-2023twoEx.png);
+    background-image: url(../imgProyectoPersonal/Djs/18-11-2023twoEx.png);
 }
 .fondoE8{
-    background-image: url(../imgProyectoPersonal/18-11-2023-manfredas.png);
+    background-image: url(../imgProyectoPersonal/Djs/18-11-2023-manfredas.png);
 }
 .fondoE9{
-    background-image: url();
+    background-image: url(../imgProyectoPersonal/Djs/19-11-12-cloone.png);
 }
 .fondoE10{
-    background-image: url();
+    background-image: url(../imgProyectoPersonal/Djs/23-11-2023-biia.png);
 }
 
 
@@ -276,6 +277,101 @@ transition: 1s;
     color: var(--skyblue);
 }
 
+
+
+/* SECCION CULTURAL */
+.seccionC{
+    max-width: 100%;
+    margin-top:70px;
+}
+
+.tituloC{
+    color: whitesmoke;
+    font-family: var(--fuente1);
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.tituloC:hover{color:var(--yellow);}
+
+.imgC{
+    display: grid;
+    grid: 1fr 1fr / 1fr 1fr 1fr ;
+    justify-items: center;
+    gap: 10px;
+}
+.infoC{
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.753);
+    width: 100%;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-family: var(--fuente1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.infoC{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.infoC h5{
+        font-size: 0.7rem;
+        color: rgb(177, 177, 177);
+}
+.infoC:hover{
+    opacity: 1;
+    transition: 1s;
+    }
+
+.enlaceLocalc{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.infoEvento{
+    font-size: 1.5rem;
+}
+.enlaceConcierto{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.caja1C{
+    background-image: url(../imgProyectoPersonal/Conciertos/18-11-2023-spinGospelHouse.png);}
+.caja2C{
+    background-image: url(../imgProyectoPersonal/Conciertos/20-11-2023-nilsFrahm.png);}
+.caja3C{
+    background-image: url(../imgProyectoPersonal/Conciertos/22-11-2023-latinJam.png);}
+.caja4C{
+    background-image: url(../imgProyectoPersonal/Conciertos/23-11-2023-afrojam.png);}
+.caja5C{
+    background-image: url(../imgProyectoPersonal/Conciertos/24-11-2023-holyWave.png);}
+.caja6C{
+    background-image: url(../imgProyectoPersonal/Conciertos/28-11-2023-boogieBelgique.png);}
+
+.caja1C,.caja2C,.caja3C,.caja4C,.caja5C,.caja6C{
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 460px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+
 @media(min-width:768px) and (max-width:1140px){
     .cajasInicio{
         margin: 0 auto;
@@ -292,11 +388,12 @@ transition: 1s;
     .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
         width: 150px;
         height: 250px;
+        margin-bottom: 20px;
     }
     .textoImgE{
         font-size: 0.7rem;
     }
-    .fondoP1,.fondoP2,.fondoP3,.fondoP4,.fondoP5{
+    .fondoE6,.fondoE7,.fondoE8,.fondoE9,.fondoE10{
         width: 150px;
         height: 250px;
     }
@@ -322,7 +419,7 @@ transition: 1s;
         align-items: center;
         margin-bottom: 50px;
     }
-    .cajaE{ padding: 30px 40px 30px 40px;margin-bottom: 15px;}
+    .cajaE{ padding: 30px 50px 30px 50px;margin-bottom: 15px;}
     .cajaC{ padding: 30px 30px 30px 20px;margin-bottom: 15px;}
 
     .sectorEventos{margin-top: 150px;}
@@ -331,24 +428,21 @@ transition: 1s;
         width: 150px;
         height: 250px;
         margin-bottom: 10px;
-    }
-    .imgEvent {
-        display: grid;
-        grid: 1fr 1fr 1fr / 1fr 1fr;
-    }
-    .cajaEm{
-        grid-column: 1/3;
-        grid-row: 3/4;
-    }
-    
-    .textoImgE{
-        font-size: 0.5rem;
-    }
-    .fondoP1,.fondoP2,.fondoP3,.fondoP4,.fondoP5{
+    } 
+    .fondoE6,.fondoE7,.fondoE8,.fondoE9,.fondoE10{
         width: 150px;
         height: 250px;
         margin-bottom: 10px;
     }
+    .imgDjsPrincipal {
+        display: grid;
+        grid: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr;
+    }
+
+    .textoImgE{
+        font-size: 0.5rem;
+    }
+   
     .textoImgP{
         font-size: 0.5rem;
     }
@@ -356,85 +450,13 @@ transition: 1s;
         justify-content: center;
         align-items: center;
     }
-    
-}
 
-/* SECCION CULTURAL */
-.seccionC{
-    max-width: 100%;
-    margin-top:70px;
-}
-
-.tituloC{
-    color: whitesmoke;
-    font-family: var(--fuente1);
-    font-size: 4rem;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-.tituloC:hover{color:var(--yellow);}
-
-.imgC{
-    display: grid;
-    grid: 1fr 1fr / 1fr 1fr 1fr ;
-    justify-items: center;
-    gap: 10px;
-}
-.infoC{
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.753);
-    width: 100%;
-    color: whitesmoke;
-    font-size: 1rem;
-    font-family: var(--fuente1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.infoC{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-}
-.infoC:hover{
-    opacity: 1;
-    transition: 1s;
+    .caja1C,.caja2C,.caja3C,.caja4C,.caja5C,.caja6C{
+        width: 350px;
+        height: 550px;
+        margin-bottom: 20px;
     }
     
-.infoEvento{
-    font-size: 1.5rem;
-}
-.enlaceConcierto{
-    text-transform: uppercase;
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 1.5rem;
-}
-.caja1C{
-    background-image: url(../imgProyectoPersonal/fondo1.jpg);}
-.caja2C{
-    background-image: url(../imgProyectoPersonal/fondo1.jpg);}
-.caja3C{
-    background-image: url(../imgProyectoPersonal/fondo1.jpg);}
-.caja4C{
-    background-image: url(../imgProyectoPersonal/fondo1.jpg);}
-.caja5C{
-    background-image: url(../imgProyectoPersonal/fondo1.jpg);}
-.caja6C{
-    background-image: url(../imgProyectoPersonal/fondo1.jpg);}
-
-.caja1C,.caja2C,.caja3C,.caja4C,.caja5C,.caja6C{
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 15px;
 }
 
 /*VOLVER AL INICIO*/
@@ -454,11 +476,16 @@ transition: 1s;
 /* FOOTER */
 .fin{
     display: grid;
-    grid: 1fr 1fr / 1fr 1fr 1fr;
+    grid: 1fr / 1fr 1fr 1fr 1fr;
     justify-items: center;
-    margin: 80px 0px 5px 0px;
+    margin: 100px 0px 40px 0px;
     border-top: whitesmoke solid 1px;
     width: 100%;
+}
+.finCajaEnlaces{
+    display: flex;
+    flex-direction: column;
+    align-items: start
 }
 
 .textoFin{
@@ -487,10 +514,13 @@ transition: 1s;
     line-height: 35px;
 }
 
-.imgFooter{ margin-top: 30px;}
+.imgFooter{ 
+    margin-top: 30px;
+}
 .imgFin{
-    width: 20px;
+    width: 30px;
     margin-right: 5px;
+    margin-bottom: 5px;
     margin-left: 5px;
 }
 
@@ -521,6 +551,9 @@ transition: 1s;
         grid-column: 1/2;
     }
 
+    .newsLetter{
+        margin-left: 0px;
+    }
 }
 
 
