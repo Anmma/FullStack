@@ -130,16 +130,16 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
         background-image: url(../imgProyectoPersonal/17112023-jamieJones.png);
 }
 .fondoE2{
-        background-image: url(../imgProyectoPersonal/18112023-youngMarco.png);
+        background-image: url(../imgProyectoPersonal/17-11-2023-caniche.png);
 }
 .fondoE3{
-        background-image: url(../imgProyectoPersonal/18112023-rhode&brown.png);
+        background-image: url(../imgProyectoPersonal/18-11-2023-argy.png);
 }
 .fondoE4{
-        background-image: url(../imgProyectoPersonal/18112023-halley.png);
+        background-image: url(../imgProyectoPersonal/18-11-2023-youngMarco.png);
 }
 .fondoE5{
-        background-image: url(../imgProyectoPersonal/23112023-isumi.png);
+        background-image: url(../imgProyectoPersonal/18-11-2023-kunst.png);
 }
 
 .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
@@ -152,24 +152,8 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     overflow: hidden;
     border-radius: 15px;
 }
-/* PROXIMO MES  */
-.fondoP1{
-    background-image: url(../imgProyectoPersonal/01122023-gordonCity.png);
-}
-.fondoP2{
-    background-image: url(../imgProyectoPersonal/01122023-egoTrip.png);
-}
-.fondoP3{
-    background-image: url();
-}
-.fondoP4{
-    background-image: url();
-}
-.fondoP5{
-    background-image: url();
-}
 
-.fondoP1,.fondoP2,.fondoP3,.fondoP4,.fondoP5{
+.fondoE6,.fondoE7,.fondoE8,.fondoE9,.fondoE10{
 background-size:cover;
 background-repeat: no-repeat;
 width: 250px;
@@ -179,6 +163,24 @@ justify-content: center;
 overflow: hidden;
 border-radius: 15px;
 }
+
+
+.fondoE6{
+    background-image: url(../imgProyectoPersonal/18112023-rhode&brown.png);
+}
+.fondoE7{
+    background-image: url(../imgProyectoPersonal/18-11-2023twoEx.png);
+}
+.fondoE8{
+    background-image: url(../imgProyectoPersonal/18-11-2023-manfredas.png);
+}
+.fondoE9{
+    background-image: url();
+}
+.fondoE10{
+    background-image: url();
+}
+
 
 .textoImgP,.textoImgE{
 opacity: 0;
@@ -192,6 +194,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+text-transform: uppercase;
 } 
 
 .textoImgP:hover{
@@ -242,6 +245,10 @@ transition: 1s;
 }
 .textoImgE h2{
     text-transform: uppercase;
+}
+.textoImgE h5{
+    font-size: 0.7rem;
+    color: rgb(177, 177, 177);
 }
 
 .cajaVerMas1,.cajaVerMas2{
