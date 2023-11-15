@@ -403,6 +403,12 @@ transition: 1s;
         margin-top: 100px;
     }
     
+    .caja1C,.caja2C,.caja3C,.caja4C,.caja5C,.caja6C{
+        margin-bottom: 20px;
+        width: 355px;
+        height: 255px;
+    }
+    
 }
 
 @media(max-width:768px){
@@ -452,9 +458,18 @@ transition: 1s;
     }
 
     .caja1C,.caja2C,.caja3C,.caja4C,.caja5C,.caja6C{
-        width: 350px;
-        height: 550px;
         margin-bottom: 20px;
+        width: 360px;
+        height: 250px;
+    }
+    .imgC{
+        display: grid;
+        grid: 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr ;
+        justify-items: center;
+        gap: 10px;
+    }
+    .infoEvento{
+        font-size: 1rem;
     }
     
 }
@@ -478,7 +493,7 @@ transition: 1s;
     display: grid;
     grid: 1fr / 1fr 1fr 1fr 1fr;
     justify-items: center;
-    margin: 100px 0px 40px 0px;
+    margin: 100px 0px 20px 0px;
     border-top: whitesmoke solid 1px;
     width: 100%;
 }
@@ -502,8 +517,9 @@ transition: 1s;
     text-decoration: none;
     font-size: 1.5rem;
     font-family: var(--fuente1);
-    margin-top: 30px;
+    margin-top: 15px;
     display: block;
+    text-transform: uppercase;
 }
 .newsLetter{
     color: whitesmoke;
@@ -515,7 +531,7 @@ transition: 1s;
 }
 
 .imgFooter{ 
-    margin-top: 30px;
+    margin-top: 25px;
 }
 .imgFin{
     width: 30px;
@@ -525,26 +541,11 @@ transition: 1s;
 }
 
 @media(max-width:768px){
-    .seccionCultura{
-        max-width: 100%;
-        margin-top:100px;
-    }
-    .imgC{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-    .caja1C,.caja2C,.caja3C,.caja4C,.caja5C,.caja6C{
-        width: 375px;
-        height: 250px;
-    }
-
+  
     .fin{
         display: grid;
         grid: 1fr 1fr 1fr 1fr/ 1fr ;
-        margin: 30px 10px 5px 10px;
+        margin: 30px 10px 0px 10px;
     }
     .textoFin{
         grid-row: 4/5;
@@ -553,30 +554,34 @@ transition: 1s;
 
     .newsLetter{
         margin-left: 0px;
+        margin-top: 50px;
     }
+    .finCajaEnlaces{margin-top: 30px;}
+    .imgFooter{margin-top: 60px;}
 }
 
 
 @media(min-width:768px) and (max-width:1140px){
-    .imgSC{
+    .imgC{
         display: grid;
         grid:1fr 1fr 1fr / 1fr 1fr;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     .fin{
         display: grid;
         grid: 1fr 1fr/ 1fr 1fr ;
         justify-items: center;
         }
-    .textoFin{
+    .finCajaEnlaces{
         grid-column: 1/2;
         grid-row: 2/3;
+        margin-top: 15px;
     }
-    .newsLetter{
-        margin-left: 70px;
-    }
+    .newsLetter{margin-left: 70px;}
+    .imgFooter,.textoFin{margin-top: 50px;}
 }
 /* POPUP */
+
 .popUpA,.popUpB{
     background: rgba(0, 0, 0, 0.852);
     position:absolute;
@@ -621,9 +626,8 @@ transition: 1s;
     justify-content: end;
     cursor: pointer;
 } 
-.imgX img{
-    width: 25px;
-}
+
+.imgX img{width: 25px;}
 
 .buttonPop1{
     font-size: 2rem;
