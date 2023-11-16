@@ -299,7 +299,7 @@ transition: 1s;
     display: grid;
     grid: 1fr 1fr / 1fr 1fr 1fr ;
     justify-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 .infoC{
     opacity: 0;
@@ -362,7 +362,7 @@ transition: 1s;
 .caja1C,.caja2C,.caja3C,.caja4C,.caja5C,.caja6C{
     background-size:cover;
     background-repeat: no-repeat;
-    width: 445px;
+    width: 440px;
     height: 320px;
     display: flex;
     justify-content: center;
