@@ -19,15 +19,5 @@ document.getElementById("cierreb").addEventListener("click" , function(){
 
 
 
-//weDJe
-//CALENDAR & GENERO
-document.getElementById("calendar").addEventListener("click" , function(){
-    document.querySelector(".calendario").style.display = "flex";
-})
-
-document.getElementById("cierre2").addEventListener("click" , function(){
-    document.querySelector(".calendario").style.display = "none"
-})
-
 
 

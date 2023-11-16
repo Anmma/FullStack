@@ -471,7 +471,11 @@ transition: 1s;
     .infoEvento{
         font-size: 1rem;
     }
-    
+
+    .textoImgE h1{
+       font-size: 1.8rem;
+    }
+   
 }
 
 /*VOLVER AL INICIO*/
@@ -608,7 +612,7 @@ transition: 1s;
     color: white;
 }
 .tituloLogin{
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
 .tituloSu{margin-bottom:40px;}
 
