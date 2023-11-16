@@ -299,7 +299,7 @@ transition: 1s;
     display: grid;
     grid: 1fr 1fr / 1fr 1fr 1fr ;
     justify-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 .infoC{
     opacity: 0;
