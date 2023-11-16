@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
 :root{
     --fuente1: 'Share Tech Mono', monospace;;
     --lila: rgb(186, 158, 232); 
@@ -16,13 +21,11 @@
     --cyan:rgb(60, 228, 141);
 }
 
-html{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
+
 
 body{
     background-color: black;
+    width: 100%;
 }
 
 /* HEADER */
@@ -91,10 +94,10 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     font-weight: 800;
     color: whitesmoke;
     text-transform: uppercase;
-    transition: transform 0.3s; 
+    transition: 1s; 
 }
 
-.enlacesInicio:hover{transform: scale(1.2);}
+.enlacesInicio:hover{font-size: 2rem;}
 
 /* SECCION EVENTOS */
 .sectorDjs{width: 100%;}
