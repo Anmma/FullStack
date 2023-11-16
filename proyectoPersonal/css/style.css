@@ -299,6 +299,7 @@ transition: 1s;
     display: grid;
     grid: 1fr 1fr / 1fr 1fr 1fr ;
     justify-items: center;
+    gap: 10px;
 }
 .infoC{
     opacity: 0;
@@ -318,7 +319,6 @@ transition: 1s;
    justify-content: center;
    align-items: center;
    text-align: center;
-   gap: 15px;
 }
 .infoC h5{
         font-size: 0.7rem;
