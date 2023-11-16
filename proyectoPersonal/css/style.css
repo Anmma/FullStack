@@ -362,7 +362,7 @@ transition: 1s;
 .caja1C,.caja2C,.caja3C,.caja4C,.caja5C,.caja6C{
     background-size:cover;
     background-repeat: no-repeat;
-    width: 460px;
+    width: 455px;
     height: 320px;
     display: flex;
     justify-content: center;
