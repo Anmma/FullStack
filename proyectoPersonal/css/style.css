@@ -240,14 +240,14 @@ transition: 1s;
 .cajaGeneros{
     margin-top: 10px;
 }
-.textoImgE h3{
+.infoDjs h3{
     font-size: 2rem;
     margin-top: 28px;
 }
-.textoImgE h2{
+.infoDjs h2{
     text-transform: uppercase;
 }
-.textoImgE h5{
+.infoDjs h5{
     font-size: 0.7rem;
     color: rgb(177, 177, 177);
 }
@@ -408,6 +408,9 @@ transition: 1s;
         width: 355px;
         height: 255px;
     }
+    .enlaceLocal{
+        font-size: 1.5rem;
+    }
     
 }
 
@@ -472,10 +475,18 @@ transition: 1s;
         font-size: 1rem;
     }
 
-    .textoImgE h1{
-       font-size: 1.8rem;
+    .infoDjs h1{
+       font-size: 1.7rem;
     }
-   
+    .infoDjs h2{
+        font-size: 1.5rem;
+    }
+    .infoDjs h3{
+        font-size: 1.4rem;
+    }
+    .enlaceLocal{
+        font-size: 1.2rem;
+    }
 }
 
 /*VOLVER AL INICIO*/
