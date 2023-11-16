@@ -1,4 +1,8 @@
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 :root{
     --fuente1: 'Share Tech Mono', monospace;;
@@ -19,8 +23,6 @@ html{
 
 body{
     background-color: black;
-    box-sizing: border-box;
-    height: 100%;
 }
 
 /* HEADER */
@@ -89,10 +91,10 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     font-weight: 800;
     color: whitesmoke;
     text-transform: uppercase;
-    transition: 0.2s; 
+    transition: transform 0.3s; 
 }
 
-.enlacesInicio:hover{font-size:2rem;}
+.enlacesInicio:hover{transform: scale(1.2);}
 
 /* SECCION EVENTOS */
 .sectorDjs{width: 100%;}
@@ -243,14 +245,14 @@ transition: 1s;
 .cajaGeneros{
     margin-top: 10px;
 }
-.infoDjs h3{
+.textoImgE h3{
     font-size: 2rem;
     margin-top: 28px;
 }
-.infoDjs h2{
+.textoImgE h2{
     text-transform: uppercase;
 }
-.infoDjs h5{
+.textoImgE h5{
     font-size: 0.7rem;
     color: rgb(177, 177, 177);
 }
@@ -302,7 +304,7 @@ transition: 1s;
     display: grid;
     grid: 1fr 1fr / 1fr 1fr 1fr ;
     justify-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 .infoC{
     opacity: 0;
@@ -365,7 +367,7 @@ transition: 1s;
 .caja1C,.caja2C,.caja3C,.caja4C,.caja5C,.caja6C{
     background-size:cover;
     background-repeat: no-repeat;
-    width: 440px;
+    width: 460px;
     height: 320px;
     display: flex;
     justify-content: center;
@@ -410,9 +412,6 @@ transition: 1s;
         margin-bottom: 20px;
         width: 355px;
         height: 255px;
-    }
-    .enlaceLocal{
-        font-size: 1.5rem;
     }
     
 }
@@ -477,22 +476,7 @@ transition: 1s;
     .infoEvento{
         font-size: 1rem;
     }
-
-    .infoDjs h1{
-       font-size: 1.7rem;
-    }
-    .infoDjs h2{
-        font-size: 1.5rem;
-    }
-    .infoDjs h3{
-        font-size: 1.4rem;
-    }
-    .textoImgE h5{
-        font-size: 0.7rem;
-    }
-    .enlaceLocal{
-        font-size: 1.2rem;
-    }
+    
 }
 
 /*VOLVER AL INICIO*/
@@ -619,7 +603,7 @@ transition: 1s;
 .contenidoPopUp{
     height: 350px;
     width: 550px;
-    background-image: url(../imgProyectoPersonal/fondoLog.jpeg);
+    background-image: url(../imgProyectoPersonal/fondo3.jpg);
     padding: 5px;
     border-radius: 5px;
     position: relative;
@@ -628,9 +612,7 @@ transition: 1s;
     text-transform: uppercase;
     color: white;
 }
-.tituloLogin{
-    margin-bottom: 50px;
-}
+.tituloLogin{margin-bottom:50px;}
 .tituloSu{margin-bottom:40px;}
 
 .inPop{
@@ -666,9 +648,7 @@ transition: 1s;
     color: black;
     color: white;
 }
-.botonesLogueo{
-    margin-top: 50px;
-}
+.botonesLogueo{margin-top: 50px;}
 
 /*PAGINA DJ EVENTOS*/
 
@@ -727,9 +707,7 @@ transition: 1s;
     color: whitesmoke;
 }
 
-.videoDiv iframe{
-    border-radius: 15px;
-}
+
 
   
   
