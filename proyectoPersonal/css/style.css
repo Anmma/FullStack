@@ -12,7 +12,10 @@
     --cyan:rgb(60, 228, 141);
 }
 
-html{font-size: 62.5%;}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: black;
@@ -724,7 +727,9 @@ transition: 1s;
     color: whitesmoke;
 }
 
-
+.videoDiv iframe{
+    border-radius: 15px;
+}
 
   
   
