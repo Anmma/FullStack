@@ -126,7 +126,6 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     display: grid;
     grid: 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
-    padding: 20px;
     margin-top: 0;
     gap: 10px;
 }
@@ -159,18 +158,6 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     margin-bottom: 50px;
 }
 
-.fondoE6,.fondoE7,.fondoE8,.fondoE9,.fondoE10{
-background-size:cover;
-background-repeat: no-repeat;
-width: 250px;
-height: 450px;
-display: flex;
-justify-content: center;
-overflow: hidden;
-border-radius: 15px;
-}
-
-
 .fondoE6{
     background-image: url(../imgProyectoPersonal/Djs/18112023-rhode&brown.png);
 }
@@ -185,6 +172,16 @@ border-radius: 15px;
 }
 .fondoE10{
     background-image: url(../imgProyectoPersonal/Djs/23-11-2023-biia.png);
+}
+.fondoE6,.fondoE7,.fondoE8,.fondoE9,.fondoE10{
+background-size:cover;
+background-repeat: no-repeat;
+width: 250px;
+height: 450px;
+display: flex;
+justify-content: center;
+overflow: hidden;
+border-radius: 15px;
 }
 
 
@@ -242,15 +239,15 @@ transition: 1s;
     color: var(--lila);
     border: 2px solid var(--lila);
 }
-.cajaGeneros{
-    margin-top: 10px;
-}
+.cajaGeneros{margin-top: 10px;}
+
 .textoImgE h3{
     font-size: 2rem;
     margin-top: 28px;
 }
 .textoImgE h2{
     text-transform: uppercase;
+    margin-bottom: 5px;
 }
 .textoImgE h5{
     font-size: 0.7rem;
@@ -286,7 +283,7 @@ transition: 1s;
 
 /* SECCION CULTURAL */
 .seccionC{
-    max-width: 100%;
+    width: 100%;
     margin-top:70px;
 }
 
@@ -325,9 +322,20 @@ transition: 1s;
    align-items: center;
    text-align: center;
 }
+
+.infoC .cajaGeneros{
+    margin-bottom: 20px;
+}
+
+.infoC h2{
+    font-size:2rem;
+    margin-bottom: 10px;
+}
+
 .infoC h5{
         font-size: 0.7rem;
         color: rgb(177, 177, 177);
+        margin-top: 20px;
 }
 .infoC:hover{
     opacity: 1;
@@ -367,7 +375,7 @@ transition: 1s;
 .caja1C,.caja2C,.caja3C,.caja4C,.caja5C,.caja6C{
     background-size:cover;
     background-repeat: no-repeat;
-    width: 460px;
+    width: 440px;
     height: 320px;
     display: flex;
     justify-content: center;
