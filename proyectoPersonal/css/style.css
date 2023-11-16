@@ -101,12 +101,14 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 
 /* SECCION EVENTOS */
 .sectorDjs{width: 100%;}
+
 .tituloSection1{
     color: whitesmoke;
     font-family: var(--fuente1);
     font-size: 6rem;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .tituloSection1:hover{ color: var(--lila);}
