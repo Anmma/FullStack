@@ -318,6 +318,7 @@ transition: 1s;
    justify-content: center;
    align-items: center;
    text-align: center;
+   gap: 15px;
 }
 .infoC h5{
         font-size: 0.7rem;
@@ -597,7 +598,7 @@ transition: 1s;
 .contenidoPopUp{
     height: 350px;
     width: 550px;
-    background-image: url(../imgProyectoPersonal/fondo3.jpg);
+    background-image: url(../imgProyectoPersonal/fondoLog.jpeg);
     padding: 5px;
     border-radius: 5px;
     position: relative;
@@ -606,7 +607,9 @@ transition: 1s;
     text-transform: uppercase;
     color: white;
 }
-.tituloLogin{margin-bottom:50px;}
+.tituloLogin{
+    margin-bottom:50px;
+}
 .tituloSu{margin-bottom:40px;}
 
 .inPop{
@@ -642,7 +645,9 @@ transition: 1s;
     color: black;
     color: white;
 }
-.botonesLogueo{margin-top: 50px;}
+.botonesLogueo{
+    margin-top: 50px;
+}
 
 /*PAGINA DJ EVENTOS*/
 
