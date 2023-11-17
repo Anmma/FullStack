@@ -129,40 +129,28 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 
 .imgDjsPrincipal{
     display: grid;
-    grid: 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr;
-    justify-items: center;
+    grid: 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
+    justify-self: center;
     margin-top: 0;
-    gap: 10px;
+    gap: 15px; 
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .fondoE1{
-        background-image: url(../imgProyectoPersonal/Djs/17112023-jamieJones.png);
+        background-image: url(../imgProyectoPersonal/Djs/17-11-2023-jamieJones.png);
+       
 }
 .fondoE2{
         background-image: url(../imgProyectoPersonal/Djs/17-11-2023-caniche.png);
 }
 .fondoE3{
-        background-image: url(../imgProyectoPersonal/Djs/18-11-2023-argy.png);
-}
+    background-image: url(../imgProyectoPersonal/Djs/18-11-2023-argy.png);}
 .fondoE4{
-        background-image: url(../imgProyectoPersonal/Djs/18-11-2023-youngMarco.png);
-}
+    background-image: url(../imgProyectoPersonal/Djs/18-11-2023-youngMarco.png);}
 .fondoE5{
-        background-image: url(../imgProyectoPersonal/Djs/18-11-2023-kunst.png);
+    background-image: url(../imgProyectoPersonal/Djs/18-11-2023-kunst.png);
 }
-
-.fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 250px;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 15px;
-    margin-bottom: 50px;
-}
-
 .fondoE6{
     background-image: url(../imgProyectoPersonal/Djs/18112023-rhode&brown.png);
 }
@@ -178,18 +166,38 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 .fondoE10{
     background-image: url(../imgProyectoPersonal/Djs/23-11-2023-biia.png);
 }
-.fondoE6,.fondoE7,.fondoE8,.fondoE9,.fondoE10{
-background-size:cover;
-background-repeat: no-repeat;
-width: 250px;
-height: 450px;
-display: flex;
-justify-content: center;
-overflow: hidden;
-border-radius: 15px;
+.fondoE11{
+    background-image: url(../imgProyectoPersonal/Djs/23-11-2023-sammyvirji.jpg);
+}
+.fondoE12{
+    background-image: url(../imgProyectoPersonal/Djs/24-11-2023-kungs.jpg);
+}
+.fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    border-radius: 15px;
 }
 
 
+
+.fondoE6,.fondoE7,.fondoE8,.fondoE9,.fondoE10,.fondoE11,.fondoE12{
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+    /* margin-bottom: 50px; */
+}
 .textoImgP,.textoImgE{
 opacity: 0;
 background-color: rgba(0, 0, 0, 0.877);
@@ -203,6 +211,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 text-transform: uppercase;
+padding: 40% 15% 40% 15%;
 } 
 
 .textoImgP:hover{
