@@ -1,4 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
 
 :root{
     --fuente1: 'Share Tech Mono', monospace;;
@@ -12,15 +21,11 @@
     --cyan:rgb(60, 228, 141);
 }
 
-html{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
+
 
 body{
     background-color: black;
-    box-sizing: border-box;
-    height: 100%;
+    width: 100%;
 }
 
 /* HEADER */
@@ -89,19 +94,21 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     font-weight: 800;
     color: whitesmoke;
     text-transform: uppercase;
-    transition: 0.2s; 
+    transition: 1s; 
 }
 
-.enlacesInicio:hover{font-size:2rem;}
+.enlacesInicio:hover{font-size: 2rem;}
 
 /* SECCION EVENTOS */
 .sectorDjs{width: 100%;}
+
 .tituloSection1{
     color: whitesmoke;
     font-family: var(--fuente1);
     font-size: 6rem;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .tituloSection1:hover{ color: var(--lila);}
@@ -124,7 +131,6 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     display: grid;
     grid: 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
-    padding: 20px;
     margin-top: 0;
     gap: 10px;
 }
@@ -157,18 +163,6 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     margin-bottom: 50px;
 }
 
-.fondoE6,.fondoE7,.fondoE8,.fondoE9,.fondoE10{
-background-size:cover;
-background-repeat: no-repeat;
-width: 250px;
-height: 450px;
-display: flex;
-justify-content: center;
-overflow: hidden;
-border-radius: 15px;
-}
-
-
 .fondoE6{
     background-image: url(../imgProyectoPersonal/Djs/18112023-rhode&brown.png);
 }
@@ -183,6 +177,16 @@ border-radius: 15px;
 }
 .fondoE10{
     background-image: url(../imgProyectoPersonal/Djs/23-11-2023-biia.png);
+}
+.fondoE6,.fondoE7,.fondoE8,.fondoE9,.fondoE10{
+background-size:cover;
+background-repeat: no-repeat;
+width: 250px;
+height: 450px;
+display: flex;
+justify-content: center;
+overflow: hidden;
+border-radius: 15px;
 }
 
 
@@ -240,17 +244,17 @@ transition: 1s;
     color: var(--lila);
     border: 2px solid var(--lila);
 }
-.cajaGeneros{
-    margin-top: 10px;
-}
-.infoDjs h3{
+.cajaGeneros{margin-top: 10px;}
+
+.textoImgE h3{
     font-size: 2rem;
     margin-top: 28px;
 }
-.infoDjs h2{
+.textoImgE h2{
     text-transform: uppercase;
+    margin-bottom: 5px;
 }
-.infoDjs h5{
+.textoImgE h5{
     font-size: 0.7rem;
     color: rgb(177, 177, 177);
 }
@@ -284,7 +288,7 @@ transition: 1s;
 
 /* SECCION CULTURAL */
 .seccionC{
-    max-width: 100%;
+    width: 100%;
     margin-top:70px;
 }
 
@@ -302,7 +306,7 @@ transition: 1s;
     display: grid;
     grid: 1fr 1fr / 1fr 1fr 1fr ;
     justify-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 .infoC{
     opacity: 0;
@@ -323,9 +327,20 @@ transition: 1s;
    align-items: center;
    text-align: center;
 }
+
+.infoC .cajaGeneros{
+    margin-bottom: 20px;
+}
+
+.infoC h2{
+    font-size:2rem;
+    margin-bottom: 10px;
+}
+
 .infoC h5{
         font-size: 0.7rem;
         color: rgb(177, 177, 177);
+        margin-top: 20px;
 }
 .infoC:hover{
     opacity: 1;
@@ -411,9 +426,6 @@ transition: 1s;
         width: 355px;
         height: 255px;
     }
-    .enlaceLocal{
-        font-size: 1.5rem;
-    }
     
 }
 
@@ -477,22 +489,7 @@ transition: 1s;
     .infoEvento{
         font-size: 1rem;
     }
-
-    .infoDjs h1{
-       font-size: 1.7rem;
-    }
-    .infoDjs h2{
-        font-size: 1.5rem;
-    }
-    .infoDjs h3{
-        font-size: 1.4rem;
-    }
-    .textoImgE h5{
-        font-size: 0.7rem;
-    }
-    .enlaceLocal{
-        font-size: 1.2rem;
-    }
+    
 }
 
 /*VOLVER AL INICIO*/
@@ -619,7 +616,7 @@ transition: 1s;
 .contenidoPopUp{
     height: 350px;
     width: 550px;
-    background-image: url(../imgProyectoPersonal/fondoLog.jpeg);
+    background-image: url(../imgProyectoPersonal/fondo3.jpg);
     padding: 5px;
     border-radius: 5px;
     position: relative;
@@ -628,9 +625,7 @@ transition: 1s;
     text-transform: uppercase;
     color: white;
 }
-.tituloLogin{
-    margin-bottom: 50px;
-}
+.tituloLogin{margin-bottom:50px;}
 .tituloSu{margin-bottom:40px;}
 
 .inPop{
@@ -666,9 +661,7 @@ transition: 1s;
     color: black;
     color: white;
 }
-.botonesLogueo{
-    margin-top: 50px;
-}
+.botonesLogueo{margin-top: 50px;}
 
 /*PAGINA DJ EVENTOS*/
 
@@ -727,9 +720,7 @@ transition: 1s;
     color: whitesmoke;
 }
 
-.videoDiv iframe{
-    border-radius: 15px;
-}
+
 
   
   
