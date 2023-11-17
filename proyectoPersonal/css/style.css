@@ -224,7 +224,10 @@ transition: 1s;
     transition: 1s;
 }
 .infoDjs{
-    text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 .enlaceUbicacion,.enlaceEntradas,.enlaceGeneros,.enlaceLocal,.enlaceInfo{
     text-decoration: none;
@@ -253,15 +256,16 @@ transition: 1s;
     color: var(--lila);
     border: 2px solid var(--lila);
 }
-.cajaGeneros{margin-top: 10px;}
-
-.textoImgE h3{
-    font-size: 2rem;
-    margin-top: 28px;
+.cajaGeneros{
+    margin-bottom: 20px;
 }
-.textoImgE h2{
-    text-transform: uppercase;
-    margin-bottom: 5px;
+.cajaNombres{
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 .textoImgE h5{
     font-size: 0.7rem;
