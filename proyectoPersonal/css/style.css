@@ -152,7 +152,7 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     background-image: url(../imgProyectoPersonal/Djs/18-11-2023-kunst.png);
 }
 .fondoE6{
-    background-image: url(../imgProyectoPersonal/Djs/18112023-rhode&brown.png);
+    background-image: url(../imgProyectoPersonal/Djs/18-11-2023-rhode&brown.png);
 }
 .fondoE7{
     background-image: url(../imgProyectoPersonal/Djs/18-11-2023twoEx.png);
@@ -266,6 +266,7 @@ transition: 1s;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+    text-align: center;
 }
 .textoImgE h5{
     font-size: 0.7rem;
@@ -694,8 +695,29 @@ transition: 1s;
     color: whitesmoke;
     font-size: 2rem;
 }
-
-.tituloPagDe{
+.textCalendar{
+    color: whitesmoke;
+    font-size: 4rem;
+    font-family: var(--fuente1);
+}
+.calendar{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.date{
+    font-family: var(--fuente1);
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+.envio{
+    font-family: var(--fuente1);
+    width: 20%;
+    font-size: 1.5rem;
+}
+.tituloPagD{
     font-family: var(--fuente1);
     font-weight: 800px;
     color: whitesmoke;
@@ -704,36 +726,70 @@ transition: 1s;
     text-align: center;
 }
 
-.contenedorDjE{
+.contenedorDj{
     display: flex;
     flex-direction: column;
 }
 
-.cajaImgText1{
+.cajaInfoDjs{
     display: flex;
-    margin-bottom: 20PX;
+    justify-content: center;
+    margin: 0px 20px 20px 20px;
 }
 
-.imgDjE1{
-    width: 250px;
+.imgDj1{
+    width: 70%;
     margin-left: 20px;
+    
+}
+.imgDj1 img{
     border-radius: 15px;
+    width: 85%;
 }
 
-.textoDjE{
+.textoDj{
     font-size: 2rem;
     color: whitesmoke;
     font-family: var(--fuente1);
-    width: 70%;
-    margin-left: 20px;
+    width: 100%;
 }
 
-.textoDjE a{
+.ubicacion{
+    margin-top: 20px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+.ubicacion a{
+       color: var(--redSoft); 
+       text-decoration: none;
+}
+.comunidad{
+   margin-top: 30px;
+}
+.comh{
+    color: whitesmoke; 
     text-decoration: none;
-    color: whitesmoke;
+    border: whitesmoke solid 2px; 
+    width: 25%;
+    padding: 15px; 
+    border-radius: 15px;
+}
+.comh:hover{
+    color: var(--yellow);
+    border: var(--yellow) solid 2px; 
 }
 
-
+iframe{
+    border-radius: 15px;
+    
+}
+.videoDiv{
+    margin-bottom: 20px;
+}
+.contendorMedia{
+    display: flex;
+    flex-direction: column;
+}
 
   
   

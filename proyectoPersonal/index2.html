@@ -57,39 +57,68 @@
         </section>
     </header>
     <main>
-        <div class="tituloPagDe">
-            <h1 class="tituloDje">Dj's & Eventos</h1>
+        <div class="tituloPagD">
+            <h1 class="tituloDje">Dj's</h1>
         </div>
     </main>
 
     <nav>
         <ul class="menuPg1">
-            <li id="calendar">Calendario</li>
-            <li id="genero">Genero</li>
+            <div>
+                <form action="">
+                    <div class="calendar">
+                        <label class="textCalendar" for="calendario">Elige el rango o la fecha que desees consultar:</label>
+                        <input class="date" type="date" id="calendario" name="calendario"><br><br>
+            
+                        <input class="envio" type="submit" value="Enviar" name="enviar">
+                    </div>
+                </form>
+            
+            </div>
+            
+            <li id="genero">Generos</li>
+            <ul>
+                <li>Techno</li>
+                <li>Dance</li>
+                <li>House</li>
+                <li>Tech House</li>
+                <li>Deep House</li>
+                <li>Afro</li>
+            </ul>
         </ul>
     </nav>
 
-    <section class="contenedorDjE">
-        <div class="cajaImgText1">
-        <div>
-        <img class="imgDjE1" src="imgProyectoPersonal/Djs/17112023-jamieJones.png" alt="Evento Jamie Jones">
+    <section class="contenedorDj">
+        <div class="cajaInfoDjs">
+        <div class="imgDj1">
+        <img  src="imgProyectoPersonal/Djs/17112023-jamieJones.png" alt="Evento Jamie Jones">
         </div>
-        <div class="textoDjE">
+        <div class="textoDj">
         <div>
         <h1>BeRenatta</h1>    
         <h1>Jamie Jones</h1>
         <h2>Jose Fajardo · Tief</h2>
         <h3>17·11·2023</h3>
         </div>
+        <div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat doloribus adipisci. Neque corrupti explicabo modi voluptate veniam vero dignissimos, velit quibusdam repudiandae porro optio cumque. Sequi minus culpa voluptas.
         </p>
-        <a href="#">Ubicacion 📍</a>
         </div>
-
+        <div class="ubicacion">
+        <a href="#">Ubicacion 📍</a><br>
+        </div>
+        <div class="comunidad" >
+        <a class="comh" href="#">Comunidad</a>
+        </div>
+        </div>
+        <div class="contenedorMedia">
         <div class="videoDiv">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/RWVBoK4idas?si=3Vo9Z-HzlJP0gBEh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-
+        <div>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO2qTB74?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        </div>
 
         
         </div>
