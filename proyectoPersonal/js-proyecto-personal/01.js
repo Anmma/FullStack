@@ -19,5 +19,11 @@ document.getElementById("cierreb").addEventListener("click" , function(){
 
 
 
+///
+document.getElementById("generos-link").addEventListener("click" , function(){
+    document.querySelector(".contenedor-generos").style.display = "flex";
+})
 
-
+document.getElementById("x-generos").addEventListener("click" , function(){
+    document.querySelector(".contenedor-generos").style.display = "none"
+})
