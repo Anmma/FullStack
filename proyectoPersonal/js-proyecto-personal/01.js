@@ -1,29 +1,37 @@
 //Login-SingUp
 
 document.getElementById("loginA").addEventListener("click" , function(){
-    document.querySelector(".popUpA").style.display = "flex";
+    document.querySelector(".pop-up-a").style.display = "flex";
 })
 
 document.getElementById("cierre").addEventListener("click" , function(){
-    document.querySelector(".popUpA").style.display = "none"
+    document.querySelector(".pop-up-a").style.display = "none"
 })
 
 
 document.getElementById("loginB").addEventListener("click" , function(){
-    document.querySelector(".popUpB").style.display = "flex";
+    document.querySelector(".pop-up-b").style.display = "flex";
 })
 
-document.getElementById("cierreb").addEventListener("click" , function(){
-    document.querySelector(".popUpB").style.display = "none"
+document.getElementById("cierre-2").addEventListener("click" , function(){
+    document.querySelector(".pop-up-b").style.display = "none"
 })
 
 
 
-///
-document.getElementById("generos-link").addEventListener("click" , function(){
-    document.querySelector(".contenedor-generos").style.display = "flex";
+///GENEROS
+document.getElementById("generos-direct").addEventListener("click" , function(){
+    document.querySelector(".contenedor-filtros-g").style.display = "flex";
 })
 
-document.getElementById("x-generos").addEventListener("click" , function(){
-    document.querySelector(".contenedor-generos").style.display = "none"
+document.getElementById("cierre-g").addEventListener("click" , function(){
+    document.querySelector(".contenedor-filtros-g").style.display = "none"
+})
+///CALENDARIO
+document.getElementById("calendario-direct").addEventListener("click" , function(){
+    document.querySelector(".contenedor-filtros-c").style.display = "flex";
+})
+
+document.getElementById("cierre-c").addEventListener("click" , function(){
+    document.querySelector(".contenedor-filtros-c").style.display = "none"
 })

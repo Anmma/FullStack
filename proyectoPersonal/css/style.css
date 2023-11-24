@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: var(--fuente1);
 }
 
 html{
@@ -40,7 +41,6 @@ header{
     margin-top: 10px;
 }
 #loginA,#loginB{
-    font-family: var(--fuente1);
     text-decoration: none;
     color: whitesmoke;
     font-size: 1.5rem;
@@ -51,11 +51,10 @@ header{
 span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 
 /* MAIN */
-.inicioTitulo{
+.logo-inicial{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: var(--fuente1);
     font-weight: 800px;
     font-size: 4rem;
     color: whitesmoke;
@@ -66,7 +65,7 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 
 /* SECCION1 */
 
-.cajasInicio{
+.seleccion-inicio{
    display: flex;
    justify-content: center;
    gap: 50px;
@@ -74,62 +73,46 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
    margin: 0 auto 250px auto;
 }
 
-.cajaE{
+.djs-inicio{
     background-image: url(../imgProyectoPersonal/fondo1.jpg);
     background-size: cover;
     padding: 40px 75px 40px 75px;
     border-radius: 15px;
 }
-.cajaC{
+.conciertos-inicio{
     background-image: url(../imgProyectoPersonal/fondo2.jpg);
     background-size: cover;
     padding: 40px 50px 40px 50px;
     border-radius: 15px;
 }
 
-.enlacesInicio{
+.enlaces-inicio{
     font-size: 1.5rem;
     text-decoration: none;
-    font-family: var(--fuente1);
     font-weight: 800;
     color: whitesmoke;
     text-transform: uppercase;
     transition: 1s; 
 }
 
-.enlacesInicio:hover{font-size: 2rem;}
+.enlaces-inicio:hover{font-size: 2rem;}
 
 /* SECCION EVENTOS */
-.sectorDjs{width: 100%;}
+.seccion-info-djs{width: 100%;}
 
-.tituloSection1{
+.titulo-principal-djs{
     color: whitesmoke;
-    font-family: var(--fuente1);
     font-size: 6rem;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
 }
 
-.tituloSection1:hover{ color: var(--lila);}
+.titulo-principal-djs:hover{ color: var(--lila);}
 
-.sub1,.sub2{
-    color: whitesmoke;
-    font-family: var(--fuente1);
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-@media(max-width:1140px){
-    .tituloSection1{
-        font-size: 3rem;
-    }
-}
-
-.imgDjsPrincipal{
+.img-info-djs{
     display: grid;
-    grid: 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
+    grid: 1fr 1fr / 1fr 1fr 1fr 1fr;
     justify-self: center;
     margin-top: 0;
     gap: 15px; 
@@ -137,42 +120,42 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     margin-right: 40px;
 }
 
-.fondoE1{
-        background-image: url(../imgProyectoPersonal/Djs/17-11-2023-jamieJones.png);
-       
+.fondo1{
+        background-image: url(../imgProyectoPersonal/Djs/17-11-2023-jamieJones.png);   
 }
-.fondoE2{
+.fondo2{
         background-image: url(../imgProyectoPersonal/Djs/17-11-2023-caniche.png);
 }
-.fondoE3{
+.fondo3{
     background-image: url(../imgProyectoPersonal/Djs/18-11-2023-argy.png);}
-.fondoE4{
+.fondo4{
     background-image: url(../imgProyectoPersonal/Djs/18-11-2023-youngMarco.png);}
-.fondoE5{
+.fondo5{
     background-image: url(../imgProyectoPersonal/Djs/18-11-2023-kunst.png);
 }
-.fondoE6{
+.fondo6{
     background-image: url(../imgProyectoPersonal/Djs/18-11-2023-rhode&brown.png);
 }
-.fondoE7{
+.fondo7{
     background-image: url(../imgProyectoPersonal/Djs/18-11-2023twoEx.png);
 }
-.fondoE8{
+.fondo8{
     background-image: url(../imgProyectoPersonal/Djs/18-11-2023-manfredas.png);
 }
-.fondoE9{
+.fondo9{
     background-image: url(../imgProyectoPersonal/Djs/19-11-12-cloone.png);
 }
-.fondoE10{
+.fondo10{
     background-image: url(../imgProyectoPersonal/Djs/23-11-2023-biia.png);
 }
-.fondoE11{
+.fondo11{
     background-image: url(../imgProyectoPersonal/Djs/23-11-2023-sammyvirji.jpg);
 }
-.fondoE12{
+.fondo12{
     background-image: url(../imgProyectoPersonal/Djs/24-11-2023-kungs.jpg);
 }
-.fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
+
+.fondo1,.fondo2,.fondo3,.fondo4,.fondo5,.fondo6,.fondo7,.fondo8,.fondo9,.fondo10,.fondo11,.fondo12{
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -184,27 +167,12 @@ span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
     border-radius: 15px;
 }
 
-
-
-.fondoE6,.fondoE7,.fondoE8,.fondoE9,.fondoE10,.fondoE11,.fondoE12{
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    overflow: hidden;
-    border-radius: 15px;
-    /* margin-bottom: 50px; */
-}
-.textoImgP,.textoImgE{
+.texto-fondo-1{
 opacity: 0;
 background-color: rgba(0, 0, 0, 0.877);
 width: 100%;
 color: whitesmoke;
 font-size: 1.4rem;
-font-family: var(--fuente1);
 font-weight: 800px;
 display: flex;
 flex-direction: column;
@@ -214,52 +182,19 @@ text-transform: uppercase;
 padding: 40% 15% 40% 15%;
 } 
 
-.textoImgP:hover{
+.texto-fondo-1:hover{
 opacity: 1;
 transition: 1s;
 }
 
-.textoImgE:hover{
-    opacity: 1;
-    transition: 1s;
-}
-.infoDjs{
+.contenedor-info{
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
 }
-.enlaceUbicacion,.enlaceEntradas,.enlaceGeneros,.enlaceLocal,.enlaceInfo{
-    text-decoration: none;
-    color:whitesmoke;
-    margin: 5px;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-.enlaceEntradas:hover{
-    color: var(--yellow);
-}
-.enlaceUbicacion:hover{
-    color: var(--orange);
-}
-.enlaceLocal{
-    font-size: 2rem;
-}
-.enlaceLocal:hover{
-    color: var(--redSoft);
-}
-.enlaceGeneros{
-    border: 2px solid whitesmoke;
-    padding: 5px;
-}
-.enlaceGeneros:hover{
-    color: var(--lila);
-    border: 2px solid var(--lila);
-}
-.cajaGeneros{
-    margin-bottom: 20px;
-}
-.cajaNombres{
+
+.nombres-djs{
     font-size: 1.7rem;
     display: flex;
     flex-direction: column;
@@ -268,45 +203,86 @@ transition: 1s;
     margin-bottom: 10px;
     text-align: center;
 }
-.textoImgE h5{
+
+.box-generos{
+    margin-bottom: 20px;
+}
+
+.enlace-g,.enlace-local,.enlace-info{
+    text-decoration: none;
+    color:whitesmoke;
+    margin: 5px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.enlace-local{
+    font-size: 2rem;
+}
+.enlace-local:hover{
+    color: var(--redSoft);
+}
+.enlace-g{
+    border: 2px solid whitesmoke;
+    padding: 5px;
+}
+.enlace-g:hover{
+    color: var(--lila);
+    border: 2px solid var(--lila);
+}
+.fecha{
+    font-size: 2.5rem;
+}
+.autor{
     font-size: 0.7rem;
     color: rgb(177, 177, 177);
 }
-
-.cajaVerMas1,.cajaVerMas2{
+.box-ver-mas{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
-.cajaVerMas3{
-    margin-top: 50px ;
+.ver-mas-styles{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
 
-.verMasHover1,.verMasHover2{
+.ver-mas-styles{
     color: whitesmoke;
     font-family: var(--fuente1);
     text-decoration: none;
     text-transform: uppercase;
-    margin-top: 10px;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-top: 50px;
 }
 
-.verMasHover1:hover{
+.ver-mas-styles:hover{
     color: var(--green);
 }
-.verMasHover2:hover{
-    color: var(--skyblue);
+
+/*Volver al inicio*/
+
+.arrow{
+    background-image: url(../imgProyectoPersonal/back-1.png);
+    background-repeat: no-repeat;
+    padding: 25px;
+}
+.contenedor-back{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 50px auto;
 }
 
-
-
-/* SECCION CULTURAL */
-.seccionC{
+.arrow:hover{
+    background-image: url(../imgProyectoPersonal/back-2.png);
+}
+/* SECCION CONCIERTOS */
+.seccion-conciertos{
     width: 100%;
     margin-top:70px;
 }
 
-.tituloC{
+.titulo-principal-c{
     color: whitesmoke;
     font-family: var(--fuente1);
     font-size: 6rem;
@@ -314,15 +290,20 @@ transition: 1s;
     text-transform: uppercase;
     margin-bottom: 50px;
 }
-.tituloC:hover{color:var(--yellow);}
+.titulo-principal-c:hover{color:var(--yellow);}
 
-.imgC{
+.img-info-c{
     display: grid;
-    grid: 1fr 1fr / 1fr 1fr 1fr ;
+    grid: 1fr 1fr 1fr/ 1fr 1fr ;
     justify-items: center;
-    gap: 10px;
+    
 }
-.infoC{
+.contenedor-concierto{
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.conciertos-info{
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.753);
     width: 100%;
@@ -333,109 +314,102 @@ transition: 1s;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-}
-.infoC{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 70px 100px 70px;
+    border-radius: 15px;
 }
 
-.infoC .cajaGeneros{
-    margin-bottom: 20px;
-}
-
-.infoC h2{
-    font-size:2rem;
-    margin-bottom: 10px;
-}
-
-.infoC h5{
-        font-size: 0.7rem;
-        color: rgb(177, 177, 177);
-        margin-top: 20px;
-}
-.infoC:hover{
+.conciertos-info:hover{
     opacity: 1;
     transition: 1s;
     }
 
-.enlaceLocalc{
+.box1{
+    background-image: url(../imgProyectoPersonal/Conciertos/18-11-2023-spinGospelHouse.png);}
+.box2{
+    background-image: url(../imgProyectoPersonal/Conciertos/20-11-2023-nilsFrahm.png);}
+.box3{
+    background-image: url(../imgProyectoPersonal/Conciertos/22-11-2023-latinJam.png);}
+.box4{
+    background-image: url(../imgProyectoPersonal/Conciertos/23-11-2023-afrojam.png);}
+.box5{
+    background-image: url(../imgProyectoPersonal/Conciertos/24-11-2023-holyWave.png);}
+.box6{
+    background-image: url(../imgProyectoPersonal/Conciertos/28-11-2023-boogieBelgique.png);}
+
+.box1,.box2,.box3,.box4,.box5,.box6{
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+    
+}
+
+.artistas{
+    font-size: 3rem;
+}
+
+.box-generos-2{
+        margin-bottom: 20px;
+    }
+
+.enlace-g{
     color: whitesmoke;
     text-decoration: none;
     font-size: 1.5rem;
 }
-
-.infoEvento{
-    font-size: 1.5rem;
+.enlace-local-c{
+    text-decoration: none;
+    color: whitesmoke;
 }
-.enlaceConcierto{
+.mas-info-c{
     text-transform: uppercase;
     text-decoration: none;
     color: whitesmoke;
     font-size: 1.5rem;
     margin-top: 20px;
 }
-
-.caja1C{
-    background-image: url(../imgProyectoPersonal/Conciertos/18-11-2023-spinGospelHouse.png);}
-.caja2C{
-    background-image: url(../imgProyectoPersonal/Conciertos/20-11-2023-nilsFrahm.png);}
-.caja3C{
-    background-image: url(../imgProyectoPersonal/Conciertos/22-11-2023-latinJam.png);}
-.caja4C{
-    background-image: url(../imgProyectoPersonal/Conciertos/23-11-2023-afrojam.png);}
-.caja5C{
-    background-image: url(../imgProyectoPersonal/Conciertos/24-11-2023-holyWave.png);}
-.caja6C{
-    background-image: url(../imgProyectoPersonal/Conciertos/28-11-2023-boogieBelgique.png);}
-
-.caja1C,.caja2C,.caja3C,.caja4C,.caja5C,.caja6C{
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 440px;
-    height: 320px;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 15px;
-    margin-bottom: 50px;
+.ver-mas-styles2{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 2rem;
+}
+.ver-mas-styles2:hover{
+    color: var(--skyblue);
 }
 
-
 @media(min-width:768px) and (max-width:1140px){
-    .cajasInicio{
-        margin: 0 auto;
+    .seleccion-inicio{
+        margin: 0 auto 150px auto;
     }
-    .cajaE{
+    .djs-inicio{
         padding: 30px 40px 30px 40px; 
         margin-bottom: 20px;
     }
-    .cajaC{
+    .conciertos-inicio{
         padding:30px 20px 30px 20px; 
         margin-bottom: 20px;
     }
 
-    .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
-        width: 150px;
-        height: 250px;
-        margin-bottom: 20px;
+    .titulo-principal-djs{
+        margin-bottom: 50px;
+        font-size: 6rem;
     }
-    .textoImgE{
-        font-size: 0.7rem;
-    }
-    .fondoE6,.fondoE7,.fondoE8,.fondoE9,.fondoE10{
-        width: 150px;
-        height: 250px;
-    }
-    .textoImgP{font-size: 0.7rem;}
 
-    .sectorEventos{
-        margin-top: 100px;
+    .img-info-djs{
+        display: grid;
+        grid: 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
     }
+
+    .texto-fondo-1{padding: 5% 40% 5% 40%;}
     
-    .caja1C,.caja2C,.caja3C,.caja4C,.caja5C,.caja6C{
+    .box1,.box2,.box3,.box4,.box5,.box6{
         margin-bottom: 20px;
         width: 355px;
         height: 255px;
@@ -506,22 +480,11 @@ transition: 1s;
     
 }
 
-/*VOLVER AL INICIO*/
 
-.cajaBack{
-    font-size: 1.5rem;
-    margin-top: 50px;
-}
-.backArrow{
-    display: flex; 
-    align-items: center;
-    justify-content: center; 
-    height: 100%;
-}
 
 
 /* FOOTER */
-.fin{
+.footer-general{
     display: grid;
     grid: 1fr / 1fr 1fr 1fr 1fr;
     justify-items: center;
@@ -534,6 +497,23 @@ transition: 1s;
     flex-direction: column;
     align-items: start
 }
+.news-letter{
+    color: whitesmoke;
+    font-family: var(--fuente1);
+    font-size: 1.5rem;
+    margin-left: 50px;
+    margin-top: 20px;
+    line-height: 35px;
+}
+.enlaces-end{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--fuente1);
+    margin-top: 15px;
+    display: block;
+    text-transform: uppercase;
+}
 
 .textoFin{
     color: whitesmoke;
@@ -544,28 +524,11 @@ transition: 1s;
     grid-row: 2/3;
 }
 
-.enlaceFin{
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-family: var(--fuente1);
-    margin-top: 15px;
-    display: block;
-    text-transform: uppercase;
-}
-.newsLetter{
-    color: whitesmoke;
-    font-family: var(--fuente1);
-    font-size: 1.5rem;
-    margin-left: 50px;
-    margin-top: 20px;
-    line-height: 35px;
-}
 
-.imgFooter{ 
+.redes-end{ 
     margin-top: 25px;
 }
-.imgFin{
+.redes{
     width: 30px;
     margin-right: 5px;
     margin-bottom: 5px;
@@ -614,7 +577,7 @@ transition: 1s;
 }
 /* POPUP */
 
-.popUpA,.popUpB{
+.pop-up-a,.pop-up-b{
     background: rgba(0, 0, 0, 0.852);
     position:absolute;
     top: 0;
@@ -627,7 +590,7 @@ transition: 1s;
     font-size: 1.5rem;
 }
 
-.contenidoPopUp{
+.contenido-pop-up{
     height: 350px;
     width: 550px;
     background-image: url(../imgProyectoPersonal/fondo3.jpg);
@@ -639,10 +602,14 @@ transition: 1s;
     text-transform: uppercase;
     color: white;
 }
-.tituloLogin{margin-bottom:50px;}
-.tituloSu{margin-bottom:40px;}
+.exit{
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+} 
 
-.inPop{
+.titulo-login{margin-bottom:50px;}
+.input-user-pass{
     margin: 20px auto ;
     display: block;
     width: 50%;
@@ -651,90 +618,43 @@ transition: 1s;
     border: solid 2px rgb(255, 255, 255);
     font-family: var(--fuente1);
 }
-.inPop::placeholder{color: rgba(0, 0, 0, 0.838);}
+.input-user-pass::placeholder{color: rgba(0, 0, 0, 0.838);}
 
-.imgX{
-    display: flex;
-    justify-content: end;
-    cursor: pointer;
-} 
+.titulo-sign-up{margin-bottom:40px;}
 
-.imgX img{width: 25px;}
+#cierre{width: 25px;}
 
-.buttonPop1{
+.button-1{
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
     color: white;
 }
-.buttonPop2{
+.button-2{
     font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
     color: white;
 }
-.botonesLogueo{margin-top: 50px;}
+.buttons-log{margin-top: 50px;}
 
 /*PAGINA DJ EVENTOS*/
 
-.tituloPagD{
-    font-family: var(--fuente1);
-    font-weight: 800px;
-    color: whitesmoke;
-    font-size: 3rem;
-    text-transform: uppercase;
-    margin-left: 50px;
-}
-
-
-/*MENU*/
+/*FILTROS*/
 .filtracion{
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     align-items: center;
-    margin-left: 50px;
-    margin-bottom: 50px;
+    margin: 50px auto 50px 50px;
     cursor: pointer;
 }
 
-.filtracion li{
-    font-family: var(--fuente1);
-    color: whitesmoke;
-    font-size: 2rem;
-}
-
-/*Calendario*/
-.textCalendar{
-    color: whitesmoke;
-    font-size: 4rem;
-    font-family: var(--fuente1);
-}
-.calendar{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-}
-.date{
-    font-family: var(--fuente1);
-    background-color: rgb(255, 255, 255);
-    width: 50%;
-    font-size: 2rem;
-    margin-top: 10px;
-}
-.envio{
-    font-family: var(--fuente1);
-    width: 20%;
-    font-size: 1.5rem;
-}
-
 /*GENEROS*/
-
-#generos-link{
-    background-color: rgba(46, 46, 46, 0.84);
+#generos-direct,#calendario-direct{
+    background-color: rgba(255, 255, 255, 0.84);
     border-radius: 15px;
-    width: 100%;
     padding: 10px 10px 10px 10px;
     margin-bottom: 20px;
     display: flex;
@@ -742,18 +662,24 @@ transition: 1s;
     justify-content: center;
     align-items: center;
 }
-
-#generos-link:hover{background-color: var(--orange);}
-
-#generos-link a{
+#calendario-direct a{
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     font-family: var(--fuente1);
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: uppercase;
 }
+#generos-direct:hover{background-color: var(--orange);}
+#calendario-direct:hover{background-color: var(--pink);}
 
-.contenedor-generos{
+#generos-direct a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: var(--fuente1);
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.contenedor-filtros-g{
     background: rgb(0, 0, 0);
     position:absolute;
     top: 0;
@@ -766,6 +692,7 @@ transition: 1s;
     font-size: 1.5rem;
     border-radius: 15px;
 }
+
 .titulo-popup{
     font-family: var(--fuente1);
     color: whitesmoke;
@@ -797,6 +724,57 @@ transition: 1s;
     border-radius: 15px;
     padding: 10px;
 }
+/*Calendario*/
+.contenedor-filtros-c{
+    background: rgba(0, 0, 0, 0.656);
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+.textCalendar{
+    color: whitesmoke;
+    font-size: 4rem;
+    font-family: var(--fuente1);
+}
+.cierre-calendario{
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+.calendar{
+    display:grid;
+    grid: 1fr/1fr 1fr 1fr;
+    width: 100%;
+}
+.contenedor-calendario{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--skyblue);
+    padding: 20px;
+    border-radius: 10px;
+}
+.date{
+    font-family: var(--fuente1);
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+.envio{
+    font-family: var(--fuente1);
+    width: 20%;
+    font-size: 1.5rem;
+}
+
 
 .contenedorDj{
     display: flex;

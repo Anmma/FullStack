@@ -167,46 +167,6 @@ DIAPOSITIVA 22
                 php -v PARA VER VERSION DE PHP EN TERMINAL
 
 
-
-
-
-
-
-
-/*
-**************************************************
-COMIENZO DE CLASE 2023/11/03
-**************************************************
-
-
-
-*******************
-REPASO DÍA ANTERIOR
-
-    INTRODUCCION A BASE DE DATOS
-        ALMACENAR Y ORDENAR UNA GRAN CANTIDAD DE DATOS, ACTUALIZAR INFORMACIÓN
-        SQL EL LENGUAJE
-        MYSQL ES GESTOR DE BASES DE DATOS
-
-    TIPOS DE BASES DE DATOS
-        BASE DE DATOS RELACIONALES
-        EN CADA FILA HAY UNA INSTANCIA
-        COLUMNA EL TIPO DE DATOS
-
-    TIPO DE RELACIONES DE BASE DE DATOS
-        1 A MUCHOS
-        MUCHOS A MUCHOS
-        1 A 1
-
-    STACK AMP, APACHE, MYSQL, PHP
-        APACHE SERVIDOR
-        MYSQL GESTOR DE BASE DATOS
-        PHP LENGUAJE PROGRAMACIÓN
-
-
-FIN DEL REPASO
-*******************
-
             
             INSTALAR Y CONFIGURAR MYSQL
                 dev.mysql.com/downloads/mysql
