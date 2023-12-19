@@ -7,7 +7,7 @@
 
 html{
     font-size: 62.5%;
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 :root{
@@ -16,12 +16,11 @@ html{
     --redSoft: rgb(236, 60, 83);
     --orange: rgb(230, 142, 32);
     --green:rgb(122, 214, 78);
-    --pink:rgb(223, 127, 118);
+    --pink:rgb(255, 146, 199);
     --yellow:rgb(254, 194, 82);
     --skyblue:rgb(21, 185, 227);
     --cyan:rgb(60, 228, 141);
 }
-
 
 
 body{
@@ -29,8 +28,8 @@ body{
     width: 100%;
 }
 
-/* HEADER */
-header{
+/* NAV*/
+.pop-up-inicio{
     display: flex;
     justify-content: end;
     width: 100%;
@@ -50,531 +49,6 @@ header{
 
 span{font-weight: 800; color: whitesmoke; font-size: 1.8rem;}
 
-/* MAIN */
-.logo-inicial{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 800px;
-    font-size: 4rem;
-    color: whitesmoke;
-    margin-bottom: 50px;
-    margin-top: 90px;
-    text-transform: uppercase;
-}
-
-/* SECCION1 */
-
-.seleccion-inicio{
-   display: flex;
-   justify-content: center;
-   gap: 50px;
-   max-width: 100%;
-   margin: 0 auto 250px auto;
-}
-
-.djs-inicio{
-    background-image: url(../imgProyectoPersonal/fondo1.jpg);
-    background-size: cover;
-    padding: 40px 75px 40px 75px;
-    border-radius: 15px;
-}
-.conciertos-inicio{
-    background-image: url(../imgProyectoPersonal/fondo2.jpg);
-    background-size: cover;
-    padding: 40px 50px 40px 50px;
-    border-radius: 15px;
-}
-
-.enlaces-inicio{
-    font-size: 1.5rem;
-    text-decoration: none;
-    font-weight: 800;
-    color: whitesmoke;
-    text-transform: uppercase;
-    transition: 1s; 
-}
-
-.enlaces-inicio:hover{font-size: 2rem;}
-
-/* SECCION EVENTOS */
-.seccion-info-djs{width: 100%;}
-
-.titulo-principal-djs{
-    color: whitesmoke;
-    font-size: 6rem;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.titulo-principal-djs:hover{ color: var(--lila);}
-
-.img-info-djs{
-    display: grid;
-    grid: 1fr 1fr / 1fr 1fr 1fr 1fr;
-    justify-self: center;
-    margin-top: 0;
-    gap: 15px; 
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.fondo1{
-        background-image: url(../imgProyectoPersonal/Djs/17-11-2023-jamieJones.png);   
-}
-.fondo2{
-        background-image: url(../imgProyectoPersonal/Djs/17-11-2023-caniche.png);
-}
-.fondo3{
-    background-image: url(../imgProyectoPersonal/Djs/18-11-2023-argy.png);}
-.fondo4{
-    background-image: url(../imgProyectoPersonal/Djs/18-11-2023-youngMarco.png);}
-.fondo5{
-    background-image: url(../imgProyectoPersonal/Djs/18-11-2023-kunst.png);
-}
-.fondo6{
-    background-image: url(../imgProyectoPersonal/Djs/18-11-2023-rhode&brown.png);
-}
-.fondo7{
-    background-image: url(../imgProyectoPersonal/Djs/18-11-2023twoEx.png);
-}
-.fondo8{
-    background-image: url(../imgProyectoPersonal/Djs/18-11-2023-manfredas.png);
-}
-.fondo9{
-    background-image: url(../imgProyectoPersonal/Djs/19-11-12-cloone.png);
-}
-.fondo10{
-    background-image: url(../imgProyectoPersonal/Djs/23-11-2023-biia.png);
-}
-.fondo11{
-    background-image: url(../imgProyectoPersonal/Djs/23-11-2023-sammyvirji.jpg);
-}
-.fondo12{
-    background-image: url(../imgProyectoPersonal/Djs/24-11-2023-kungs.jpg);
-}
-
-.fondo1,.fondo2,.fondo3,.fondo4,.fondo5,.fondo6,.fondo7,.fondo8,.fondo9,.fondo10,.fondo11,.fondo12{
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    overflow: hidden;
-    border-radius: 15px;
-}
-
-.texto-fondo-1{
-opacity: 0;
-background-color: rgba(0, 0, 0, 0.877);
-width: 100%;
-color: whitesmoke;
-font-size: 1.4rem;
-font-weight: 800px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-transform: uppercase;
-padding: 40% 15% 40% 15%;
-} 
-
-.texto-fondo-1:hover{
-opacity: 1;
-transition: 1s;
-}
-
-.contenedor-info{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-
-.nombres-djs{
-    font-size: 1.7rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.box-generos{
-    margin-bottom: 20px;
-}
-
-.enlace-g,.enlace-local,.enlace-info{
-    text-decoration: none;
-    color:whitesmoke;
-    margin: 5px;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-.enlace-local{
-    font-size: 2rem;
-}
-.enlace-local:hover{
-    color: var(--redSoft);
-}
-.enlace-g{
-    border: 2px solid whitesmoke;
-    padding: 5px;
-}
-.enlace-g:hover{
-    color: var(--lila);
-    border: 2px solid var(--lila);
-}
-.fecha{
-    font-size: 2.5rem;
-}
-.autor{
-    font-size: 0.7rem;
-    color: rgb(177, 177, 177);
-}
-.box-ver-mas{
-    display: flex;
-    justify-content: center;
-}
-.ver-mas-styles{
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-
-.ver-mas-styles{
-    color: whitesmoke;
-    font-family: var(--fuente1);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    margin-top: 50px;
-}
-
-.ver-mas-styles:hover{
-    color: var(--green);
-}
-
-/*Volver al inicio*/
-
-.arrow{
-    background-image: url(../imgProyectoPersonal/back-1.png);
-    background-repeat: no-repeat;
-    padding: 25px;
-}
-.contenedor-back{
-    display: flex;
-    justify-content: center;
-    margin: 50px auto 50px auto;
-}
-
-.arrow:hover{
-    background-image: url(../imgProyectoPersonal/back-2.png);
-}
-/* SECCION CONCIERTOS */
-.seccion-conciertos{
-    width: 100%;
-    margin-top:70px;
-}
-
-.titulo-principal-c{
-    color: whitesmoke;
-    font-family: var(--fuente1);
-    font-size: 6rem;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-.titulo-principal-c:hover{color:var(--yellow);}
-
-.img-info-c{
-    display: grid;
-    grid: 1fr 1fr 1fr/ 1fr 1fr ;
-    justify-items: center;
-    
-}
-.contenedor-concierto{
-    display: flex; 
-    justify-content: center;
-    margin-bottom: 20px;
-}
-.conciertos-info{
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.753);
-    width: 100%;
-    color: whitesmoke;
-    font-size: 1rem;
-    font-family: var(--fuente1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    flex-direction: column;
-    text-align: center;
-    padding: 100px 70px 100px 70px;
-    border-radius: 15px;
-}
-
-.conciertos-info:hover{
-    opacity: 1;
-    transition: 1s;
-    }
-
-.box1{
-    background-image: url(../imgProyectoPersonal/Conciertos/18-11-2023-spinGospelHouse.png);}
-.box2{
-    background-image: url(../imgProyectoPersonal/Conciertos/20-11-2023-nilsFrahm.png);}
-.box3{
-    background-image: url(../imgProyectoPersonal/Conciertos/22-11-2023-latinJam.png);}
-.box4{
-    background-image: url(../imgProyectoPersonal/Conciertos/23-11-2023-afrojam.png);}
-.box5{
-    background-image: url(../imgProyectoPersonal/Conciertos/24-11-2023-holyWave.png);}
-.box6{
-    background-image: url(../imgProyectoPersonal/Conciertos/28-11-2023-boogieBelgique.png);}
-
-.box1,.box2,.box3,.box4,.box5,.box6{
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 15px;
-    
-}
-
-.artistas{
-    font-size: 3rem;
-}
-
-.box-generos-2{
-        margin-bottom: 20px;
-    }
-
-.enlace-g{
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 1.5rem;
-}
-.enlace-local-c{
-    text-decoration: none;
-    color: whitesmoke;
-}
-.mas-info-c{
-    text-transform: uppercase;
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 1.5rem;
-    margin-top: 20px;
-}
-.ver-mas-styles2{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: whitesmoke;
-    font-size: 2rem;
-}
-.ver-mas-styles2:hover{
-    color: var(--skyblue);
-}
-
-@media(min-width:768px) and (max-width:1140px){
-    .seleccion-inicio{
-        margin: 0 auto 150px auto;
-    }
-    .djs-inicio{
-        padding: 30px 40px 30px 40px; 
-        margin-bottom: 20px;
-    }
-    .conciertos-inicio{
-        padding:30px 20px 30px 20px; 
-        margin-bottom: 20px;
-    }
-
-    .titulo-principal-djs{
-        margin-bottom: 50px;
-        font-size: 6rem;
-    }
-
-    .img-info-djs{
-        display: grid;
-        grid: 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
-    }
-
-    .texto-fondo-1{padding: 5% 40% 5% 40%;}
-    
-    .box1,.box2,.box3,.box4,.box5,.box6{
-        margin-bottom: 20px;
-        width: 355px;
-        height: 255px;
-    }
-    
-}
-
-@media(max-width:768px){
-
-    .inicioTitulo{
-        font-size: 5rem;
-        text-align: center;
-    }
-
-    .cajasInicio{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
-    }
-    .cajaE{ padding: 30px 50px 30px 50px;margin-bottom: 15px;}
-    .cajaC{ padding: 30px 30px 30px 20px;margin-bottom: 15px;}
-
-    .sectorEventos{margin-top: 150px;}
-
-    .fondoE1,.fondoE2,.fondoE3,.fondoE4,.fondoE5{
-        width: 150px;
-        height: 250px;
-        margin-bottom: 10px;
-    } 
-    .fondoE6,.fondoE7,.fondoE8,.fondoE9,.fondoE10{
-        width: 150px;
-        height: 250px;
-        margin-bottom: 10px;
-    }
-    .imgDjsPrincipal {
-        display: grid;
-        grid: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr;
-    }
-
-    .textoImgE{
-        font-size: 0.5rem;
-    }
-   
-    .textoImgP{
-        font-size: 0.5rem;
-    }
-    .cajaVerMas1,.cajaVerMas2{
-        justify-content: center;
-        align-items: center;
-    }
-
-    .caja1C,.caja2C,.caja3C,.caja4C,.caja5C,.caja6C{
-        margin-bottom: 20px;
-        width: 360px;
-        height: 250px;
-    }
-    .imgC{
-        display: grid;
-        grid: 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr ;
-        justify-items: center;
-        gap: 10px;
-    }
-    .infoEvento{
-        font-size: 1rem;
-    }
-    
-}
-
-
-
-
-/* FOOTER */
-.footer-general{
-    display: grid;
-    grid: 1fr / 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    margin: 100px 0px 20px 0px;
-    border-top: whitesmoke solid 1px;
-    width: 100%;
-}
-.finCajaEnlaces{
-    display: flex;
-    flex-direction: column;
-    align-items: start
-}
-.news-letter{
-    color: whitesmoke;
-    font-family: var(--fuente1);
-    font-size: 1.5rem;
-    margin-left: 50px;
-    margin-top: 20px;
-    line-height: 35px;
-}
-.enlaces-end{
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-family: var(--fuente1);
-    margin-top: 15px;
-    display: block;
-    text-transform: uppercase;
-}
-
-.textoFin{
-    color: whitesmoke;
-    font-family: var(--fuente1);
-    font-size: 1.5rem;
-    margin-top: 30px;
-    grid-column: 1/4;
-    grid-row: 2/3;
-}
-
-
-.redes-end{ 
-    margin-top: 25px;
-}
-.redes{
-    width: 30px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-}
-
-@media(max-width:768px){
-  
-    .fin{
-        display: grid;
-        grid: 1fr 1fr 1fr 1fr/ 1fr ;
-        margin: 30px 10px 0px 10px;
-    }
-    .textoFin{
-        grid-row: 4/5;
-        grid-column: 1/2;
-    }
-
-    .newsLetter{
-        margin-left: 0px;
-        margin-top: 50px;
-    }
-    .finCajaEnlaces{margin-top: 30px;}
-    .imgFooter{margin-top: 60px;}
-}
-
-
-@media(min-width:768px) and (max-width:1140px){
-    .imgC{
-        display: grid;
-        grid:1fr 1fr 1fr / 1fr 1fr;
-        margin-bottom: 20px;
-    }
-    .fin{
-        display: grid;
-        grid: 1fr 1fr/ 1fr 1fr ;
-        justify-items: center;
-        }
-    .finCajaEnlaces{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        margin-top: 15px;
-    }
-    .newsLetter{margin-left: 70px;}
-    .imgFooter,.textoFin{margin-top: 50px;}
-}
 /* POPUP */
 
 .pop-up-a,.pop-up-b{
@@ -591,10 +65,9 @@ transition: 1s;
 }
 
 .contenido-pop-up{
-    height: 350px;
-    width: 550px;
-    background-image: url(../imgProyectoPersonal/fondo3.jpg);
-    padding: 5px;
+    width: 70%;
+    padding: 40px;
+    background-color: #000;
     border-radius: 5px;
     position: relative;
     font-family: var(--fuente1);
@@ -609,6 +82,7 @@ transition: 1s;
 } 
 
 .titulo-login{margin-bottom:50px;}
+
 .input-user-pass{
     margin: 20px auto ;
     display: block;
@@ -638,12 +112,120 @@ transition: 1s;
     color: black;
     color: white;
 }
-.buttons-log{margin-top: 50px;}
+.buttons-log{
+    margin-top: 50px; 
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* INICIO*/
+.contenedor-inicio{
+    margin-top: 100px;
+}
+.inicio{
+    font-weight: 800px;
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-align: center;
+    background-image: url(../imgProyectoPersonal/fondo-inicio-we.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.inicio h2{
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.seleccion-inicio{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   width: 100%;
+}
+
+.djs-inicio{
+    border: solid 2px black;
+    padding: 5px 55px 5px 55px;
+}
+.conciertos-inicio{
+    border: solid 2px black;
+    padding: 5px 25px 10px 25px;
+}
+
+.enlaces-inicio{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    transition: 1s; 
+}
+
+.djs-inicio:hover{
+    background-color: rgba(150, 88, 251, 0.451);
+}
+.conciertos-inicio:hover{
+    background-color: rgba(21, 186, 227, 0.549);
+}
+
+/* FOOTER */
+.footer-general{
+    display: grid;
+    grid: 1fr/ 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 0px 0px 20px 0px;
+    border-top: rgb(0, 0, 0) solid 1px;
+    width: 100%;
+}
+.finCajaEnlaces{
+    display: flex;
+    flex-direction: column;
+    align-items: start
+}
+.news-letter{
+    color: whitesmoke;
+    font-family: var(--fuente1);
+    font-size: 1.5rem;
+    margin-left: 50px;
+    margin-top: 50px;
+    line-height: 35px;
+}
+.enlaces-end{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--fuente1);
+    margin-top: 15px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.textoFin{
+    color: whitesmoke;
+    font-family: var(--fuente1);
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+.redes-end{ 
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.redes{
+    width: 30px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
 
 /*PAGINA DJ EVENTOS*/
 
 /*FILTROS*/
-.filtracion{
+.filtro{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -653,32 +235,29 @@ transition: 1s;
 
 /*GENEROS*/
 #generos-direct,#calendario-direct{
-    background-color: rgba(255, 255, 255, 0.84);
-    border-radius: 15px;
+    border: 2px solid whitesmoke;
     padding: 10px 10px 10px 10px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-#calendario-direct a{
+    color: whitesmoke;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-family: var(--fuente1);
-    font-size: 3rem;
-    text-transform: uppercase;
+    font-size: 2rem;
 }
-#generos-direct:hover{background-color: var(--orange);}
-#calendario-direct:hover{background-color: var(--pink);}
 
-#generos-direct a{
+#generos-direct:hover{
+    color: rgb(222, 255, 146);
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-family: var(--fuente1);
-    font-size: 3rem;
-    text-transform: uppercase;
+    border:  rgb(222, 255, 146) solid 2px; 
 }
+#calendario-direct:hover{
+    color: var(--pink);
+    text-decoration: none;
+    border:  var(--pink) 2px solid; 
+}
+
 .contenedor-filtros-g{
     background: rgb(0, 0, 0);
     position:absolute;
@@ -775,56 +354,62 @@ transition: 1s;
     font-size: 1.5rem;
 }
 
-
-.contenedorDj{
-    display: flex;
-    flex-direction: column;
+.caja-info-djs{
+    display: grid;
+    grid: 1fr/1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
 }
-
-.cajaInfoDjs{
-    display: flex;
-    justify-content: center;
-    margin: 0px 20px 20px 20px;
+.contenedor-djs{
+    margin-right: 60px;
 }
-
-.imgDj1{
+.img-dj-1 {
+    background-image: url(../imgProyectoPersonal/Djs/17112023-jamieJones.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 70%;
-    margin-left: 20px;
-    
-}
-.imgDj1 img{
+    height:100%;
     border-radius: 15px;
-    width: 85%;
 }
 
-.textoDj{
-    font-size: 2rem;
+.texto-dj{
     color: whitesmoke;
     font-family: var(--fuente1);
-    width: 100%;
 }
-
+.fuente-djs h1{
+    font-size: 4rem;
+}
+.fuente-djs{
+    font-size: 2.5rem;
+}
+.fuente-djs{
+    font-size: 2rem;
+}
+.texto-info{
+    font-size: 2rem;
+}
 .ubicacion{
     margin-top: 20px;
-    margin-left: 10px;
     text-transform: uppercase;
 }
 .ubicacion a{
        color: var(--redSoft); 
        text-decoration: none;
+       font-size: 1.7rem;
 }
 .comunidad{
    margin-top: 30px;
 }
-.comh{
+.comunidad-enlace{
     color: whitesmoke; 
     text-decoration: none;
     border: whitesmoke solid 2px; 
     width: 25%;
-    padding: 15px; 
+    padding: 15px;
     border-radius: 15px;
+    font-size: 1.5rem;
 }
-.comh:hover{
+.comunidad-enlace:hover{
     color: var(--yellow);
     border: var(--yellow) solid 2px; 
 }
@@ -833,15 +418,32 @@ iframe{
     border-radius: 15px;
     
 }
-.videoDiv{
+.video-iframe{
     margin-bottom: 20px;
 }
-.contendorMedia{
+.contendor-media{
     display: flex;
     flex-direction: column;
+    
 }
 
+@media(max-width:1140px){
+        .inicio{
+            background-size: cover;
+            background-position: 50%;
+        }
+}
+@media(min-width:768px) and (max-width:1140px){
+   
+}
+@media(max-width:768px){
+  .footer-general{
+            display: grid;
+            justify-content: center;
+            grid:1fr 1fr 1fr/1fr;
+            margin: 0px 0px 40px 0px;
+        }
   
-  
+}
   
   
